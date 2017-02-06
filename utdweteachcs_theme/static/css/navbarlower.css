@@ -1,0 +1,18 @@
+.navbar-lower {
+  top: 50px;
+  padding: 0;
+  min-height: 30px;
+}
+#lowernavbar li>a{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: -88px;
+  padding-top: 100px;
+}

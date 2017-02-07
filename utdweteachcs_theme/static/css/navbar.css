@@ -1,20 +1,25 @@
 body {
-  padding-top: 70px;
-  padding-bottom: 250px;
+    padding-top: 70px;
+    padding-bottom: 250px;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+}
+
+.navbar-fixed-top {
+    height: 4em;
 }
 
 .navbar-inverse {
-  border-bottom-color: #008542;
-  border-bottom-width: 5px;
+    border-bottom-color: #008542;
+    border-bottom-width: 5px;
 }
 
 .navbar-brand {
-  padding: 2px;
+    height: 100%;
+    padding: 2px;
 }
 
 .footer-brand {
@@ -54,22 +59,24 @@ html {
     text-decoration: underline;
 }
 .h4, .h5, .h6, h4, h5, h6 {
-  color: #008542;
+    color: #008542;
 }
 
 .responsiveCal {
-  position: relative;
-  padding-bottom: 60%;
-  height: 0;
-  overflow: hidden;
+    position: relative;
+    padding-bottom: 60%;
+    height: 0;
+    overflow: hidden;
 }
 
 .responsiveCal iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.img-center {margin:0 auto;}
+.img-center {
+    margin:0 auto;
+}

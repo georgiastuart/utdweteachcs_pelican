@@ -7,8 +7,11 @@ headers: Syllabus: top
          Requirements: requirements
          Format: course-format
          Tools: course-tools
+         Objectives: student-objectives
+         Grading and Hours: grading
+         Assignment Redo: assignment-resubmission
 save_as: syllabus/index.html
-template: lower_navbar
+template: sidebar
 
 # Syllabus: Semester I # { #top }
 
@@ -56,3 +59,49 @@ programming through TI-Basic and Lua and computers to write Lua and JavaScript.
 Course communication and discussion will be done through the course Slack.
 Note: you are not required to use your real name on Slack, but you must inform
 the instructor of your screen name. All grades will be posted on the university eLearning.
+
+## Student Objectives
+
+*Students will be able to...*
+
+- discuss computational and algorithmic thinking, the current research, and how these modes of thinking appear frequently in our day-to-day lives
+- describe variables, control structures, truth values, and integer operations and use them in a variety of programming contexts
+- create a simple game
+- describe data types, floating point operations, binary arithmetic, and data structures and use them in a variety of programming contexts.
+- use abstraction to create flexible functions and discuss the importance of abstraction in programming
+- create a program that can interact with the physical world via a variety of sensors
+- describe the merits of and use design strategies, diagramming, pseudocode, version control, and IDEs
+
+## Course Grading and Hour Completion # { #grading }
+
+Evaluation for this course will be done on two axes: hour completion for TRC credit and a standards-based grade scale for academic credit.
+
+#### Hour Completion
+
+This course awards a maximum of 45 hours for TRC participation. Students have the opportunity to earn up to six
+hours for each of the eight weeks, split between in-class participation (3 hours) and online participation
+(3 hours). Participation is monitored by comprehension checks after students view course material, weekly
+assignments, and participation in the class Slack. Missing an in-class meeting or online assignments will
+result in a reduction of earned hours for the week unless alternative arrangements are made with the instructor
+in advance.
+
+#### Standards-Based Grading
+
+Since the aim of the course is preparation for the TExES 241 Computer Science exam, we will employ standards-based
+grading aligned with the TExES Computer Science 241 Educator standards. Translation to the A-F scale used at
+UT Dallas is as follows. *Note: “proficient on all standards” and similar phrasing means “at least proficient on
+all standards.” Higher proficiencies are included.*
+
+{!content/pages/syllabus/grade_table.html!}
+
+## Assignment resubmission
+
+Since our goal is to assess mastery of standards, students will be given the opportunity to either resubmit
+assignments with correction and discussion of the errors and/or to submit another, similar assignment.
+Specifics of the resubmission or similar assignment are at the instructor’s discretion. Students wishing to
+re-submit work must consult with the instructor.
+
+## UT Dallas Syllabus Policies and Procedures
+
+The information contained in the following link constitutes the University’s policies and procedures
+segment of the course syllabus. Please go to [go.utdallas.edu/syllabus-policies](http://go.utdallas.edu/syllabus-policies) for these policies

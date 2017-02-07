@@ -9,10 +9,15 @@
 }
 
 body {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
-  margin-top: -88px;
-  padding-top: 100px;
+  margin-top: -68px;
+  padding-top: 80px;
+}
+
+.sidebar {
+    /*background-color: #008542;*/
+    top: 88px;
 }

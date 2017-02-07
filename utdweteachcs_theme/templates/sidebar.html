@@ -1,0 +1,28 @@
+{% extends 'page_base.html' %}
+
+{% block header %}{{ super() }}
+<link href="/static/css/sidebar.css" rel="stylesheet">
+{% endblock %}
+{% block title %}{{ super() }} - {{ page.title }}{% endblock %}
+
+{% block content %}
+    <div class="row">
+    <!--Nav Bar -->
+    <nav class="col-md-3">
+        <div class="affix hidden-sm hidden-xs sidebar" id="lowernavbar">
+            <ul class="nav nav-pills nav-stacked">
+              {% for header, ref in page.headers|get_headers %}
+                  <li><a href="#{{ ref }}">{{ header }}</a></li>
+              {% endfor %}
+            </ul>
+        </div>
+    </nav>
+    <!--Main Content -->
+    <div class="col-md-9">
+    {{ page.content }}
+    </div>
+    </div>{% endblock %}
+
+{% block js %}{{ super() }}
+<script src="/static/js/sidebar.js"></script>
+{% endblock %}

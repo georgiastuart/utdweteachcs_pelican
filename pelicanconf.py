@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 import ast
 
 
-def str_to_dict(value):
+def get_headers(value):
     for index, pair in enumerate(value):
         value[index] = (x.strip() for x in pair.split(':'))
     return value
@@ -26,9 +26,10 @@ THEME_STATIC_DIR = 'static'
 
 MARKDOWN = {'extension_configs': {'markdown.extensions.toc': {},
                                   'markdown.extensions.attr_list': {},
-                                  'markdown_include.include': {}}}
+                                  'markdown_include.include': {},
+                                  'markdown.extensions.tables': {}}}
 
-JINJA_FILTERS = {'str2dict': str_to_dict}
+JINJA_FILTERS = {'get_headers': get_headers}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -44,7 +45,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
+SOCIAL = (('Facebook', 'http://facebook.com'),
           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10

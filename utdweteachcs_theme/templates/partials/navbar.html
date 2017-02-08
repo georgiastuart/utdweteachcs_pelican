@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
 {#      <a class="navbar-brand" href="#">Brand</a>#}
-        <a href="/" class="navbar-brand"><img src="/static/images/weteachcs_utd_logo_graphic_small.png"></a>
+        <a href="{{ SITEURL }}/" class="navbar-brand"><img src="{{ SITEURL }}/static/images/weteachcs_utd_logo_graphic_small.png"></a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar">
@@ -16,24 +16,24 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Program Info <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="/syllabus/">Syllabus</a></li>
-            <li><a href="/calendar/">Calendar</a></li>
+            <li><a href="{{ SITEURL }}/syllabus/">Syllabus</a></li>
+            <li><a href="{{ SITEURL }}/calendar/">Calendar</a></li>
             <li class="divider"></li>
-            <li><a href="/instructors/">Instructors</a></li>
+            <li><a href="{{ SITEURL }}/instructors/">Instructors</a></li>
             <li><a href="http://utdallas.edu/scimathed">UTD Science/Mathematics Education</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modules <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="/module-0/">Module 0: Computational Thinking</a></li>
-            <li><a href="/calendar/">Calendar</a></li>
+            <li><a href="{{ SITEURL }}/module-0/">Module 0: Computational Thinking</a></li>
+            <li><a href="{{ SITEURL }}/calendar/">Calendar</a></li>
             <li class="divider"></li>
-            <li><a href="/instructors/">Instructors</a></li>
+            <li><a href="{{ SITEURL }}/instructors/">Instructors</a></li>
             <li><a href="http://utdallas.edu/scimathed">UTD Science/Mathematics Education</a></li>
           </ul>
         </li>
-        <li><a href="/resources/">Resources</a></li>
+        <li><a href="{{ SITEURL }}/resources/">Resources</a></li>
       </ul>
     </div>
   </div>

@@ -1,5 +1,6 @@
 .idea/
 output/
+.DS_Store
 
 # compiled / optimized / DLL files
 __pycache__/

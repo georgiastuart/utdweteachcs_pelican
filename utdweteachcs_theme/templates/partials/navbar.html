@@ -1,40 +1,38 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-{#      <a class="navbar-brand" href="#">Brand</a>#}
-        <a href="{{ SITEURL }}/" class="navbar-brand"><img src="{{ SITEURL }}/static/images/weteachcs_utd_logo_graphic_small.png"></a>
+<nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
+    {#    <div class="navbar-header">#}
+    {#      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">#}
+    {#        <span class="sr-only">Toggle navigation</span>#}
+    {#        <span class="icon-bar"></span>#}
+    {#        <span class="icon-bar"></span>#}
+    {#        <span class="icon-bar"></span>#}
+    {#      </button>#}
+    <button class="navbar-toggler hide-lg-up float-right" type="button" data-cfw="collapse" data-cfw-collapse-toggle="#respNav1"
+            data-cfw-collapse-hidden="false" aria-label="Toggle navigation">&#8801;</button>
+    {#      <a class="navbar-brand" href="#">Brand</a>#}
+    <a href="/" class="navbar-brand"><img src="/static/images/weteachcs_utd_logo_graphic_small.png"></a>
+    <div class="collapse navbar-toggleable-md" id="respNav0">
+        <ul class="nav navbar-nav">
+            <li class="nav-item dropdown">
+                <a href="#" role="button" class="nav-link dropdown-toggle" data-cfw="dropdown" data-cfw-dropdown-toggle="#info-dropdown">Program Info</a>
+                <ul class="dropdown-menu" id="info-dropdown">
+                    <li><a href="/syllabus/" class="dropdown-item">Syllabus</a></li>
+                    <li><a href="/calendar/" class="dropdown-item">Calendar</a></li>
+                    <li class="divider" class="dropdown-divider"></li>
+                    <li><a href="/instructors/" class="dropdown-item">Instructors</a></li>
+                    <li><a href="http://utdallas.edu/scimathed" class="dropdown-item">UTD Science/Mathematics Education</a></li>
+                </ul>
+            </li>
+            {#                <li class="dropdown">#}
+            {#                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modules <span class="caret"></span></a>#}
+            {#                    <ul class="dropdown-menu" role="menu">#}
+            {#                        <li><a href="/module-0/">Module 0: Computational Thinking</a></li>#}
+            {#                        <li><a href="/calendar/">Calendar</a></li>#}
+            {#                        <li class="divider"></li>#}
+            {#                        <li><a href="/instructors/">Instructors</a></li>#}
+            {#                        <li><a href="http://utdallas.edu/scimathed">UTD Science/Mathematics Education</a></li>#}
+            {#                    </ul>#}
+            {#                </li>#}
+            {#                <li><a href="/resources/">Resources</a></li>#}
+        </ul>
     </div>
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Program Info <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="{{ SITEURL }}/syllabus/">Syllabus</a></li>
-            <li><a href="{{ SITEURL }}/calendar/">Calendar</a></li>
-            <li class="divider"></li>
-            <li><a href="{{ SITEURL }}/instructors/">Instructors</a></li>
-            <li><a href="http://utdallas.edu/scimathed">UTD Science/Mathematics Education</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modules <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="{{ SITEURL }}/module-0/">Module 0: Computational Thinking</a></li>
-            <li><a href="{{ SITEURL }}/calendar/">Calendar</a></li>
-            <li class="divider"></li>
-            <li><a href="{{ SITEURL }}/instructors/">Instructors</a></li>
-            <li><a href="http://utdallas.edu/scimathed">UTD Science/Mathematics Education</a></li>
-          </ul>
-        </li>
-        <li><a href="{{ SITEURL }}/resources/">Resources</a></li>
-      </ul>
-    </div>
-  </div>
 </nav>

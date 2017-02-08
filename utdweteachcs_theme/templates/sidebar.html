@@ -9,10 +9,10 @@
     <div class="row">
     <!--Nav Bar -->
     <nav class="col-md-3">
-        <div class="affix-top hidden-sm hidden-xs sidebar" id="lowernavbar">
+        <div class="affix-top hidden-sm hidden-xs sidebar" id="sidebar">
             <ul class="nav nav-pills nav-stacked">
               {% for header, ref in page.headers|get_headers %}
-                  <li><a href="#{{ ref }}">{{ header }}</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#{{ ref }}">{{ header }}</a></li>
               {% endfor %}
             </ul>
         </div>

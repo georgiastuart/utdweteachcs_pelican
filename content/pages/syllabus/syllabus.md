@@ -32,7 +32,7 @@ for Domain II - Program Design and Development and Domain III - Programming
 Language Topics. In addition, we cover as much as possible of Domain IV -
 Special Topics. We also focus on the TEKS for Computer Science I and II and
 the standards for AP Computer Science Principles. This course is **not** effective
-preparation for AP Computer Science A..
+preparation for AP Computer Science A.
 
 
 ## Requirements

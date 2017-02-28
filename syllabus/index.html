@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="http://georgiastuart.com/utdweteachcs_pelican/static/css/bootstrap_utd.min.css" rel="stylesheet">
+    <link href="http://georgiastuart.com/utdweteachcs_pelican/static/css/figuration.min.css" rel="stylesheet">
     <link href="http://georgiastuart.com/utdweteachcs_pelican/static/css/navbar.css" rel="stylesheet">
     <title>UT Dallas WeTeach_CS  - Syllabus</title>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,61 +18,46 @@
 <link href="http://georgiastuart.com/utdweteachcs_pelican/static/css/sidebar.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a href="http://georgiastuart.com/utdweteachcs_pelican/" class="navbar-brand"><img src="http://georgiastuart.com/utdweteachcs_pelican/static/images/weteachcs_utd_logo_graphic_small.png"></a>
+<header class="navbar navbar-dark bg-inverse navbar-fixed-top">
+    <div class="container">
+        <nav>
+            <button class="navbar-toggler hide-lg-up float-right" type="button" data-cfw="collapse" data-cfw-collapse-toggle="#respNav1"
+                    data-cfw-collapse-hidden="false" aria-label="Toggle navigation">&#8801;</button>
+            <a href="http://georgiastuart.com/utdweteachcs_pelican/" class="navbar-brand"><img src="http://georgiastuart.com/utdweteachcs_pelican/static/images/weteachcs_utd_logo_graphic_small.png"></a>
+            <div class="collapse navbar-toggleable-md" id="respNav0">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" role="button" class="nav-link dropdown-toggle" data-cfw="dropdown" data-cfw-dropdown-toggle="#info-dropdown">Program Info</a>
+                        <ul class="dropdown-menu" id="info-dropdown">
+                            <li><a href="http://georgiastuart.com/utdweteachcs_pelican/syllabus/" class="dropdown-item">Syllabus</a></li>
+                            <li><a href="http://georgiastuart.com/utdweteachcs_pelican/calendar/" class="dropdown-item">Calendar</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a href="http://georgiastuart.com/utdweteachcs_pelican/instructors/" class="dropdown-item">Instructors</a></li>
+                            <li><a href="http://utdallas.edu/scimathed" class="dropdown-item">UTD Science/Mathematics Education</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Program Info <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="http://georgiastuart.com/utdweteachcs_pelican/syllabus/">Syllabus</a></li>
-            <li><a href="http://georgiastuart.com/utdweteachcs_pelican/calendar/">Calendar</a></li>
-            <li class="divider"></li>
-            <li><a href="http://georgiastuart.com/utdweteachcs_pelican/instructors/">Instructors</a></li>
-            <li><a href="http://utdallas.edu/scimathed">UTD Science/Mathematics Education</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modules <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="http://georgiastuart.com/utdweteachcs_pelican/module-0/">Module 0: Computational Thinking</a></li>
-            <li><a href="http://georgiastuart.com/utdweteachcs_pelican/calendar/">Calendar</a></li>
-            <li class="divider"></li>
-            <li><a href="http://georgiastuart.com/utdweteachcs_pelican/instructors/">Instructors</a></li>
-            <li><a href="http://utdallas.edu/scimathed">UTD Science/Mathematics Education</a></li>
-          </ul>
-        </li>
-        <li><a href="http://georgiastuart.com/utdweteachcs_pelican/resources/">Resources</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+</header>
     <div class="container" id="main" role="main">
     <div class="row">
     <!--Nav Bar -->
     <nav class="col-md-3">
-        <div class="affix hidden-sm hidden-xs sidebar" id="lowernavbar">
+        <div class="affix-top hide-sm-down sidebar" id="sidebar">
             <ul class="nav nav-pills nav-stacked">
-                  <li><a href="#top">Syllabus</a></li>
-                  <li><a href="#info">Dates & Times</a></li>
-                  <li><a href="#info">Instructor</a></li>
-                  <li><a href="#course-description">Course Description</a></li>
-                  <li><a href="#requirements">Requirements</a></li>
-                  <li><a href="#course-format">Format</a></li>
-                  <li><a href="#course-tools">Tools</a></li>
-                  <li><a href="#student-objectives">Objectives</a></li>
-                  <li><a href="#grading">Grading and Hours</a></li>
-                  <li><a href="#assignment-resubmission">Assignment Redo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#top">Syllabus</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#info">Dates & Times</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#info">Instructor</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#course-description">Course Description</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#requirements">Requirements</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#course-format">Format</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#course-tools">Tools</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#student-objectives">Objectives</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#grading">Grading and Hours</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#assignment-resubmission">Assignment Redo</a></li>
             </ul>
         </div>
     </nav>
@@ -81,8 +66,7 @@
     <h1 id="top">Syllabus: Semester I</h1>
 <h2 id="info">Location, Time, and Instructor Information</h2>
 <div class="row">
-<div class="col-md-6">
-    <table class="table table-hover">
+    <table class="table table-striped">
             <thead><tr><th colspan="2" class="text-center">Course Information</th></tr></thead>
             <tr>
                 <th>Dates</th>
@@ -105,9 +89,7 @@
                 <td>Participants must be certified middle or high school math or science teachers in Texas.</td>
             </tr>
         </table>
-    </div>
-    <div class="col-md-6">
-        <table class="table table-hover" id="instructor">
+        <table class="table table-striped" id="instructor">
             <thead><tr><th colspan="2" class="text-center">Instructor Information</th></tr></thead>
             <tr>
                 <th>Lead Instructor</th>
@@ -119,18 +101,17 @@
             </tr>
             <tr>
                 <th>Phone</th>
-                <td>972-883-</td>
+                <td>972-883-2913</td>
             </tr>
             <tr>
                 <th>Office</th>
-                <td>FN 3.308Q</td>
+                <td>FN 3.308A</td>
             </tr>
             <tr>
                 <th>Office Hours</th>
                 <td>By request</td>
             </tr>
         </table>
-    </div>
 </div>
 
 <h2 id="course-description">Course Description</h2>
@@ -145,7 +126,7 @@ for Domain II - Program Design and Development and Domain III - Programming
 Language Topics. In addition, we cover as much as possible of Domain IV -
 Special Topics. We also focus on the TEKS for Computer Science I and II and
 the standards for AP Computer Science Principles. This course is <strong>not</strong> effective
-preparation for AP Computer Science A..</p>
+preparation for AP Computer Science A.</p>
 <h2 id="requirements">Requirements</h2>
 <p>Students are expected to be comfortable using a computer and typing. Consistent
 Internet access is required as much of the course is online. Students must
@@ -176,19 +157,19 @@ the instructor of your screen name. All grades will be posted on the university 
 </ul>
 <h2 id="grading">Course Grading and Hour Completion</h2>
 <p>Evaluation for this course will be done on two axes: hour completion for TRC credit and a standards-based grade scale for academic credit.</p>
-<h4 id="hour-completion">Hour Completion</h4>
+<h3 id="hour-completion">Hour Completion</h3>
 <p>This course awards a maximum of 45 hours for TRC participation. Students have the opportunity to earn up to six
 hours for each of the eight weeks, split between in-class participation (3 hours) and online participation
 (3 hours). Participation is monitored by comprehension checks after students view course material, weekly
 assignments, and participation in the class Slack. Missing an in-class meeting or online assignments will
 result in a reduction of earned hours for the week unless alternative arrangements are made with the instructor
 in advance.</p>
-<h4 id="standards-based-grading">Standards-Based Grading</h4>
+<h3 id="standards-based-grading">Standards-Based Grading</h3>
 <p>Since the aim of the course is preparation for the TExES 241 Computer Science exam, we will employ standards-based
 grading aligned with the TExES Computer Science 241 Educator standards. Translation to the A-F scale used at
 UT Dallas is as follows. <em>Note: “proficient on all standards” and similar phrasing means “at least proficient on
 all standards.” Higher proficiencies are included.</em></p>
-<table class="table table-hover">
+<table class="table table-striped">
 <thead>
 <tr>
 <th>Letter Grade</th>
@@ -253,35 +234,114 @@ segment of the course syllabus. Please go to <a href="http://go.utdallas.edu/syl
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://georgiastuart.com/utdweteachcs_pelican/static/js/bootstrap.min.js"></script>
+        <script src="http://georgiastuart.com/utdweteachcs_pelican/static/js/figuration.min.js"></script>
         <script src="https://use.fontawesome.com/ea978b152b.js"></script>
 
 <script src="http://georgiastuart.com/utdweteachcs_pelican/static/js/sidebar.js"></script>
 <footer class="footer">
     <div class="container">
+        <div class="row hide-md-up">
+                        <div class="col-3">
+                            <a href="mailto:georgia.stuart@utdallas.edu" target="_blank"><i class="fa fa-envelope fa-footer fa-fw mx-auto"></i></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://www.facebook.com/utdweteachcs/" target="_blank"><i class="fa fa-facebook-square fa-footer fa-fw mx-auto"></i></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://twitter.com/utdweteachcs/" target="_blank"><i class="fa fa-twitter fa-footer fa-fw mx-auto"></i></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://www.instagram.com/utdweteachcs/" target="_blank"><i class="fa fa-instagram fa-footer fa-fw mx-auto"></i></a>
+                        </div>
+                </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="row">
-                    <a href="http://utdallas.edu" class="footer-brand"><img class="img-responsive" src="http://georgiastuart.com/utdweteachcs_pelican/static/images/header_nsm_white_low.png"></a>
+                    <a href="http://utdallas.edu" class="footer-brand" target="_blank"><img class="img-responsive"
+                                                                            src="http://georgiastuart.com/utdweteachcs_pelican/static/images/header_nsm_white_low.png"></a>
                 </div>
                 <div class="row">
-                    The UT Dallas WeTeach_CS Collaborative is housed in the <a href="http://utdallas.edu/scimathed">Science/Mathematics
-                    Education Department</a> in the <a href="http://www.utdallas.edu/nsm/index.html">School of Natural
-                    Sciences & Mathematics</a>.
-                </div></div>
-                <div class="col-md-4">
-                <div class="row">
-                <a href="https://stemcenter.utexas.edu/" class="footer-brand"><img src="http://georgiastuart.com/utdweteachcs_pelican/static/images/CSTEM-wordmark-white.png"></a>
+                    <a href="https://stemcenter.utexas.edu/" class="footer-brand" target="_blank"><img
+                            src="http://georgiastuart.com/utdweteachcs_pelican/static/images/CSTEM-wordmark-white.png"></a>
                 </div>
-                <div class="row">
-                    WeTeach_CS is a program of The University of Texas at Austin’s Center for STEM Education, a research,
-                    teaching, and service unit of the College of Education.
-                </div>
-                </div>
-            <div class="col-md-4">
-                <div class="row">This is a footer!!</div>
-
             </div>
+            <div class="col-md-4 hide-sm-down">
+                <div class="row">
+                    <h4>Contact Us!</h4>
+                </div>
+                <div class="row">
+                        <div class="col-3">
+                            <a href="mailto:georgia.stuart@utdallas.edu" target="_blank"><i class="fa fa-envelope fa-footer fa-fw mx-auto"></i></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://www.facebook.com/utdweteachcs/" target="_blank"><i class="fa fa-facebook-square fa-footer fa-fw mx-auto"></i></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://twitter.com/utdweteachcs/" target="_blank"><i class="fa fa-twitter fa-footer fa-fw mx-auto"></i></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://www.instagram.com/utdweteachcs/" target="_blank"><i class="fa fa-instagram fa-footer fa-fw mx-auto"></i></a>
+                        </div>
+                </div>
+            </div>
+        <div class="col-md-4 hide-sm-down">
+<!-- Begin MailChimp Signup Form -->
+
+<div id="mc_embed_signup">
+    <form action="//utdweteachcs.us15.list-manage.com/subscribe/post?u=bba08256017efb5b3e45a50fd&amp;id=da0261bebf"
+          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+          target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+            <h4>Subscribe to our mailing list</h4>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+
+            <div class="mc-field-group form-group row">
+                <label for="mce-EMAIL" class="col-sm-4">Email <span class="asterisk">*</span> </label>
+                <input type="email" value="" name="EMAIL" class="required email form-control col-sm-8"
+                       placeholder="name@example.com" id="mce-EMAIL">
+            </div>
+            <div class="mc-field-group form-group row">
+                <label for="mce-FNAME" class="col-sm-4">First Name </label>
+                <input type="text" value="" name="FNAME" class="form-control col-sm-8"
+                       placeholder="Jane" id="mce-FNAME">
+            </div>
+            <div class="mc-field-group form-group row">
+                <label for="mce-LNAME" class="col-sm-4">Last Name </label>
+                <input type="text" value="" name="LNAME" class="form-control col-sm-8"
+                       placeholder="Doe" id="mce-LNAME">
+            </div>
+            <div class="mc-field-group form-group row">
+                <label for="mce-DISTRICT" class="col-sm-4">District </label>
+                <select name="DISTRICT" class="form-control col-sm-8" id="mce-DISTRICT">
+                    <option value=""></option>
+                    <option value="Dallas ISD">Dallas ISD</option>
+                    <option value="Garland ISD">Garland ISD</option>
+                    <option value="Richardson ISD">Richardson ISD</option>
+                    <option value="Plano ISD">Plano ISD</option>
+                    <option value="Frisco ISD">Frisco ISD</option>
+                    <option value="McKinney ISD">McKinney ISD</option>
+                    <option value="Allen ISD">Allen ISD</option>
+                    <option value="Private School">Private School</option>
+                    <option value="Charter School">Charter School</option>
+                    <option value="Other">Other</option>
+
+                </select>
+            </div>
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                      name="b_bba08256017efb5b3e45a50fd_da0261bebf"
+                                                                                      tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                      class="button btn btn-inverse"></div>
+        </div>
+    </form>
+</div>
+
+<!--End mc_embed_signup-->        </div>
         </div>
     </div>
 </footer></body>

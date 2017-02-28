@@ -5,6 +5,8 @@ GEM
     colorator (1.1.0)
     ffi (1.9.14)
     ffi (1.9.14-x86-mingw32)
+    font-awesome-sass (4.7.0)
+      sass (>= 3.2)
     forwardable-extended (2.6.0)
     jekyll (3.2.1)
       colorator (~> 1.0)
@@ -48,6 +50,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  font-awesome-sass (~> 4.7.0)
   jekyll (~> 3.2.1)
   jekyll-redirect-from (~> 0.11.0)
   jekyll-sitemap (~> 0.11.0)

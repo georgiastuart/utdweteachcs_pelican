@@ -303,7 +303,7 @@ module.exports = function(grunt) {
                 tasks: ['jshint:core', 'qunit', 'concat']
             },
             sass: {
-                files: 'scss/**/*.scss',
+                files: ['scss/**/*.scss', '../custom_sass/*.scss'],
                 tasks: ['dist-css', 'docs']
             },
             docs: {

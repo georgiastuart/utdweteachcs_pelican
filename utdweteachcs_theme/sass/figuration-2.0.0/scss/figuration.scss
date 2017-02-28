@@ -9,7 +9,7 @@
 @import "functions";
 
 // Variables and mixins
-@import "custom";
+@import "../../custom_sass/custom";
 @import "settings";
 @import "mixins";
 
@@ -26,6 +26,9 @@
 @import "core/forms";
 @import "core/custom-forms"; // TODO: look into svg coloring
 @import "core/buttons";
+
+// UTD Theme
+@import "../../custom_sass/utdtheme.scss";
 
 // Components - extend with new or extended functionality and layout
 @import "component/grid";
@@ -58,3 +61,5 @@
 
 // Utility classes
 @import "utilities";
+
+

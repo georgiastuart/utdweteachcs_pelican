@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,MAAO;EACH,KAAK,ECiCI,OAAO;;AD9BpB,MAAO;EACH,KAAK,EC+BI,OAAO",
-"sources": ["utdtheme.scss","../figuration-2.0.0/scss/_custom.scss"],
-"names": [],
-"file": "utdtheme.css"
-}

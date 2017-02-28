@@ -1,0 +1,65 @@
+@import "custom";
+
+.h2, h2 {
+    color: $utdsapling;
+}
+
+.h3, h3 {
+    color: $utdstratos;
+}
+
+body {
+    padding-top: 5rem;
+    padding-bottom: 300px;
+}
+
+.table td, .table th {
+    border-top-width: 0rem;
+}
+
+.fa.fa-footer {
+    font-size: 2rem;
+}
+
+.fa.fa-footer:hover {
+    color: $utdgreen;
+}
+
+footer {
+    .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+        color: $white;
+    }
+
+    #mc_embed_signup .form-group {
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        padding: 0;
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 100px;
+    margin-top: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: $utdorange;
+    border-top: 5px solid $utdgreen;
+    color: $white;
+    font-size: 14px;
+}
+
+.btn-inverse {
+    background: transparent;
+    border-color: $white;
+    color: $white;
+    border-width: 0.15rem;
+}
+
+.btn-inverse:hover {
+    background: $utdgreen;
+    border-color: $utdgreen;
+    color: inherit;
+}

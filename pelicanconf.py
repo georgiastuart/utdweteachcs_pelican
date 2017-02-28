@@ -45,8 +45,10 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('Facebook', 'http://facebook.com'),
-          ('Another social link', '#'),)
+SOCIAL = (  ('Email', 'mailto:georgia.stuart@utdallas.edu', 'fa-envelope'),
+            ('Facebook', 'https://www.facebook.com/utdweteachcs/', 'fa-facebook-square'),
+            ('Twitter', 'https://twitter.com/utdweteachcs/', 'fa-twitter'),
+            ('Instagram', 'https://www.instagram.com/utdweteachcs/', 'fa-instagram'))
 
 DEFAULT_PAGINATION = 10
 

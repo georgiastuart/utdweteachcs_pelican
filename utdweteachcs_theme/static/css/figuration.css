@@ -2384,6 +2384,68 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+.h2, h2 {
+  color: #69BE28;
+}
+
+.h3, h3 {
+  color: #00A1DE;
+}
+
+body {
+  padding-top: 5rem;
+  padding-bottom: 300px;
+}
+
+.table td, .table th {
+  border-top-width: 0rem;
+}
+
+.fa.fa-footer {
+  font-size: 2rem;
+}
+
+.fa.fa-footer:hover {
+  color: #008542;
+}
+
+footer .h1, footer h1, footer .h2, footer h2, footer .h3, footer h3, footer .h4, footer h4, footer .h5, footer h5, footer .h6, footer h6 {
+  color: #FFF;
+}
+
+footer #mc_embed_signup .form-group {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  padding: 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #C75B12;
+  border-top: 5px solid #008542;
+  color: #FFF;
+  font-size: 14px;
+}
+
+.btn-inverse {
+  background: transparent;
+  border-color: #FFF;
+  color: #FFF;
+  border-width: 0.15rem;
+}
+
+.btn-inverse:hover {
+  background: #008542;
+  border-color: #008542;
+  color: inherit;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;

@@ -76,7 +76,7 @@ the instructor of your screen name. All grades will be posted on the university 
 
 Evaluation for this course will be done on two axes: hour completion for TRC credit and a standards-based grade scale for academic credit.
 
-#### Hour Completion
+### Hour Completion
 
 This course awards a maximum of 45 hours for TRC participation. Students have the opportunity to earn up to six
 hours for each of the eight weeks, split between in-class participation (3 hours) and online participation
@@ -85,7 +85,7 @@ assignments, and participation in the class Slack. Missing an in-class meeting o
 result in a reduction of earned hours for the week unless alternative arrangements are made with the instructor
 in advance.
 
-#### Standards-Based Grading
+### Standards-Based Grading
 
 Since the aim of the course is preparation for the TExES 241 Computer Science exam, we will employ standards-based
 grading aligned with the TExES Computer Science 241 Educator standards. Translation to the A-F scale used at

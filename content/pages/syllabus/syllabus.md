@@ -1,15 +1,15 @@
 Title: Syllabus
 URL:
-headers: Syllabus: top
-         Dates & Times: info
-         Instructor: info
-         Course Description: course-description
-         Requirements: requirements
-         Format: course-format
-         Tools: course-tools
-         Objectives: student-objectives
-         Grading and Hours: grading
-         Assignment Redo: assignment-resubmission
+headers: Syllabus: #top
+         Dates & Times: #info
+         Instructor: #info
+         Course Description: #course-description
+         Requirements: #requirements
+         Format: #course-format
+         Tools: #course-tools
+         Objectives: #student-objectives
+         Grading and Hours: #grading
+         Assignment Redo: #assignment-resubmission
 save_as: syllabus/index.html
 template: sidebar
 

@@ -580,34 +580,34 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 400;
   line-height: 1.1;
   color: #E98300;
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
-}
-
-h2, .h2 {
   font-size: 2rem;
 }
 
-h3, .h3 {
-  font-size: 1.75rem;
-}
-
-h4, .h4 {
+h2, .h2 {
   font-size: 1.5rem;
 }
 
-h5, .h5 {
+h3, .h3 {
   font-size: 1.25rem;
 }
 
-h6, .h6 {
+h4, .h4 {
   font-size: 1rem;
+}
+
+h5, .h5 {
+  font-size: 0.75rem;
+}
+
+h6, .h6 {
+  font-size: 0.5rem;
 }
 
 .lead {
@@ -2384,8 +2384,38 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+.navbar .navbar-fixed-top {
+  height: 2rem;
+}
+
+.navbar .navbar-brand-text {
+  padding-right: 0.5rem;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.navbar .navbar-brand-img {
+  height: 3rem;
+  padding: 0;
+}
+
+.navbar .nav-item {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
+.navbar.bg-inverse {
+  border-bottom: #008542 solid 0.3rem;
+}
+
+.sidebar .nav-pills {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 .h2, h2 {
-  color: #69BE28;
+  color: #008542;
 }
 
 .h3, h3 {

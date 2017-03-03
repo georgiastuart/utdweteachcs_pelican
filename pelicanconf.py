@@ -1,14 +1,26 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
+from collections import OrderedDict
+import json
+
 # import jinja_custom_filters as jcf
-import ast
 
 
 def get_headers(value):
     for index, pair in enumerate(value):
         value[index] = (x.strip() for x in pair.split(':'))
     return value
+
+
+def load_json(value):
+    print('Got here!')
+    try:
+        with open(value, 'r') as fp:
+            return json.load(fp, object_pairs_hook=OrderedDict)
+    except:
+        return value
 
 AUTHOR = 'Georgia Stuart'
 SITENAME = 'UT Dallas WeTeach_CS'
@@ -29,7 +41,7 @@ MARKDOWN = {'extension_configs': {'markdown.extensions.toc': {},
                                   'markdown_include.include': {},
                                   'markdown.extensions.tables': {}}}
 
-JINJA_FILTERS = {'get_headers': get_headers}
+JINJA_FILTERS = {'get_headers': get_headers, 'load_json': load_json}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

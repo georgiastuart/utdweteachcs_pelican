@@ -11,8 +11,8 @@
     <nav class="col-md-3">
         {% block sidebar_block %}
             <div class="affix-top hide-sm-down sidebar" id="sidebar">
-                <ul class="nav nav-pills nav-stacked">
-                  {% for header, ref in page.headers|get_headers %}
+                <ul class="nav nav-pills nav-stacked" {% if page.template == 'module' %}data-cfw="slideshow"{% endif %}>
+                  {% for header, ref in (page.toc|load_json).items() %}
                       <li class="nav-item"><a class="nav-link" {% if page.template == 'module' %}data-cfw="tab"{% endif %} href="{{ ref }}">{{ header }}</a></li>
                   {% endfor %}
                 </ul>

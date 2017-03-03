@@ -1,15 +1,6 @@
 Title: Syllabus
 URL:
-headers: Syllabus: #top
-         Dates & Times: #info
-         Instructor: #info
-         Course Description: #course-description
-         Requirements: #requirements
-         Format: #course-format
-         Tools: #course-tools
-         Objectives: #student-objectives
-         Grading and Hours: #grading
-         Assignment Redo: #assignment-resubmission
+toc: content/pages/syllabus/syllabus_toc.json
 save_as: syllabus/index.html
 template: sidebar
 

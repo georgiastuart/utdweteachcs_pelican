@@ -1,5 +1,15 @@
 import json
 
 
-def str_to_dict(value):
-    return json.loads(''.join(value))
+def get_headers(value):
+    for index, pair in enumerate(value):
+        value[index] = (x.strip() for x in pair.split(':'))
+    return value
+
+
+def load_toc(value):
+    with open(value, 'r') as fp:
+        return json.load(fp)
+
+def test():
+    print("it works!")

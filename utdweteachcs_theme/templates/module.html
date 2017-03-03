@@ -1,0 +1,12 @@
+{#{% extends 'sidebar.html' %}#}
+{##}
+{#{% block content %}#}
+{#    {% print(page) %}#}
+{#    {% set settings = page.settings|load_json %}#}
+{#    {% set page.toc = settings['toc'] %}#}
+{#    {% for key, value in (page.toc|load_json).items() %}#}
+{#    {% set page.toc[key] = settings['directory'] + value %}#}
+{#    {% endfor %}#}
+{##}
+{#    {{ super() }}#}
+{#{% endblock content %}#}

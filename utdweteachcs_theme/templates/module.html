@@ -13,7 +13,7 @@
         <ul class="dropdown-menu" id="moduleSelectorList">
             {% for module in module_url_base|get_modules %}
                 {% if module['visible'] %}
-                    <li class="nav-item {% if module['visible'] %}disabled{% endif %}">
+                    <li class="nav-item {% if not module['visible'] %}disabled{% endif %}">
                         <a class="nav-link"
                            href="{{ SITEURL }}/{{ module['directory'] }}">{{ module['short_title'] }}</a>
                     </li>
@@ -24,14 +24,18 @@
 {% endblock above_sidebar %}
 
 {% block main_content %}
-<h1 class="module-title">{{ page.title }}</h1>
+    <h1 class="module-title">{{ page.title }}</h1>
 
     <div class="tab-content">
-    <div class="tab-pane" id="overview">{{ page.content }}</div>
-    {% for key, item in toc.items() %}
-        <div class="tab-pane" id="{{ item }}">
-        {{ "{}/{}.md".format(settings['module_path'], item)|parse_markdown }}
-        </div>
-    {% endfor %}
+        <div class="tab-pane" id="overview">{{ page.content }}</div>
+        {% for key, item in toc.items() %}
+            <div class="tab-pane" id="{{ item }}">
+                {% if item != 'todos' %}
+                    {{ "{}/{}.md".format(settings['module_path'], item)|parse_markdown }}
+                {% else %}
+                    {% include 'partials/checklist.html' %}
+                {% endif %}
+            </div>
+        {% endfor %}
     </div>
 {% endblock main_content %}

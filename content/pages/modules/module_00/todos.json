@@ -1,0 +1,27 @@
+{
+    "Review the course format and syllabus": {
+        "type": "reading",
+        "link": "#class-format",
+        "short-name": "classFormat"
+    },
+    "Introduce yourself in #introductions on Slack": {
+        "type": "discussion",
+        "link": "https://utdweteachcs.slack.com/messages/introductions/",
+        "short-name": "introduction"
+    },
+    "Complete the Pre-Test and Attitudes Survey": {
+        "type": "assignment",
+        "link": "#pre-tests",
+        "short-name": "preTests"
+    },
+    "Participate in the class discussion in #module-0-discussion (remember, there are two parts!)": {
+        "type": "discussion",
+        "link": "https://utdweteachcs.slack.com/messages/module-0-discussion/",
+        "short-name": "mod-0-discussion"
+    },
+    "Read this week's reading: Computational Thinking in K-12": {
+        "type": "reading",
+        "short-name": "comp-think"
+    }
+
+}

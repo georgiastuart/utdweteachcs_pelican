@@ -1,6 +1,8 @@
 {
     "Overview": "overview",
+    "To-Do List": "todos",
+    "Course Format": "class-format",
     "Pre-Tests": "pre-tests",
-    "Content": "content",
+    "Computational Thinking": "comp-think",
     "Assignment": "assignment"
 }

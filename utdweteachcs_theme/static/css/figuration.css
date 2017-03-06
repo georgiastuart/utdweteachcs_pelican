@@ -415,7 +415,7 @@ blockquote {
 
 a {
   color: #008542;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:focus, a:hover {
@@ -2465,6 +2465,38 @@ body, .basic_template, .sidebar_template, .module_template, .module_landing_temp
   padding-bottom: 0.75rem;
   border-bottom: solid #008542 0.25rem;
   margin-bottom: 1.5rem;
+}
+
+.module_template #mainContent ol li, .module_template #mainContent ul li {
+  padding-bottom: 1rem;
+}
+
+.module_template .btn-todo {
+  background-color: darkred;
+  color: #FFF;
+  border: 0;
+}
+
+.module_template .btn-todo:before {
+  content: "\f10c";
+  font-family: FontAwesome;
+}
+
+.module_template .btn-todo.active {
+  background-color: #008542;
+}
+
+.module_template .btn-todo.active:before {
+  content: "\f00c";
+  font-family: FontAwesome;
+}
+
+.module_template .todo-list {
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.module_template .todo-list .row {
+  padding: 0.25rem 0 0.25rem 0;
 }
 
 .module_landing_template #moduleSelector .nav-link {

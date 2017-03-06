@@ -65,6 +65,7 @@ body {
     @extend %page_defaults;
     @include sidebar_template_mixin($top-margin-default, $top-padding-default);
 }
+
 .module_template {
     @extend %page_defaults;
     @include sidebar_template_mixin($top-margin-default, $top-padding-default, $top-padding-default - 0.15rem);
@@ -79,7 +80,7 @@ body {
         #current {
             font-size: 1.5rem;
         }
-        .nav-link{
+        .nav-link {
             @extend %module-selector-base;
             font-size: 1rem;
         }
@@ -96,6 +97,36 @@ body {
         padding-bottom: 0.75rem;
         border-bottom: solid $utdgreen 0.25rem;
         margin-bottom: 1.5rem;
+    }
+
+    #mainContent {
+        ol, ul {
+            li {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+    .btn-todo {
+        background-color: darkred;
+        color: $white;
+        border: 0;
+    }
+    .btn-todo:before {
+        content: "\f10c";
+        font-family: FontAwesome;
+    }
+    .btn-todo.active {
+        background-color: $utdgreen;
+    }
+    .btn-todo.active:before {
+        content: "\f00c";
+        font-family: FontAwesome;
+    }
+    .todo-list {
+        .row {
+            padding: 0.25rem 0 0.25rem 0;
+        }
+        padding: 0.5rem 0 0.5rem 0;
     }
 }
 
@@ -118,6 +149,10 @@ body {
     .row {
         padding: 1rem;
     }
+}
+
+ol {
+
 }
 
 .h2, h2 {

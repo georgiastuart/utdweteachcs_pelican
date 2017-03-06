@@ -10,9 +10,11 @@
     <div class="row">
     <ul class="nav nav-pills nav-stacked" id="moduleSelector">
     {% for module in module_url_base|get_modules %}
+        {% if not module['visible'] %}{% set temp_url = '#' %}{% else %}
+            {% set temp_url = '{}/{}'.format(SITEURL, module['directory']) %}{% endif %}
                     <li class="nav-item">
                         <a class="nav-link {% if not module['visible'] %}disabled{% endif %}"
-                           href="{{ SITEURL }}/{{ module['directory'] }}">{{ module['title'] }}
+                           href="{{ temp_url }}">{{ module['title'] }}
                             <div class="float-right">{{ module['date_posted'] }}</div>
                         </a>
                     </li>

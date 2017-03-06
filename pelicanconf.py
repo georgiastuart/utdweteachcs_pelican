@@ -9,6 +9,11 @@ import markdown as md
 
 # import jinja_custom_filters as jcf
 
+ext_config = {'markdown.extensions.toc': {},
+              'markdown.extensions.attr_list': {},
+              'markdown_include.include': {},
+              'markdown.extensions.tables': {}}
+
 
 def get_modules(value):
     print('USING GET_MODULES FILTER')
@@ -37,17 +42,15 @@ def load_json(value):
 
 def parse_markdown(value):
     print('USING PARSE_MARKDOWN FILTER')
-    ext_config = {'markdown.extensions.toc': {},
-                  'markdown.extensions.attr_list': {},
-                  'markdown_include.include': {},
-                  'markdown.extensions.tables': {}}
+    exts = []
+    for key, item in ext_config.items():
+        exts.append(key)
     try:
         with open(value, 'r') as fp:
-            html = md.markdown(fp.read(), extension_configs=ext_config)
-            print(html)
+            html = md.markdown(fp.read(), extensions=exts, extension_configs=ext_config)
             return html
     except FileNotFoundError:
-        print(value + 'NOT FOUND')
+        print(value, ' NOT FOUND')
         pass
 
 
@@ -68,10 +71,7 @@ INDEX_SAVE_AS = 'blog_index.html'
 THEME = 'utdweteachcs_theme'
 THEME_STATIC_DIR = 'static'
 
-MARKDOWN = {'extension_configs': {'markdown.extensions.toc': {},
-                                  'markdown.extensions.attr_list': {},
-                                  'markdown_include.include': {},
-                                  'markdown.extensions.tables': {}}}
+MARKDOWN = {'extension_config': ext_config}
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.do']}
 

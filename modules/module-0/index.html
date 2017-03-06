@@ -7,7 +7,7 @@
     <!-- Bootstrap -->
     <link href="http://georgiastuart.com/utdweteachcs_pelican/static/css/figuration.min.css" rel="stylesheet">
     <link href="http://georgiastuart.com/utdweteachcs_pelican/static/css/navbar.css" rel="stylesheet">
-    <title>UT Dallas WeTeach_CS  - Syllabus</title>
+    <title>UT Dallas WeTeach_CS  - Module 0: Intro and Computational Thinking</title>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -15,7 +15,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="sidebar_template">
+<body class="module_template">
 <header class="navbar navbar-dark bg-inverse navbar-fixed-top">
     <div class="container">
         <nav>
@@ -50,218 +50,65 @@
         <div class="affix-top sidebar hide-sm-down" id="sidebar">
 
                 <ul class="nav nav-pills nav-stacked"
->
+data-cfw="slideshow">
+    <li class="nav-item dropdown" id="moduleSelector">
+        <a href="#" role="button" class="nav-link nav-current dropdown-toggle dropdown-toggle-split" data-cfw="dropdown"
+           data-cfw-dropdown-toggle="#moduleSelectorList" id="current">Module 00 </a>
+        <ul class="dropdown-menu" id="moduleSelectorList">
+                    <li class="nav-item disabled">
+                        <a class="nav-link"
+                           href="/modules/module-0/">Module 00</a>
+                    </li>
+        </ul>
+    </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                               href="##top">Syllabus</a>
+data-cfw="tab"                               href="#overview">Overview</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                               href="##info">Dates & Times</a>
+data-cfw="tab"                               href="#pre-tests">Pre-Tests</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                               href="##info">Instructor</a>
+data-cfw="tab"                               href="#content">Content</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                               href="##course-description">Course Description</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                               href="##requirements">Requirements</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                               href="##course-format">Format</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                               href="##course-tools">Tools</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                               href="##student-objectives">Objectives</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                               href="##grading">Grading and Hours</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                               href="##assignment-resubmission">Assignment Redo</a>
+data-cfw="tab"                               href="#assignment">Assignment</a>
                         </li>
                 </ul>
 
         </div>
         <!--Main Content -->
         <div class="col-sm-9">
-<h1 id="top">Syllabus: Semester I</h1>
-<h2 id="info">Location, Time, and Instructor Information</h2>
-<div class="row">
-    <table class="table table-striped">
-            <thead><tr><th colspan="2" class="text-center">Course Information</th></tr></thead>
-            <tr>
-                <th>Dates</th>
-                <td>March 6 through May 8, 2017</td>
-            </tr>
-            <tr>
-                <th>Times</th>
-                <td>Monday or Thursday, 5:30 pm – 8:15 pm</td>
-            </tr>
-            <tr>
-                <th>Room</th>
-                <td>FN 3.410c (M) and FN 2.306 (R)</td>
-            </tr>
-            <tr>
-                <th>Website</th>
-                <td><a href="/">utdweteachcs.org</a></td>
-            </tr>
-            <tr>
-                <th>Requirements</th>
-                <td>Participants must be certified middle or high school math or science teachers in Texas.</td>
-            </tr>
-        </table>
-        <table class="table table-striped" id="instructor">
-            <thead><tr><th colspan="2" class="text-center">Instructor Information</th></tr></thead>
-            <tr>
-                <th>Lead Instructor</th>
-                <td>Georgia Stuart</td>
-            </tr>
-            <tr>
-                <th>Email (preferred)</th>
-                <td>georgia.stuart@utdallas.edu</td>
-            </tr>
-            <tr>
-                <th>Phone</th>
-                <td>972-883-2913</td>
-            </tr>
-            <tr>
-                <th>Office</th>
-                <td>FN 3.308A</td>
-            </tr>
-            <tr>
-                <th>Office Hours</th>
-                <td>By request</td>
-            </tr>
-        </table>
-</div>
+<h1 class="module-title">Module 0: Intro and Computational Thinking</h1>
 
-<h2 id="course-description">Course Description</h2>
-<p>With the addition of the Computer Science track in the STEM Endorsement
-and the requirement that districts offer Computer Science and make it available
-to all students, computer science certified teachers are in high demand.
-This course series is intended to prepare Texas teachers to take the 8–12
-Computer Science Test (241) and teach computer science or integrate computer
-science principles within their current math or science classroom. The two
-courses cover everything outlined in the TExES Computer Science 241 standards
-for Domain II - Program Design and Development and Domain III - Programming
-Language Topics. In addition, we cover as much as possible of Domain IV -
-Special Topics. We also focus on the TEKS for Computer Science I and II and
-the standards for AP Computer Science Principles. This course is <strong>not</strong> effective
-preparation for AP Computer Science A.</p>
-<h2 id="requirements">Requirements</h2>
-<p>Students are expected to be comfortable using a computer and typing. Consistent
-Internet access is required as much of the course is online. Students must
-be comfortable with middle school level math, including basic algebraic
-manipulation and the coordinate plane.</p>
-<h2 id="course-format">Course Format</h2>
-<p>Introduction to Computer Science for Teachers is a two-course series comprising
-two eight week, three credit hour courses. Each course provides 45 contact
-hours and is taught with a blended model—there is significant online instruction
-and interaction. In addition, attendance at one of the two in-person sessions per
-week is required (though you are welcome to attend both to receive more in-person assistance).</p>
-<h2 id="course-tools">Course Tools</h2>
-<p>We use TI-Nspire Handhelds, teacher software, and Innovator Hubs to explore
-programming through TI-Basic and Lua and computers to write Lua and JavaScript.
-Course communication and discussion will be done through the course Slack.
-Note: you are not required to use your real name on Slack, but you must inform
-the instructor of your screen name. All grades will be posted on the university eLearning.</p>
-<h2 id="student-objectives">Student Objectives</h2>
-<p><em>Students will be able to...</em></p>
-<ul>
-<li>discuss computational and algorithmic thinking, the current research, and how these modes of thinking appear frequently in our day-to-day lives</li>
-<li>describe variables, control structures, truth values, and integer operations and use them in a variety of programming contexts</li>
-<li>create a simple game</li>
-<li>describe data types, floating point operations, binary arithmetic, and data structures and use them in a variety of programming contexts.</li>
-<li>use abstraction to create flexible functions and discuss the importance of abstraction in programming</li>
-<li>create a program that can interact with the physical world via a variety of sensors</li>
-<li>describe the merits of and use design strategies, diagramming, pseudocode, version control, and IDEs</li>
-</ul>
-<h2 id="grading">Course Grading and Hour Completion</h2>
-<p>Evaluation for this course will be done on two axes: hour completion for TRC credit and a standards-based grade scale for academic credit.</p>
-<h3 id="hour-completion">Hour Completion</h3>
-<p>This course awards a maximum of 45 hours for TRC participation. Students have the opportunity to earn up to six
-hours for each of the eight weeks, split between in-class participation (3 hours) and online participation
-(3 hours). Participation is monitored by comprehension checks after students view course material, weekly
-assignments, and participation in the class Slack. Missing an in-class meeting or online assignments will
-result in a reduction of earned hours for the week unless alternative arrangements are made with the instructor
-in advance.</p>
-<h3 id="standards-based-grading">Standards-Based Grading</h3>
-<p>Since the aim of the course is preparation for the TExES 241 Computer Science exam, we will employ standards-based
-grading aligned with the TExES Computer Science 241 Educator standards. Translation to the A-F scale used at
-UT Dallas is as follows. <em>Note: “proficient on all standards” and similar phrasing means “at least proficient on
-all standards.” Higher proficiencies are included.</em></p>
-<table class="table table-striped">
-<thead>
-<tr>
-<th>Letter Grade</th>
-<th>Grade Points</th>
-<th>Standard Proficiency Requirements</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>4.000</td>
-<td>proficient on all standards AND advanced on at least 75% of standards</td>
-</tr>
-<tr>
-<td>A-</td>
-<td>3.670</td>
-<td>proficient on all standards AND advanced on at least 50% of standards</td>
-</tr>
-<tr>
-<td>B+</td>
-<td>3.330</td>
-<td>proficient on all standards AND advanced on at least 25% of standards</td>
-</tr>
-<tr>
-<td>B</td>
-<td>3.000</td>
-<td>proficient on all standards</td>
-</tr>
-<tr>
-<td>B-</td>
-<td>2.670</td>
-<td>proficient on 90% of standards AND partially proficient on all standards</td>
-</tr>
-<tr>
-<td>C+</td>
-<td>2.330</td>
-<td>proficient on 80% of standards AND partially proficient on all standards</td>
-</tr>
-<tr>
-<td>C</td>
-<td>2.000</td>
-<td>proficient on 70% of standards AND partially proficient on all standards</td>
-</tr>
-<tr>
-<td>F</td>
-<td>0.000</td>
-<td>does not meet C standards</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="assignment-resubmission">Assignment resubmission</h2>
-<p>Since our goal is to assess mastery of standards, students will be given the opportunity to either resubmit
-assignments with correction and discussion of the errors and/or to submit another, similar assignment.
-Specifics of the resubmission or similar assignment are at the instructor’s discretion. Students wishing to
-re-submit work must consult with the instructor.</p>
-<h2 id="ut-dallas-syllabus-policies-and-procedures">UT Dallas Syllabus Policies and Procedures</h2>
-<p>The information contained in the following link constitutes the University’s policies and procedures
-segment of the course syllabus. Please go to <a href="http://go.utdallas.edu/syllabus-policies">go.utdallas.edu/syllabus-policies</a> for these policies</p>        </div>
+    <div class="tab-content">
+    <div class="tab-pane" id="overview"><h1 id="welcome-to-the-ut-dallas-weteach_cs-collaborative">Welcome to the UT Dallas WeTeach_CS Collaborative!</h1>
+<p>Every week, you will receive new content and assignments online.</p></div>
+        <div class="tab-pane" id="overview">
+        None
+        </div>
+        <div class="tab-pane" id="pre-tests">
+        <h1>Pre-Test and Computing Attitudes Survey</h1>
+<p>Please complete these assignments <strong>before</strong> continuning on to the content.
+Do not use outside resources. <strong>These assignments are <em>not</em> graded for correctness!!</strong></p>
+<h2>Computing Attitudes Survey</h2>
+<p><a href="https://utdallas.qualtrics.com/SE/?SID=SV_beVb5D2wQ8wnOHb">Computing Attitudes Survey</a></p>
+<h2>Computer Science Pre-Test</h2>
+<p>Do this on your own without any use of the internet or other resources!</p>
+<p><a href="https://utdallas.qualtrics.com/SE/?SID=SV_57sZXuq0VyIjYuF">Computer Science Pre-Test</a></p>
+        </div>
+        <div class="tab-pane" id="content">
+        <h1>THIS IS A TEST</h1>
+<p>to see if md is actually working</p>
+        </div>
+        <div class="tab-pane" id="assignment">
+        
+        </div>
+    </div>
+        </div>
     </div>    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

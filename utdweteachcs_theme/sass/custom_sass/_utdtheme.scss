@@ -6,7 +6,6 @@
     }
 
     .navbar-brand-text {
-        //padding: 0.25rem 0 0.25rem 0;
         padding-right: 0.5rem;
         font-family: $font-family-monospace;
         font-size: 1.5rem;
@@ -29,11 +28,96 @@
     border-bottom: #008542 solid 0.3rem;
 }
 
-.sidebar {
-    .nav-pills {
-        font-family: $font-family-monospace;
+%page_defaults {
+    padding-top: 5rem;
+    padding-bottom: 20rem;
+}
+
+.nav-pills {
+    font-family: $font-family-monospace;
+}
+
+@mixin sidebar_template_mixin($head_margin, $head_padding, $sidebar_offset: $head_padding) {
+    .h1, .h2, .h3, h1, h2, h3 {
+        margin-top: $head_margin;
+        padding-top: $head_padding;
     }
-;
+
+    .sidebar {
+        top: $sidebar_offset;
+        position: fixed;
+        //width: 25%;
+    }
+}
+
+$top-margin-default: -5rem;
+$top-padding-default: 5.75rem;
+
+body {
+    @extend %page_defaults;
+}
+
+.basic_template {
+    @extend %page_defaults;
+}
+
+.sidebar_template {
+    @extend %page_defaults;
+    @include sidebar_template_mixin($top-margin-default, $top-padding-default);
+}
+.module_template {
+    @extend %page_defaults;
+    @include sidebar_template_mixin($top-margin-default, $top-padding-default, $top-padding-default - 0.15rem);
+
+    #moduleSelector {
+        %module-selector-base {
+            background-color: $utdgreen;
+            color: $white;
+            font-family: $font-family-monospace;
+            border-color: $utdgreen;
+        }
+        #current {
+            font-size: 1.5rem;
+        }
+        .nav-link{
+            @extend %module-selector-base;
+            font-size: 1rem;
+        }
+        .dropdown-menu {
+            @extend %module-selector-base;
+            width: 100%;
+            border-radius: 0 0 0.25rem 0.25rem;
+            margin: -0.125rem 0 0;
+        }
+    }
+
+    .module-title {
+        color: $utdgreen;
+        padding-bottom: 0.75rem;
+        border-bottom: solid $utdgreen 0.25rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.module_landing_template {
+    @extend %page_defaults;
+
+    #moduleSelector {
+        .nav-link {
+            background-color: $utdgreen;
+            color: $white;
+        }
+        .nav-link:hover {
+            background-color: $utdorange;
+        }
+
+        .nav-link.disabled, .nav-link.disabled:hover {
+            background-color: $utdgrey4;
+        }
+    }
+    .row {
+        padding: 1rem;
+    }
 }
 
 .h2, h2 {
@@ -44,13 +128,8 @@
     color: $utdstratos;
 }
 
-body {
-    padding-top: 5rem;
-    padding-bottom: 300px;
-}
-
 .table td, .table th {
-    border-top-width: 0rem;
+    border-top-width: 0;
 }
 
 .fa.fa-footer {

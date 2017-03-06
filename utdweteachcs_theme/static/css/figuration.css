@@ -2410,8 +2410,78 @@ input[type="button"].btn-block {
   border-bottom: #008542 solid 0.3rem;
 }
 
-.sidebar .nav-pills {
+body, .basic_template, .sidebar_template, .module_template, .module_landing_template {
+  padding-top: 5rem;
+  padding-bottom: 20rem;
+}
+
+.nav-pills {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.sidebar_template .h1, .sidebar_template .h2, .sidebar_template .h3, .sidebar_template h1, .sidebar_template h2, .sidebar_template h3 {
+  margin-top: -5rem;
+  padding-top: 5.75rem;
+}
+
+.sidebar_template .sidebar {
+  top: 5.75rem;
+  position: fixed;
+}
+
+.module_template .h1, .module_template .h2, .module_template .h3, .module_template h1, .module_template h2, .module_template h3 {
+  margin-top: -5rem;
+  padding-top: 5.75rem;
+}
+
+.module_template .sidebar {
+  top: 5.6rem;
+  position: fixed;
+}
+
+.module_template #moduleSelector .nav-link, .module_template #moduleSelector .dropdown-menu {
+  background-color: #008542;
+  color: #FFF;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  border-color: #008542;
+}
+
+.module_template #moduleSelector #current {
+  font-size: 1.5rem;
+}
+
+.module_template #moduleSelector .nav-link {
+  font-size: 1rem;
+}
+
+.module_template #moduleSelector .dropdown-menu {
+  width: 100%;
+  border-radius: 0 0 0.25rem 0.25rem;
+  margin: -0.125rem 0 0;
+}
+
+.module_template .module-title {
+  color: #008542;
+  padding-bottom: 0.75rem;
+  border-bottom: solid #008542 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.module_landing_template #moduleSelector .nav-link {
+  background-color: #008542;
+  color: #FFF;
+}
+
+.module_landing_template #moduleSelector .nav-link:hover {
+  background-color: #C75B12;
+}
+
+.module_landing_template #moduleSelector .nav-link.disabled, .module_landing_template #moduleSelector .nav-link.disabled:hover {
+  background-color: #B7B1A9;
+}
+
+.module_landing_template .row {
+  padding: 1rem;
 }
 
 .h2, h2 {
@@ -2422,13 +2492,8 @@ input[type="button"].btn-block {
   color: #00A1DE;
 }
 
-body {
-  padding-top: 5rem;
-  padding-bottom: 300px;
-}
-
 .table td, .table th {
-  border-top-width: 0rem;
+  border-top-width: 0;
 }
 
 .fa.fa-footer {

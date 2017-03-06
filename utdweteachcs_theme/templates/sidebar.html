@@ -1,30 +1,48 @@
 {% extends 'page_base.html' %}
 
-{% block header %}{{ super() }}
-<link href="{{ SITEURL }}/static/css/sidebar.css" rel="stylesheet">
-{% endblock %}
-{% block title %}{{ super() }} - {{ page.title }}{% endblock %}
+{% if page.template == 'sidebar' %}
+    {% set toc = page.toc %}
+{% endif %}
+
+{% if page.template == 'module' %}
+    {% set disabled = False %}
+    {% if not settings['visible'] %}
+        {% set disabled = True %}
+    {% endif %}
+{% endif %}
+
+{% block title %}{{ super() }} - {{ page.title }}{% endblock title %}
 
 {% block content %}
+
     <div class="row">
-    <!--Nav Bar -->
-    <nav class="col-md-3">
-        {% block sidebar_block %}
-            <div class="affix-top hide-sm-down sidebar" id="sidebar">
-                <ul class="nav nav-pills nav-stacked" {% if page.template == 'module' %}data-cfw="slideshow"{% endif %}>
-                  {% for header, ref in (page.toc|load_json).items() %}
-                      <li class="nav-item"><a class="nav-link" {% if page.template == 'module' %}data-cfw="tab"{% endif %} href="{{ ref }}">{{ header }}</a></li>
-                  {% endfor %}
+        <!--Nav Bar -->
+        <div class="col-sm-3"></div>
+        <div class="affix-top sidebar hide-sm-down" id="sidebar">
+            {% block sidebar_block %}
+                {#                {% do toc|print %}#}
+
+                <ul class="nav nav-pills nav-stacked"
+                        {% if page.template == 'module' %}data-cfw="slideshow"{% endif %}>
+                    {% block above_sidebar %}{% endblock above_sidebar %}
+                    {% for header, ref in (toc|load_json).items() %}
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               {% if page.template == 'module' %}data-cfw="tab"{% endif %}
+                               href="#{{ ref }}">{{ header }}</a>
+                        </li>
+                    {% endfor %}
                 </ul>
-            </div>
-        {% endblock sidebar_block %}
-    </nav>
-    <!--Main Content -->
-    <div class="col-md-9">
-    {{ page.content }}
-    </div>
-    </div>{% endblock %}
+
+            {% endblock sidebar_block %}
+        </div>
+        {#        </div>#}
+        <!--Main Content -->
+        <div class="col-sm-9">
+            {% block main_content %}{{ page.content }}{% endblock main_content %}
+        </div>
+    </div>{% endblock content %}
 
 {% block js %}{{ super() }}
-<script src="{{ SITEURL }}/static/js/sidebar.js"></script>
+    <script src="{{ SITEURL }}/static/js/sidebar.js"></script>
 {% endblock %}

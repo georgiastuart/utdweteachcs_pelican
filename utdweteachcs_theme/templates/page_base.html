@@ -18,7 +18,7 @@
     <![endif]-->
 {% endblock %}
 </head>
-<body>
+<body class="{{ page.template }}_template">
     {% block lower_navbar %}{% endblock lower_navbar %}
     {%  include 'partials/navbar.html' %}
 
@@ -32,7 +32,7 @@
 {#    <script src="/static/js/bootstrap.min.js"></script>#}
         <script src="{{ SITEURL }}/static/js/figuration.min.js"></script>
         <script src="https://use.fontawesome.com/ea978b152b.js"></script>
-    {% endblock %}
+    {% endblock js %}
 {% include 'partials/footer.html' %}
 </body>
 </html>

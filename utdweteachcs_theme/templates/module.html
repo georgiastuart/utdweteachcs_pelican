@@ -1,12 +1,37 @@
-{#{% extends 'sidebar.html' %}#}
-{##}
-{#{% block content %}#}
-{#    {% print(page) %}#}
-{#    {% set settings = page.settings|load_json %}#}
-{#    {% set page.toc = settings['toc'] %}#}
-{#    {% for key, value in (page.toc|load_json).items() %}#}
-{#    {% set page.toc[key] = settings['directory'] + value %}#}
-{#    {% endfor %}#}
-{##}
-{#    {{ super() }}#}
-{#{% endblock content %}#}
+{% extends 'sidebar.html' %}
+
+{% set settings = page.module_settings|load_json %}
+{% set toc = settings['toc']|load_json %}
+{% set module_url_base = 'content/pages/modules/' %}
+
+
+
+{% block above_sidebar %}
+    <li class="nav-item dropdown" id="moduleSelector">
+        <a href="#" role="button" class="nav-link nav-current dropdown-toggle dropdown-toggle-split" data-cfw="dropdown"
+           data-cfw-dropdown-toggle="#moduleSelectorList" id="current">{{ settings['short_title'] }} </a>
+        <ul class="dropdown-menu" id="moduleSelectorList">
+            {% for module in module_url_base|get_modules %}
+                {% if module['visible'] %}
+                    <li class="nav-item {% if module['visible'] %}disabled{% endif %}">
+                        <a class="nav-link"
+                           href="{{ SITE_URL }}/{{ module['directory'] }}">{{ module['short_title'] }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </li>
+{% endblock above_sidebar %}
+
+{% block main_content %}
+<h1 class="module-title">{{ page.title }}</h1>
+
+    <div class="tab-content">
+    <div class="tab-pane" id="overview">{{ page.content }}</div>
+    {% for key, item in toc.items() %}
+        <div class="tab-pane" id="{{ item }}">
+        {{ "{}/{}.md".format(settings['module_path'], item)|parse_markdown }}
+        </div>
+    {% endfor %}
+    </div>
+{% endblock main_content %}

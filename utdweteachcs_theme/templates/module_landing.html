@@ -12,7 +12,7 @@
     {% for module in module_url_base|get_modules %}
                     <li class="nav-item">
                         <a class="nav-link {% if not module['visible'] %}disabled{% endif %}"
-                           href="{{ SITE_URL }}/{{ module['directory'] }}">{{ module['title'] }}
+                           href="{{ SITEURL }}/{{ module['directory'] }}">{{ module['title'] }}
                             <div class="float-right">{{ module['date_posted'] }}</div>
                         </a>
                     </li>

@@ -30,12 +30,10 @@
                         <ul class="dropdown-menu" id="info-dropdown">
                             <li><a href="http://georgiastuart.com/utdweteachcs_pelican/syllabus/" class="dropdown-item">Syllabus</a></li>
                             <li><a href="http://georgiastuart.com/utdweteachcs_pelican/calendar/" class="dropdown-item">Calendar</a></li>
-                            <li class="dropdown-divider"></li>
-                            <li><a href="http://georgiastuart.com/utdweteachcs_pelican/instructors/" class="dropdown-item">Instructors</a></li>
-                            <li><a href="http://utdallas.edu/scimathed" class="dropdown-item">UTD Science/Mathematics Education</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="http://georgiastuart.com/utdweteachcs_pelican/modules/">Modules</a></li>
+                    <li class="nav-item"><a href="https://utdweteachcs.slack.com/" target="_blank" class="nav-link">Slack</a></li>
                 </ul>
             </div>
         </nav>
@@ -55,7 +53,7 @@ data-cfw="slideshow">
         <a href="#" role="button" class="nav-link nav-current dropdown-toggle dropdown-toggle-split" data-cfw="dropdown"
            data-cfw-dropdown-toggle="#moduleSelectorList" id="current">Module 00 </a>
         <ul class="dropdown-menu" id="moduleSelectorList">
-                    <li class="nav-item disabled">
+                    <li class="nav-item ">
                         <a class="nav-link"
                            href="http://georgiastuart.com/utdweteachcs_pelican/modules/module-0/">Module 00</a>
                     </li>
@@ -67,11 +65,19 @@ data-cfw="tab"                               href="#overview">Overview</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
+data-cfw="tab"                               href="#todos">To-Do List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+data-cfw="tab"                               href="#class-format">Course Format</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
 data-cfw="tab"                               href="#pre-tests">Pre-Tests</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-data-cfw="tab"                               href="#content">Content</a>
+data-cfw="tab"                               href="#comp-think">Computational Thinking</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
@@ -81,32 +87,208 @@ data-cfw="tab"                               href="#assignment">Assignment</a>
 
         </div>
         <!--Main Content -->
-        <div class="col-sm-9">
-<h1 class="module-title">Module 0: Intro and Computational Thinking</h1>
+        <div class="col-sm-9" id="mainContent">
+    <h1 class="module-title">Module 0: Intro and Computational Thinking</h1>
 
     <div class="tab-content">
-    <div class="tab-pane" id="overview"><h1 id="welcome-to-the-ut-dallas-weteach_cs-collaborative">Welcome to the UT Dallas WeTeach_CS Collaborative!</h1>
-<p>Every week, you will receive new content and assignments online.</p></div>
-        <div class="tab-pane" id="overview">
-        None
+        <div class="tab-pane" id="overview"><h1>Welcome to the UT Dallas WeTeach_CS Collaborative!</h1>
+<p>The first two weeks of class will be taking care of paperwork, getting everyone
+in the online systems, and, for CS content, discussing computational thinking.</p>
+<p>Please spend some time exploring the website! If you run into any problems
+with the website please <a href="mailto:georgia.stuart@utdallas.edu">let Georgia know</a>.</p>
+<p>Each week, there will be an overview of the module, and a <a href="todo">checklist of
+tasks</a> to complete as the first two things in the module sidebar.
+<strong>At this time, the module sidebar does not function correctly on screens
+smaller than an iPad! We're working on fixing this.</strong></p>
+<p>The content and assignment pages are listed under the sidebar.</p>
+<p>All class discussion and communication (with the exception of grades) will
+be on <a href="https://utdweteachcs.slack.com/">Slack</a>.</p></div>
+            <div class="tab-pane" id="overview">
+                    None
+            </div>
+            <div class="tab-pane" id="todos">
+
+<script>
+var store = function(id) {
+    var tempItem = document.getElementById(id);
+    if (localStorage.getItem(id) === "true") {
+        localStorage.setItem(id, "false");
+    } else {
+        localStorage.setItem(id, "true");
+    }
+};
+
+var getActive = function(id) {
+    console.log(id);
+    console.log("this is doing something");
+    var status = localStorage.getItem(id);
+    var el = document.getElementById(id);
+
+    console.log(status);
+    console.log(el)
+    if ( status === "true" ) {
+        el.className += " active";
+    }
+};
+</script>
+
+<h1>To-Do List</h1>
+
+<b>This checklist is only saved locally to your browser for your own reference!</b>
+
+<div class="todo-list">
+
+        <div class="row">
+        <div class="col-1"><button type="button" data-cfw="button" onclick="store('classFormat_0')"
+                                   class="btn btn-todo" id="classFormat_0">
+        </button>
+            <script type="text/javascript">
+                getActive("classFormat_0");
+            </script>
+
         </div>
-        <div class="tab-pane" id="pre-tests">
-        <h1>Pre-Test and Computing Attitudes Survey</h1>
+        <div class="col-11">
+            <div class="todo-item mx-auto">Review the course format and syllabus</div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-1"><button type="button" data-cfw="button" onclick="store('introduction_0')"
+                                   class="btn btn-todo" id="introduction_0">
+        </button>
+            <script type="text/javascript">
+                getActive("introduction_0");
+            </script>
+
+        </div>
+        <div class="col-11">
+            <div class="todo-item mx-auto">Introduce yourself in #introductions on Slack</div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-1"><button type="button" data-cfw="button" onclick="store('preTests_0')"
+                                   class="btn btn-todo" id="preTests_0">
+        </button>
+            <script type="text/javascript">
+                getActive("preTests_0");
+            </script>
+
+        </div>
+        <div class="col-11">
+            <div class="todo-item mx-auto">Complete the Pre-Test and Attitudes Survey</div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-1"><button type="button" data-cfw="button" onclick="store('mod-0-discussion_0')"
+                                   class="btn btn-todo" id="mod-0-discussion_0">
+        </button>
+            <script type="text/javascript">
+                getActive("mod-0-discussion_0");
+            </script>
+
+        </div>
+        <div class="col-11">
+            <div class="todo-item mx-auto">Participate in the class discussion in #module-0-discussion (remember, there are two parts!)</div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-1"><button type="button" data-cfw="button" onclick="store('comp-think_0')"
+                                   class="btn btn-todo" id="comp-think_0">
+        </button>
+            <script type="text/javascript">
+                getActive("comp-think_0");
+            </script>
+
+        </div>
+        <div class="col-11">
+            <div class="todo-item mx-auto">Read this week's reading: Computational Thinking in K-12</div>
+        </div>
+        </div>
+
+</div>            </div>
+            <div class="tab-pane" id="class-format">
+                    <h1 id="course-format">Course Format</h1>
+<p>Every week, you will receive new content and assignments online on this
+website! Modules will become available on the Wednesday prior to their "week."</p>
+<h2 id="weekly-expectations">Weekly expectations</h2>
+<p>In addition to the general attendance and participation policy laid out
+in the <a href="/syllabus">syllabus</a>, every week your work will consist of the following items.</p>
+<ol>
+<li>Participate in the weekly discussion topic channel on Slack. The topic will vary each week. The discussion will happen in two parts: the first part will be the initial question, which you must engage with by Wednesday at 11:59 pm. Thursday morning, a follow up prompt will be posted, which you must engage with by Sunday at 11:59 pm.</li>
+<li><strong>(Optional, but highly encouraged)</strong> ask questions about the week’s content on Slack, and engage with other students about the content. The instructional team will monitor Slack frequently to respond to questions and requests.</li>
+<li>Complete the online lectures and comprehension checks.</li>
+<li>Attend class at least once. In-class sessions will be composed of hands-on lab activities, “offline” programming activities, and anything else that does not come across well online. We will also include time to work on assignments with the assistance of the instructional team. While the general content and lab will be the same on both Monday and Thursday, you are more than welcome to attend both classes. If you do, you can either participate in the activities again, or you may simply work on your assignments with the support of the instructional team.</li>
+<li>Complete the weekly mini-project or assignments. This may be individual, in pairs, or in small teams, depending on the week.</li>
+<li>Complete the weekly reflection and check in. This is quick and is intended for us to see where you are and how you’re feeling!</li>
+</ol>
+<h2 id="week-format-and-timing">Week format and timing</h2>
+<p>Each weel will follow the same format and timing (with exception of the first week,
+see <a href="#firstweek">the next section</a>. The <a href="/calendar">calendar</a>
+has the most detailed and up-to-date information.</p>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Event</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Wednesday</td>
+        <td></td>
+        <td>Class materials for the <b>next</b> week will be posted</td>
+    </tr>
+    <tr>
+        <td>Monday</td>
+        <td>5:30 pm to 8:15 pm</td>
+        <td>In-Class Session #1</td>
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        <td>11:59 pm</td>
+        <td>Discussion part 1 ends</td>
+    </tr>
+    <tr>
+        <td>Thursday</td>
+        <td>5:30 pm to 8:15 pm</td>
+        <td>In-Class Session #2</td>
+    </tr>
+    <tr>
+        <td>Sunday</td>
+        <td>11:59 pm</td>
+        <td>Assignments and due and discussion part 2 ends</td>
+    </tr>
+    </tbody>
+</table>
+
+<h2 id="firstweek">The first week</h2>
+<p>UT Dallas has Spring Break the second week of our class. Since the first week is odd anyway and I’m sure there will be technology kinks to work out, the first-week assignments will extend over the second week. All assignments and discussions given the first week will have the following due dates:</p>
+<ul>
+<li>Discussion part 1 will be due on Wed, March 15 at 11:59 pm</li>
+<li>Assignments will be due Sun, March 19 at 11:59 pm</li>
+</ul>
+<p>We will not have official class the week of the 13th. However, I will be available in the classroom at the usual class times. You are welcome to come for in-person help during class time.</p>
+<p>Materials for week 3 will be posted on <strong>Wed, March 15</strong> and the semester will continue on the planned pattern.</p>
+            </div>
+            <div class="tab-pane" id="pre-tests">
+                    <h1 id="pre-test-and-computing-attitudes-survey">Pre-Test and Computing Attitudes Survey</h1>
 <p>Please complete these assignments <strong>before</strong> continuning on to the content.
 Do not use outside resources. <strong>These assignments are <em>not</em> graded for correctness!!</strong></p>
-<h2>Computing Attitudes Survey</h2>
+<h3 id="computing-attitudes-survey">Computing Attitudes Survey</h3>
+<p>This is simply for us to get a sense of how you feel about computing and
+your computer science abilities.</p>
 <p><a href="https://utdallas.qualtrics.com/SE/?SID=SV_beVb5D2wQ8wnOHb">Computing Attitudes Survey</a></p>
-<h2>Computer Science Pre-Test</h2>
+<h3 id="computer-science-pre-test">Computer Science Pre-Test</h3>
 <p>Do this on your own without any use of the internet or other resources!</p>
 <p><a href="https://utdallas.qualtrics.com/SE/?SID=SV_57sZXuq0VyIjYuF">Computer Science Pre-Test</a></p>
-        </div>
-        <div class="tab-pane" id="content">
-        <h1>THIS IS A TEST</h1>
+            </div>
+            <div class="tab-pane" id="comp-think">
+                    <h1 id="this-is-a-test">THIS IS A TEST</h1>
 <p>to see if md is actually working</p>
-        </div>
-        <div class="tab-pane" id="assignment">
-        
-        </div>
+            </div>
+            <div class="tab-pane" id="assignment">
+                    
+            </div>
     </div>
         </div>
     </div>    </div>

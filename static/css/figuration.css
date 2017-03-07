@@ -2471,6 +2471,10 @@ body, .basic_template, .sidebar_template, .module_template, .module_landing_temp
   padding-bottom: 1rem;
 }
 
+.module_template #mainContent blockquote ol li, .module_template #mainContent blockquote ul li {
+  padding: 0;
+}
+
 .module_template .btn-todo {
   background-color: darkred;
   color: #FFF;
@@ -2497,6 +2501,19 @@ body, .basic_template, .sidebar_template, .module_template, .module_landing_temp
 
 .module_template .todo-list .row {
   padding: 0.25rem 0 0.25rem 0;
+}
+
+.module_template .todo-item {
+  padding: 0.25rem 0 0.25rem 0;
+}
+
+.module_template .subtask {
+  font-size: 0.9rem;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.module_template .subtask .todo-item {
+  padding: 0.2rem 0 0.2rem 0;
 }
 
 .module_landing_template #moduleSelector .nav-link {

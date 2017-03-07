@@ -91,13 +91,13 @@ data-cfw="tab"                               href="#assignment">Assignment</a>
     <h1 class="module-title">Module 0: Intro and Computational Thinking</h1>
 
     <div class="tab-content">
-        <div class="tab-pane" id="overview"><h1>Welcome to the UT Dallas WeTeach_CS Collaborative!</h1>
+        <div class="tab-pane" id="overview"><h1 id="welcome-to-the-ut-dallas-weteach_cs-collaborative">Welcome to the UT Dallas WeTeach_CS Collaborative!</h1>
 <p>The first two weeks of class will be taking care of paperwork, getting everyone
 in the online systems, and, for CS content, discussing computational thinking.</p>
 <p>Please spend some time exploring the website! If you run into any problems
 with the website please <a href="mailto:georgia.stuart@utdallas.edu">let Georgia know</a>.</p>
-<p>Each week, there will be an overview of the module, and a <a href="todo">checklist of
-tasks</a> to complete as the first two things in the module sidebar.
+<p>Each week, there will be an overview of the module, and a checklist of
+tasks to complete as the first two things in the module sidebar.
 <strong>At this time, the module sidebar does not function correctly on screens
 smaller than an iPad! We're working on fixing this.</strong></p>
 <p>The content and assignment pages are listed under the sidebar.</p>
@@ -109,99 +109,126 @@ be on <a href="https://utdweteachcs.slack.com/">Slack</a>.</p></div>
             <div class="tab-pane" id="todos">
 
 <script>
-var store = function(id) {
-    var tempItem = document.getElementById(id);
-    if (localStorage.getItem(id) === "true") {
-        localStorage.setItem(id, "false");
-    } else {
-        localStorage.setItem(id, "true");
-    }
-};
+    var store = function (id) {
+        var tempItem = document.getElementById(id);
+        if (localStorage.getItem(id) === "true") {
+            localStorage.setItem(id, "false");
+        } else {
+            localStorage.setItem(id, "true");
+        }
+    };
 
-var getActive = function(id) {
-    console.log(id);
-    console.log("this is doing something");
-    var status = localStorage.getItem(id);
-    var el = document.getElementById(id);
+    var getActive = function (id) {
+        console.log(id);
+        console.log("this is doing something");
+        var status = localStorage.getItem(id);
+        var el = document.getElementById(id);
 
-    console.log(status);
-    console.log(el)
-    if ( status === "true" ) {
-        el.className += " active";
-    }
-};
+        console.log(status);
+        console.log(el)
+        if (status === "true") {
+            el.className += " active";
+        }
+    };
 </script>
 
 <h1>To-Do List</h1>
 
-<b>This checklist is only saved locally to your browser for your own reference!</b>
+<p class="lead">This checklist is only saved locally to your browser for your own reference!
+It will not transfer between browsers or computers.</p>
 
 <div class="todo-list">
 
         <div class="row">
-        <div class="col-1"><button type="button" data-cfw="button" onclick="store('classFormat_0')"
-                                   class="btn btn-todo" id="classFormat_0">
-        </button>
-            <script type="text/javascript">
-                getActive("classFormat_0");
-            </script>
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('classFormat_0')"
+                        class="btn btn-todo" id="classFormat_0"></button>
+                <script type="text/javascript">
+                    getActive("classFormat_0");
+                </script>
 
-        </div>
-        <div class="col-11">
-            <div class="todo-item mx-auto">Review the course format and syllabus</div>
-        </div>
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Review the course format and syllabus</div>
+            </div>
         </div>
         <div class="row">
-        <div class="col-1"><button type="button" data-cfw="button" onclick="store('introduction_0')"
-                                   class="btn btn-todo" id="introduction_0">
-        </button>
-            <script type="text/javascript">
-                getActive("introduction_0");
-            </script>
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('introduction_0')"
+                        class="btn btn-todo" id="introduction_0"></button>
+                <script type="text/javascript">
+                    getActive("introduction_0");
+                </script>
 
-        </div>
-        <div class="col-11">
-            <div class="todo-item mx-auto">Introduce yourself in #introductions on Slack</div>
-        </div>
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Introduce yourself in #introductions on Slack</div>
+            </div>
         </div>
         <div class="row">
-        <div class="col-1"><button type="button" data-cfw="button" onclick="store('preTests_0')"
-                                   class="btn btn-todo" id="preTests_0">
-        </button>
-            <script type="text/javascript">
-                getActive("preTests_0");
-            </script>
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('preTests_0')"
+                        class="btn btn-todo" id="preTests_0"></button>
+                <script type="text/javascript">
+                    getActive("preTests_0");
+                </script>
 
-        </div>
-        <div class="col-11">
-            <div class="todo-item mx-auto">Complete the Pre-Test and Attitudes Survey</div>
-        </div>
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Complete the Pre-Test and Attitudes Survey</div>
+            </div>
         </div>
         <div class="row">
-        <div class="col-1"><button type="button" data-cfw="button" onclick="store('mod-0-discussion_0')"
-                                   class="btn btn-todo" id="mod-0-discussion_0">
-        </button>
-            <script type="text/javascript">
-                getActive("mod-0-discussion_0");
-            </script>
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('comp-think_0')"
+                        class="btn btn-todo" id="comp-think_0"></button>
+                <script type="text/javascript">
+                    getActive("comp-think_0");
+                </script>
 
-        </div>
-        <div class="col-11">
-            <div class="todo-item mx-auto">Participate in the class discussion in #module-0-discussion (remember, there are two parts!)</div>
-        </div>
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Read this week's reading: Computational Thinking in K-12</div>
+                    <div class="subtask">
+                        <div class="row ">
+                            <div class="col-1">
+                                <button type="button" data-cfw="button" onclick="store('kc-1_0')"
+                                        class="btn btn-todo btn-sm" id="kc-1_0"></button>
+                                <script type="text/javascript">
+                                    getActive("kc-1_0");
+                                </script>
+                            </div>
+                            <div class="col-11">
+                                <div class="todo-item">Knowledge Check #1</div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-1">
+                                <button type="button" data-cfw="button" onclick="store('kc-2_0')"
+                                        class="btn btn-todo btn-sm" id="kc-2_0"></button>
+                                <script type="text/javascript">
+                                    getActive("kc-2_0");
+                                </script>
+                            </div>
+                            <div class="col-11">
+                                <div class="todo-item">Knowledge Check #2</div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
         <div class="row">
-        <div class="col-1"><button type="button" data-cfw="button" onclick="store('comp-think_0')"
-                                   class="btn btn-todo" id="comp-think_0">
-        </button>
-            <script type="text/javascript">
-                getActive("comp-think_0");
-            </script>
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('mod-0-discussion_0')"
+                        class="btn btn-todo" id="mod-0-discussion_0"></button>
+                <script type="text/javascript">
+                    getActive("mod-0-discussion_0");
+                </script>
 
-        </div>
-        <div class="col-11">
-            <div class="todo-item mx-auto">Read this week's reading: Computational Thinking in K-12</div>
-        </div>
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Participate in the class discussion in #module-0-discussion (remember, there are two parts!)</div>
+            </div>
         </div>
 
 </div>            </div>
@@ -283,8 +310,45 @@ your computer science abilities.</p>
 <p><a href="https://utdallas.qualtrics.com/SE/?SID=SV_57sZXuq0VyIjYuF">Computer Science Pre-Test</a></p>
             </div>
             <div class="tab-pane" id="comp-think">
-                    <h1 id="this-is-a-test">THIS IS A TEST</h1>
-<p>to see if md is actually working</p>
+                    <h1 id="computational-thinking">Computational Thinking</h1>
+<h2 id="what-is-computational-thinking">What is Computational Thinking?</h2>
+<p>Computer science is not just about programming, it's also about learning
+to think <em>computationally</em>.</p>
+<blockquote class="blockquote" id="#compThinkDef">
+    <p class="mb-0">
+    Computational thinking (CT) is a problem-solving process that includes (but is not limited to)
+    the following characteristics:
+
+    <ul>
+        <li>Formulating problems in a way that enables us to use a computer and other tools to help solve them.</li>
+        <li>Logically organizing and analyzing data</li>
+        <li>Representing data through abstractions such as models and simulations</li>
+        <li>Automating solutions through algorithmic thinking (a series of ordered steps)</li>
+        <li>Identifying, analyzing, and implementing possible solutions with the goal of achieving the most
+            efficient and effective combination of steps and resources
+        </li>
+        <li>Generalizing and transferring this problem solving process to a wide variety of problems</li>
+    </ul>
+
+    These skills are supported and enhanced by a number of dispositions or attitudes that are
+    essential dimensions of CT. These dispositions or attitudes include:
+
+    <ul>
+        <li>Confidence in dealing with complexity</li>
+        <li>Persistence in working with difficult problems</li>
+        <li>Tolerance for ambiguity</li>
+        <li>The ability to deal with open ended problems</li>
+        <li>The ability to communicate and work with others to achieve a common goal or solution</li>
+    </ul>
+    </p>
+    <footer class="blockquote-footer">ISTE's <cite title="Source Title">
+        <a href="http://www.iste.org/docs/ct-documents/computational-thinking-operational-definition-flyer.pdf">
+            Operational Definition of Computational Thinking</a></cite></footer>
+</blockquote
+
+<div class="embed-responsive embed-responsive-16x9">
+    <iframe class="embed-responsive-item" src="//www.youtube-nocookie.com/embed/sxUJKn6TJOI?rel=0" allowfullscreen></iframe>
+</div>
             </div>
             <div class="tab-pane" id="assignment">
                     

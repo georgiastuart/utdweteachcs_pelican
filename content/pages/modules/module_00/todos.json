@@ -14,14 +14,17 @@
         "link": "#pre-tests",
         "short-name": "preTests"
     },
+    "Read this week's reading: Computational Thinking in K-12": {
+        "type": "reading",
+        "short-name": "comp-think",
+        "subtasks": {
+            "Knowledge Check #1": "kc-1",
+            "Knowledge Check #2": "kc-2"
+        }
+    },
     "Participate in the class discussion in #module-0-discussion (remember, there are two parts!)": {
         "type": "discussion",
         "link": "https://utdweteachcs.slack.com/messages/module-0-discussion/",
         "short-name": "mod-0-discussion"
-    },
-    "Read this week's reading: Computational Thinking in K-12": {
-        "type": "reading",
-        "short-name": "comp-think"
     }
-
 }

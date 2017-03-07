@@ -36,7 +36,7 @@ def load_json(value):
     try:
         with open(value, 'r') as fp:
             return json.load(fp, object_pairs_hook=OrderedDict)
-    except:
+    except TypeError:
         return value
 
 
@@ -71,7 +71,7 @@ INDEX_SAVE_AS = 'blog_index.html'
 THEME = 'utdweteachcs_theme'
 THEME_STATIC_DIR = 'static'
 
-MARKDOWN = {'extension_config': ext_config}
+MARKDOWN = {'extension_configs': ext_config}
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.do']}
 

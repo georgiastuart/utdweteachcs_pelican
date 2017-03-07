@@ -13,8 +13,8 @@ in the online systems, and, for CS content, discussing computational thinking.
 Please spend some time exploring the website! If you run into any problems
 with the website please [let Georgia know](mailto:georgia.stuart@utdallas.edu).
 
-Each week, there will be an overview of the module, and a [checklist of
-tasks](todo) to complete as the first two things in the module sidebar.
+Each week, there will be an overview of the module, and a checklist of
+tasks to complete as the first two things in the module sidebar.
 **At this time, the module sidebar does not function correctly on screens
 smaller than an iPad! We're working on fixing this.**
 

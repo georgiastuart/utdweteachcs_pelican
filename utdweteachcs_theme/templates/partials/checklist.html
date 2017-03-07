@@ -2,51 +2,70 @@
 {% do todo_list|print %}
 
 <script>
-var store = function(id) {
-    var tempItem = document.getElementById(id);
-    if (localStorage.getItem(id) === "true") {
-        localStorage.setItem(id, "false");
-    } else {
-        localStorage.setItem(id, "true");
-    }
-};
+    var store = function (id) {
+        var tempItem = document.getElementById(id);
+        if (localStorage.getItem(id) === "true") {
+            localStorage.setItem(id, "false");
+        } else {
+            localStorage.setItem(id, "true");
+        }
+    };
 
-var getActive = function(id) {
-    console.log(id);
-    console.log("this is doing something");
-    var status = localStorage.getItem(id);
-    var el = document.getElementById(id);
+    var getActive = function (id) {
+        console.log(id);
+        console.log("this is doing something");
+        var status = localStorage.getItem(id);
+        var el = document.getElementById(id);
 
-    console.log(status);
-    console.log(el)
-    if ( status === "true" ) {
-        el.className += " active";
-    }
-};
+        console.log(status);
+        console.log(el)
+        if (status === "true") {
+            el.className += " active";
+        }
+    };
 </script>
 
 <h1>To-Do List</h1>
 
-<b>This checklist is only saved locally to your browser for your own reference!</b>
+<p class="lead">This checklist is only saved locally to your browser for your own reference!
+It will not transfer between browsers or computers.</p>
 
 <div class="todo-list">
 
     {% for name, todo_dict in todo_list.items() %}
         <div class="row">
-        {% set id_name = '{}_{}'.format(todo_dict['short-name'], settings['module_num']) %}
-        <div class="col-1"><button type="button" data-cfw="button" onclick="store('{{ id_name }}')"
-                                   class="btn btn-todo" id="{{ id_name }}">
-{#            <i class="fa fa-circle-o"></i>#}
-        </button>
-            <script type="text/javascript">
-                getActive("{{ id_name }}");
-            </script>
+            {% set id_name = '{}_{}'.format(todo_dict['short-name'], settings['module_num']) %}
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('{{ id_name }}')"
+                        class="btn btn-todo" id="{{ id_name }}"></button>
+                <script type="text/javascript">
+                    getActive("{{ id_name }}");
+                </script>
 
-        </div>
-        <div class="col-11">
-{#        <a class="todo-item" href="{{ todo_dict['link'] }}" >{{ name }}</a>#}
-            <div class="todo-item mx-auto">{{ name }}</div>
-        </div>
+            </div>
+            <div class="col-11">
+                <div class="todo-item">{{ name }}</div>
+                {% do todo_dict['subtasks']|print %}
+                {% if todo_dict['subtasks'] %}
+                    <div class="subtask">
+                    {% for subtask, short in todo_dict['subtasks'].items() %}
+                        {% set id_name = '{}_{}'.format(short, settings['module_num']) %}
+                        <div class="row ">
+                            <div class="col-1">
+                                <button type="button" data-cfw="button" onclick="store('{{ id_name }}')"
+                                        class="btn btn-todo btn-sm" id="{{ id_name }}"></button>
+                                <script type="text/javascript">
+                                    getActive("{{ id_name }}");
+                                </script>
+                            </div>
+                            <div class="col-11">
+                                <div class="todo-item">{{ subtask }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
         </div>
     {% endfor %}
 

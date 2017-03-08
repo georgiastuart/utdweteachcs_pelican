@@ -2424,7 +2424,7 @@ body, .basic_template, .sidebar_template, .module_template, .module_landing_temp
   padding-top: 5.75rem;
 }
 
-.sidebar_template .sidebar {
+.sidebar_template .sidebar-fixed {
   top: 5.75rem;
   position: fixed;
 }
@@ -2434,7 +2434,7 @@ body, .basic_template, .sidebar_template, .module_template, .module_landing_temp
   padding-top: 5.75rem;
 }
 
-.module_template .sidebar {
+.module_template .sidebar-fixed {
   top: 5.6rem;
   position: fixed;
 }
@@ -2493,6 +2493,28 @@ body, .basic_template, .sidebar_template, .module_template, .module_landing_temp
 .module_template .btn-todo.active:before {
   content: "\f00c";
   font-family: FontAwesome;
+}
+
+.module_template .btn-knowledge:before, .module_template .btn-reading:before, .module_template .btn-assign:before, .module_template .btn-discussion:before {
+  font-family: FontAwesome;
+  padding-right: 1rem;
+  float: left;
+}
+
+.module_template .btn-knowledge:before {
+  content: "\f087";
+}
+
+.module_template .btn-reading:before {
+  content: "\f02d";
+}
+
+.module_template .btn-assign:before {
+  content: "\f044";
+}
+
+.module_template .btn-discussion:before {
+  content: "\f0e6";
 }
 
 .module_template .todo-list {

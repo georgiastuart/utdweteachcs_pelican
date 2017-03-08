@@ -21,7 +21,7 @@ Each weel will follow the same format and timing (with exception of the first we
 see [the next section](#firstweek). The [calendar](/calendar)
 has the most detailed and up-to-date information.
 
-{!content/pages/modules/module_00/timeline_table.html!}
+{!content/pages/modules/module_00/html_partials/timeline_table.html!}
 
 ## The first week # {#firstweek}
 

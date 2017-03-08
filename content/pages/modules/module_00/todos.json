@@ -18,13 +18,17 @@
         "type": "reading",
         "short-name": "comp-think",
         "subtasks": {
-            "Knowledge Check #1": "kc-1",
-            "Knowledge Check #2": "kc-2"
+            "Knowledge Check #1": "kc-1"
         }
     },
     "Participate in the class discussion in #module-0-discussion (remember, there are two parts!)": {
         "type": "discussion",
         "link": "https://utdweteachcs.slack.com/messages/module-0-discussion/",
         "short-name": "mod-0-discussion"
+    },
+        "Celebrate! There's no other assignments this module": {
+        "type": "assignment",
+        "link": "",
+        "short-name": "assignment"
     }
 }

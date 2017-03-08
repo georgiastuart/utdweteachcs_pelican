@@ -3,6 +3,7 @@ URL:
 toc: content/pages/syllabus/syllabus_toc.json
 save_as: syllabus/index.html
 template: sidebar
+scrollspy: true
 
 # Syllabus: Semester I # { #top }
 

@@ -1,6 +1,6 @@
 Title: Home
 URL:
 save_as: index.html
-template: basic
+template: home
 
 Thank you for visiting. Welcome!

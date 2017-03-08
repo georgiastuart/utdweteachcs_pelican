@@ -67,6 +67,7 @@ TIMEZONE = 'America/Chicago'
 
 DEFAULT_LANG = 'en'
 
+STATIC_PATHS = ['images', 'papers']
 INDEX_SAVE_AS = 'blog_index.html'
 THEME = 'utdweteachcs_theme'
 THEME_STATIC_DIR = 'static'

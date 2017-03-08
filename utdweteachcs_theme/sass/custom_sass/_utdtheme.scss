@@ -43,11 +43,15 @@
         padding-top: $head_padding;
     }
 
-    .sidebar {
+    .sidebar-fixed {
         top: $sidebar_offset;
         position: fixed;
-        //width: 25%;
     }
+
+    .sidebar {
+
+    }
+
 }
 
 $top-margin-default: -5rem;
@@ -128,6 +132,27 @@ body {
     .btn-todo.active:before {
         content: "\f00c";
         font-family: FontAwesome;
+    }
+    %btn-icon-base {
+        font-family: FontAwesome;
+        padding-right: 1rem;
+        float: left;
+    }
+    .btn-knowledge:before {
+        @extend %btn-icon-base;
+        content: "\f087";
+    }
+    .btn-reading:before {
+        @extend %btn-icon-base;
+        content: "\f02d";
+    }
+    .btn-assign:before {
+        @extend %btn-icon-base;
+        content: "\f044";
+    }
+    .btn-discussion:before {
+        @extend %btn-icon-base;
+        content: "\f0e6";
     }
     .todo-list {
         .row {

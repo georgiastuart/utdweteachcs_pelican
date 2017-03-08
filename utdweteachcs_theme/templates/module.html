@@ -28,13 +28,13 @@
 
     <div class="tab-content">
         <div class="tab-pane" id="overview">{{ page.content }}</div>
+        <div class="tab-pane" id="todos">{% include 'partials/checklist.html' %}</div>
+        {% do toc.pop("overview", None) %}
+        {% do toc.pop("todos", None) %}
         {% for key, item in toc.items() %}
             <div class="tab-pane" id="{{ item }}">
-                {% if item != 'todos' %}
-                    {{ "{}/{}.md".format(settings['module_path'], item)|parse_markdown }}
-                {% else %}
-                    {% include 'partials/checklist.html' %}
-                {% endif %}
+                {% do key|print %}
+                {{ "{}/{}.md".format(settings['module_path'], item)|parse_markdown }}
             </div>
         {% endfor %}
     </div>

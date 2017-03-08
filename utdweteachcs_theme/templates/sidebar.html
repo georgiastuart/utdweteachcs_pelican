@@ -17,26 +17,25 @@
 
     <div class="row">
         <!--Nav Bar -->
-        <div class="col-sm-3"></div>
-        <div class="affix-top sidebar hide-sm-down" id="sidebar">
+        <div class="col-sm-3 sidebar">
+            {% if page.scrollspy == 'true' %}
+        </div>
+        <div class="affix-top sidebar-fixed hide-sm-down" id="sidebar">
+        {% endif %}
             {% block sidebar_block %}
-                {#                {% do toc|print %}#}
-
-                <ul class="nav nav-pills nav-stacked"
-                        {% if page.template == 'module' %}data-cfw="slideshow"{% endif %}>
+                <ul class="nav nav-pills nav-stacked">
+{#                    {% if page.template == 'module' %}data-cfw="slideshow"{% endif %}>#}
                     {% block above_sidebar %}{% endblock above_sidebar %}
                     {% for header, ref in (toc|load_json).items() %}
-                        <li class="nav-item">
+                        <li class="nav-item {% if ref == "overview" %}active{% endif %}">
                             <a class="nav-link"
                                {% if page.template == 'module' %}data-cfw="tab"{% endif %}
                                href="#{{ ref }}">{{ header }}</a>
                         </li>
                     {% endfor %}
                 </ul>
-
             {% endblock sidebar_block %}
         </div>
-        {#        </div>#}
         <!--Main Content -->
         <div class="col-sm-9" id="mainContent">
             {% block main_content %}{{ page.content }}{% endblock main_content %}
@@ -44,5 +43,12 @@
     </div>{% endblock content %}
 
 {% block js %}{{ super() }}
-    <script src="{{ SITEURL }}/static/js/sidebar.js"></script>
+    {% if page.scrollspy == 'true' %}
+    <script type="text/javascript">
+        $('body').CFW_Scrollspy({
+            target: '#sidebar',
+            offset: 40
+        });
+    </script>
+    {% endif %}
 {% endblock %}

@@ -2,25 +2,32 @@
 
 {% block content %}
     <div class="row">
-{#    <h1 class="mx-auto">UT Dallas WeTeach_CS Collaborative</h1>#}
+        <div class="container-fluid">
+            <h2 class="title hide-md-up">UT Dallas WeTeach_CS Collaborative</h2>
+            <h1 class="title hide-sm-down">UT Dallas WeTeach_CS Collaborative</h1>
+            <hr class="my-05">
         </div>
-    <div class="row">
-<div class="col-md-6">
-<img src="{{ SITEURL }}/static/images/utdweteachcslogo.png" class="img-responsive" alt="UT Dallas WeTeach_CS Logo">
-</div>
-    <div class="col-md-6">
-        <h1 class="mx-auto">UT Dallas WeTeach_CS Collaborative</h1>
-        <h2>Texas teachers learn computer science!</h2>
-        <p>Texas is facing a critical shortage of computer science teachers. If you are a certified 6-12 math
-            or science teacher, this FREE two-part course will prepare you to take the 8-12 Computer Science
-            exam and successfully transition from your current subject to the Computer Science classroom or
-            incorporate CS into your current math or science classes.</p>
-        <p class="lead">Unfortunately, we are full for the Spring-Summer 2017 program. If you would like to be notified
-        of future programs and opportunities in computer science for teachers at UT Dallas, please fill out
-        the contact form at the bottom of the page.</p>
-        <p>The UT Dallas WeTeach_CS Collaborative is completely grant funded by our wonderful partners,
-        <a href="https://stemcenter.utexas.edu/" target="_blank">The Center for STEM Education at UT Austin</a> and
-        <a href="https://www.ti.com/" target="_blank">Texas Instruments</a> </p>
     </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ SITEURL }}/static/images/utdweteachcslogo.png" class="img-responsive"
+                 alt="UT Dallas WeTeach_CS Logo">
+        </div>
+        <div class="col-md-6">
+            {#        <h1 class="mx-auto">UT Dallas WeTeach_CS Collaborative</h1>#}
+            <h2>Texas teachers learn computer science!</h2>
+            <p>Texas is facing a critical shortage of computer science teachers. If you are a certified 6-12 math
+                or science teacher, this FREE two-part course will prepare you to take the 8-12 Computer Science
+                exam and successfully transition from your current subject to the Computer Science classroom or
+                incorporate CS into your current math or science classes.</p>
+            <p class="lead">Unfortunately, we are full for the Spring-Summer 2017 program. If you would like to be
+                notified
+                of future programs and opportunities in computer science for teachers at UT Dallas,
+                <a href="http://eepurl.com/cDJOLL">please fill out our contact form</a>.</p>
+            <p>The UT Dallas WeTeach_CS Collaborative is completely grant funded by our wonderful partners,
+                <a href="https://stemcenter.utexas.edu/" target="_blank">The Center for STEM Education at UT Austin</a>
+                and
+                <a href="https://www.ti.com/" target="_blank">Texas Instruments</a></p>
+        </div>
     </div>
 {% endblock content %}

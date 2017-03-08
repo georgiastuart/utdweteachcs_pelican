@@ -22,4 +22,4 @@ an overview of the field six years later.
 
 After you've completed the readings, complete the knowledge check.
 
-[Knowledge Check](https://goo.gl/forms/pTiN2IkpOF44pEEQ2){: class="btn btn-success btn-block btn-knowledge" role="button" target="_blank" }
+[Knowledge Check](https://utdallas.qualtrics.com/SE/?SID=SV_1OeSdNJQ1IFhbHD){: class="btn btn-success btn-block btn-knowledge" role="button" target="_blank" }

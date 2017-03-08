@@ -44,53 +44,51 @@
 
     <div class="row">
         <!--Nav Bar -->
-        <div class="col-sm-3"></div>
-        <div class="affix-top sidebar hide-sm-down" id="sidebar">
-
-                <ul class="nav nav-pills nav-stacked"
->
-                        <li class="nav-item">
+        <div class="col-sm-3 sidebar">
+        </div>
+        <div class="affix-top sidebar-fixed hide-sm-down" id="sidebar">
+                <ul class="nav nav-pills nav-stacked">
+                        <li class="nav-item ">
                             <a class="nav-link"
                                href="#top">Syllabus</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
                                href="#info">Dates & Times</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
                                href="#info">Instructor</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
                                href="#course-description">Course Description</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
                                href="#requirements">Requirements</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
                                href="#course-format">Format</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
                                href="#course-tools">Tools</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
                                href="#student-objectives">Objectives</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
                                href="#grading">Grading and Hours</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
                                href="#assignment-resubmission">Assignment Redo</a>
                         </li>
                 </ul>
-
         </div>
         <!--Main Content -->
         <div class="col-sm-9" id="mainContent">
@@ -267,7 +265,12 @@ segment of the course syllabus. Please go to <a href="http://go.utdallas.edu/syl
         <script src="http://georgiastuart.com/utdweteachcs_pelican/static/js/figuration.min.js"></script>
         <script src="https://use.fontawesome.com/ea978b152b.js"></script>
 
-    <script src="http://georgiastuart.com/utdweteachcs_pelican/static/js/sidebar.js"></script>
+    <script type="text/javascript">
+        $('body').CFW_Scrollspy({
+            target: '#sidebar',
+            offset: 40
+        });
+    </script>
 <footer class="footer">
     <div class="container">
         <div class="row hide-md-up">

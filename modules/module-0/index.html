@@ -44,11 +44,8 @@
 
     <div class="row">
         <!--Nav Bar -->
-        <div class="col-sm-3"></div>
-        <div class="affix-top sidebar hide-sm-down" id="sidebar">
-
-                <ul class="nav nav-pills nav-stacked"
-data-cfw="slideshow">
+        <div class="col-sm-3 sidebar">
+                <ul class="nav nav-pills nav-stacked">
     <li class="nav-item dropdown" id="moduleSelector">
         <a href="#" role="button" class="nav-link nav-current dropdown-toggle dropdown-toggle-split" data-cfw="dropdown"
            data-cfw-dropdown-toggle="#moduleSelectorList" id="current">Module 00 </a>
@@ -59,32 +56,35 @@ data-cfw="slideshow">
                     </li>
         </ul>
     </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link"
 data-cfw="tab"                               href="#overview">Overview</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
 data-cfw="tab"                               href="#todos">To-Do List</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
 data-cfw="tab"                               href="#class-format">Course Format</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
+                            <a class="nav-link"
+data-cfw="tab"                               href="#introduction">Slack Introductions</a>
+                        </li>
+                        <li class="nav-item ">
                             <a class="nav-link"
 data-cfw="tab"                               href="#pre-tests">Pre-Tests</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
 data-cfw="tab"                               href="#comp-think">Computational Thinking</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link"
-data-cfw="tab"                               href="#assignment">Assignment</a>
+data-cfw="tab"                               href="#discussion">Slack Discussion</a>
                         </li>
                 </ul>
-
         </div>
         <!--Main Content -->
         <div class="col-sm-9" id="mainContent">
@@ -103,11 +103,7 @@ smaller than an iPad! We're working on fixing this.</strong></p>
 <p>The content and assignment pages are listed under the sidebar.</p>
 <p>All class discussion and communication (with the exception of grades) will
 be on <a href="https://utdweteachcs.slack.com/">Slack</a>.</p></div>
-            <div class="tab-pane" id="overview">
-                    None
-            </div>
-            <div class="tab-pane" id="todos">
-
+        <div class="tab-pane" id="todos">
 <script>
     var store = function (id) {
         var tempItem = document.getElementById(id);
@@ -202,18 +198,6 @@ It will not transfer between browsers or computers.</p>
                                 <div class="todo-item">Knowledge Check #1</div>
                             </div>
                         </div>
-                        <div class="row ">
-                            <div class="col-1">
-                                <button type="button" data-cfw="button" onclick="store('kc-2_0')"
-                                        class="btn btn-todo btn-sm" id="kc-2_0"></button>
-                                <script type="text/javascript">
-                                    getActive("kc-2_0");
-                                </script>
-                            </div>
-                            <div class="col-11">
-                                <div class="todo-item">Knowledge Check #2</div>
-                            </div>
-                        </div>
                     </div>
             </div>
         </div>
@@ -230,10 +214,29 @@ It will not transfer between browsers or computers.</p>
                 <div class="todo-item">Participate in the class discussion in #module-0-discussion (remember, there are two parts!)</div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('assignment_0')"
+                        class="btn btn-todo" id="assignment_0"></button>
+                <script type="text/javascript">
+                    getActive("assignment_0");
+                </script>
 
-</div>            </div>
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Celebrate! There's no other assignments this module</div>
+            </div>
+        </div>
+
+</div></div>
+            <div class="tab-pane" id="overview">
+                None
+            </div>
+            <div class="tab-pane" id="todos">
+                None
+            </div>
             <div class="tab-pane" id="class-format">
-                    <h1 id="course-format">Course Format</h1>
+                <h1 id="course-format">Course Format</h1>
 <p>Every week, you will receive new content and assignments online on this
 website! Modules will become available on the Wednesday prior to their "week."</p>
 <h2 id="weekly-expectations">Weekly expectations</h2>
@@ -297,25 +300,58 @@ has the most detailed and up-to-date information.</p>
 <p>We will not have official class the week of the 13th. However, I will be available in the classroom at the usual class times. You are welcome to come for in-person help during class time.</p>
 <p>Materials for week 3 will be posted on <strong>Wed, March 15</strong> and the semester will continue on the planned pattern.</p>
             </div>
+            <div class="tab-pane" id="introduction">
+                <h1 id="introduce-yourself">Introduce yourself!</h1>
+<p>When you receive the slack invitation email, create your log in and
+join the conversations! Slack is a communication platform that lets you
+communicate with your classmates and the instructors in real-time.</p>
+<p>You can access Slack from a computer browser, a desktop application for
+Windows or Mac, or a mobile app for iOS or Android. <a href="https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-users">Here is a good guide
+for getting started with Slack!</a></p>
+<div class="jumbotron">
+    <h2>Introduce Yourself</h2>
+    <hr class="my-05">
+    In the introductions channel, let us know:
+    <ol>
+        <li>what and where you teach</li>
+        <li>if you've had any computer science experience</li>
+        <li>something unexpected that people wouldn't guess about you!
+    </ol>
+    <hr class="my-05">
+    <a class="btn btn-primary btn-discussion btn-xl" href="https://utdweteachcs.slack.com/messages/introductions/"
+       role="button" target="_blank">Go to Introductions Channel</a>
+</div>
+
+<p>Slack will be our <strong>primary communication platform</strong> for discussions and
+asking questions. If you have any trouble or want some help, let us know!</p>
+            </div>
             <div class="tab-pane" id="pre-tests">
-                    <h1 id="pre-test-and-computing-attitudes-survey">Pre-Test and Computing Attitudes Survey</h1>
+                <h1 id="pre-test-and-computing-attitudes-survey">Pre-Test and Computing Attitudes Survey</h1>
 <p>Please complete these assignments <strong>before</strong> continuning on to the content.
 Do not use outside resources. <strong>These assignments are <em>not</em> graded for correctness!!</strong></p>
 <h3 id="computing-attitudes-survey">Computing Attitudes Survey</h3>
 <p>This is simply for us to get a sense of how you feel about computing and
 your computer science abilities.</p>
-<p><a href="https://utdallas.qualtrics.com/SE/?SID=SV_beVb5D2wQ8wnOHb">Computing Attitudes Survey</a></p>
+<p><a class="btn btn-lg btn-block btn-assign btn-primary" href="https://utdallas.qualtrics.com/SE/?SID=SV_beVb5D2wQ8wnOHb" role="button" target="_blank">Launch the Computing
+Attitudes Survey</a></p>
 <h3 id="computer-science-pre-test">Computer Science Pre-Test</h3>
 <p>Do this on your own without any use of the internet or other resources!</p>
-<p><a href="https://utdallas.qualtrics.com/SE/?SID=SV_57sZXuq0VyIjYuF">Computer Science Pre-Test</a></p>
+<p><a class="btn btn-lg btn-block btn-assign btn-primary" href="https://utdallas.qualtrics.com/SE/?SID=SV_57sZXuq0VyIjYuF" role="button" target="_blank">Launch the Computer
+Science Pre-Test</a></p>
             </div>
             <div class="tab-pane" id="comp-think">
-                    <h1 id="computational-thinking">Computational Thinking</h1>
+                <h1 id="computational-thinking">Computational Thinking</h1>
 <h2 id="what-is-computational-thinking">What is Computational Thinking?</h2>
+<div class="embed-responsive embed-responsive-16x9">
+    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/sxUJKn6TJOI"
+            allowfullscreen></iframe>
+</div>
+
 <p>Computer science is not just about programming, it's also about learning
-to think <em>computationally</em>.</p>
+to think <em>computationally</em>. The ISTE,
+<a href="http://iste.org" target="_blank">International Society for Technology in Education</a>,
+ has defined an operational definition for computational thinking.</p>
 <blockquote class="blockquote" id="#compThinkDef">
-    <p class="mb-0">
     Computational thinking (CT) is a problem-solving process that includes (but is not limited to)
     the following characteristics:
 
@@ -340,18 +376,44 @@ to think <em>computationally</em>.</p>
         <li>The ability to deal with open ended problems</li>
         <li>The ability to communicate and work with others to achieve a common goal or solution</li>
     </ul>
-    </p>
     <footer class="blockquote-footer">ISTE's <cite title="Source Title">
-        <a href="http://www.iste.org/docs/ct-documents/computational-thinking-operational-definition-flyer.pdf">
+        <a href="http://www.iste.org/docs/ct-documents/computational-thinking-operational-definition-flyer.pdf"
+        target="_blank">
             Operational Definition of Computational Thinking</a></cite></footer>
-</blockquote
+</blockquote>
 
-<div class="embed-responsive embed-responsive-16x9">
-    <iframe class="embed-responsive-item" src="//www.youtube-nocookie.com/embed/sxUJKn6TJOI?rel=0" allowfullscreen></iframe>
-</div>
+<p>While computational thinking has been on education the scene since the 1980s,
+the prevalence of computers in the new millenium. Your reading assignment
+for this week is two papers--the seminal Jeannette Wing paper from 2006, and
+an overview of the field six years later.</p>
+<p><a class="btn btn-primary btn-block btn-reading" href="/papers/wing2006.pdf" role="button" target="_blank">Wing, J. M. (2006). Computational thinking. Communications of the ACM, 49(3), 33–35.</a></p>
+<p><a class="btn btn-primary btn-block btn-reading" href="/papers/state_of_the_field.pdf" role="button" target="_blank">Grover, S., &amp; Pea, R. (2013). Computational Thinking in K–12. Educational Researcher, 42(1), 38–43.</a></p>
+<p>After you've completed the readings, complete the knowledge check.</p>
+<p><a class="btn btn-success btn-block btn-knowledge" href="https://goo.gl/forms/pTiN2IkpOF44pEEQ2" role="button" target="_blank">Knowledge Check</a></p>
             </div>
-            <div class="tab-pane" id="assignment">
-                    
+            <div class="tab-pane" id="discussion">
+                <h1 id="module-0-discussion">Module 0 Discussion</h1>
+<p>You can access Slack from a computer browser, a desktop application for
+Windows or Mac, or a mobile app for iOS or Android. <a href="https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-users">Here is a good guide
+for getting started with Slack!</a></p>
+<div class="jumbotron">
+    <h2>Computational Thinking and Your Subject</h2>
+    <hr class="my-05">
+    <h3>Discussion Part 1</h3>
+    <p class="lead">Part 1 Ends on March 15th at 11:59 pm</p>
+    In the #module-0-discussion channel, discuss the value (or lack thereof if that's how you feel!) of computational thinking
+    within the subject you currently teach. You might consider how it might enhance (or detract from) certain
+    methods in your subject, or how it could be used to further support student learning.
+    <hr class="my-05">
+    <h3>Discussion Part 2</h3>
+    <p class="lead">Part 2 will be posted on March 16th</p>
+    <hr class="my-05">
+    <a class="btn btn-primary btn-discussion btn-xl" href="https://utdweteachcs.slack.com/messages/module-0-discussion"
+       role="button" target="_blank">Go to Discussion Channel</a>
+</div>
+
+<p>Slack will be our <strong>primary communication platform</strong> for discussions and
+asking questions. If you have any trouble or want some help, let us know!</p>
             </div>
     </div>
         </div>
@@ -362,7 +424,6 @@ to think <em>computationally</em>.</p>
         <script src="http://georgiastuart.com/utdweteachcs_pelican/static/js/figuration.min.js"></script>
         <script src="https://use.fontawesome.com/ea978b152b.js"></script>
 
-    <script src="http://georgiastuart.com/utdweteachcs_pelican/static/js/sidebar.js"></script>
 <footer class="footer">
     <div class="container">
         <div class="row hide-md-up">

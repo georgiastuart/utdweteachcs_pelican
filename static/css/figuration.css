@@ -2623,7 +2623,7 @@ footer #mc_embed_signup .form-group {
 .footer .row.footer-title {
   border-bottom: white solid 0.05rem;
   padding-bottom: 0.1rem !important;
-  text-align: center;
+  text-align: left;
 }
 
 .footer .figuration-reference {

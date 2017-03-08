@@ -3,8 +3,11 @@
 {% block content %}
     <h1>UT Dallas WeTeach_CS Calendar</h1>
     <div class="row">
-    <div class="responsiveCal">
+    <div class="responsiveCal hide-sm-down">
         <iframe src="https://calendar.google.com/calendar/embed?title=%20&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=59igu7pmrc9th61h3bi9coqm24%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+        <div class="responsiveCal hide-md-up">
+        <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=59igu7pmrc9th61h3bi9coqm24%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
     </div>
 {% endblock %}

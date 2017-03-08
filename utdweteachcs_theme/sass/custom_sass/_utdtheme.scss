@@ -22,26 +22,27 @@
         font-size: 1rem;
         padding: 0.25rem;
     }
+
     .navbar-toggler {
         border: $white solid;
     }
-    .dropdown-menu {
-        background-color: $utdorange;
-        border: none;
-        @include media-breakpoint-up(md) {
-            border: solid $utdgreen;
-            border-top: none;
-            border-radius: 0 0 0.25rem 0.25rem;
-            margin-top: 0.65rem;
-        }
-        a {
-            color: $white;
-        }
-        li > a:hover {
-            background-color: $utdorange;
-            color: $utdspark;
-        }
-    }
+    //.dropdown-menu {
+    //    background-color: $utdorange;
+    //    //border-color: $utdorange;
+    //    //@include media-breakpoint-up(md) {
+    //    //    border: solid $utdgreen;
+    //    //    border-top: none;
+    //    //    border-radius: 0 0 0.25rem 0.25rem;
+    //    //    margin-top: 0.65rem;
+    //    //}
+    //    a {
+    //        color: $white;
+    //    }
+    //    li > a:hover {
+    //        background-color: $utdorange;
+    //        color: $utdspark;
+    //    }
+    //}
 }
 
 .navbar.bg-inverse {

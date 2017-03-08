@@ -67,7 +67,10 @@ TIMEZONE = 'America/Chicago'
 
 DEFAULT_LANG = 'en'
 
-STATIC_PATHS = ['images', 'papers']
+STATIC_PATHS = ['images', 'papers', 'extra']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
+                       'extra/.nojekyll': {'path': '.nojekyll'}}
+
 INDEX_SAVE_AS = 'blog_index.html'
 THEME = 'utdweteachcs_theme'
 THEME_STATIC_DIR = 'static'

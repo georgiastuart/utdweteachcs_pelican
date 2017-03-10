@@ -2416,7 +2416,18 @@ input[type="button"].btn-block {
 
 body, .basic_template, .home_template, .sidebar_template, .module_template, .module_landing_template {
   padding-top: 5rem;
-  padding-bottom: 20rem;
+}
+
+@media (min-width: 48em) {
+  body, .basic_template, .home_template, .sidebar_template, .module_template, .module_landing_template {
+    padding-bottom: 25rem;
+  }
+}
+
+@media (max-width: 47.9375em) {
+  body, .basic_template, .home_template, .sidebar_template, .module_template, .module_landing_template {
+    padding-bottom: 30rem;
+  }
 }
 
 .nav-pills {
@@ -2607,6 +2618,23 @@ footer #mc_embed_signup .form-group {
   border-top: 5px solid #008542;
   color: #FFF;
   font-size: 14px;
+}
+
+.footer .row.footer-title {
+  border-bottom: white solid 0.05rem;
+  padding-bottom: 0.1rem !important;
+  text-align: left;
+}
+
+.footer .figuration-reference {
+  border-top: solid white 0.1rem;
+  padding-top: 0.15rem;
+}
+
+.footer .figuration-reference a {
+  text-decoration: none;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: small;
 }
 
 .btn-inverse {

@@ -1,38 +1,58 @@
 <footer class="footer">
     <div class="container">
-        <div class="row hide-md-up">
+        {#        <div class="row hide-md-up">#}
+        {#            {% for soc in SOCIAL %}#}
+        {#                <div class="col-3">#}
+        {#                    <a href="{{ soc[1] }}" target="_blank"><i class="fa {{ soc[2] }} fa-footer fa-fw mx-auto"></i></a>#}
+        {#                </div>#}
+        {#            {% endfor %}#}
+        {#        </div>#}
+        <div class="row" data-cfw="equalize" data-cfw-equalize-target="footerHeight">
+            <div class="col-md-4" data-cfw-equalize-target="footerHeight">
+                <div class="row footer-title">
+                    <h3>Contact Us!</h3>
+                </div>
+                <div class="row">
                     {% for soc in SOCIAL %}
                         <div class="col-3">
-                            <a href="{{ soc[1] }}" target="_blank"><i class="fa {{ soc[2] }} fa-footer fa-fw mx-auto"></i></a>
+                            <a href="{{ soc[1] }}" target="_blank"><i
+                                    class="fa {{ soc[2] }} fa-footer fa-fw mx-auto"></i></a>
                         </div>
                     {% endfor %}
                 </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="row">
+                <div class="row hide-sm-down">
                     <a href="http://utdallas.edu" class="footer-brand" target="_blank"><img class="img-responsive"
-                                                                            src="{{ SITEURL }}/static/images/header_nsm_white_low.png"></a>
+                                                                                            src="{{ SITEURL }}/static/images/sme_logo_white.png"></a>
+                </div>
+                <div class="row figuration-reference hide-sm-down">
+                    <a class="" href="http://figuration.org/" target="_blank">Built for accessibility with CAST Figuration</a>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-cfw-equalize-target="footerHeight">
+                <div class="row footer-title">
+                    <h3>Funding Provided By</h3>
                 </div>
                 <div class="row">
                     <a href="https://stemcenter.utexas.edu/" class="footer-brand" target="_blank"><img
                             src="{{ SITEURL }}/static/images/CSTEM-wordmark-white.png"></a>
                 </div>
-            </div>
-            <div class="col-md-4 hide-sm-down">
                 <div class="row">
-                    <h2 class="footer-title">Contact Us!</h2>
-                </div>
-                <div class="row">
-                    {% for soc in SOCIAL %}
-                        <div class="col-3">
-                            <a href="{{ soc[1] }}" target="_blank"><i class="fa {{ soc[2] }} fa-footer fa-fw mx-auto"></i></a>
-                        </div>
-                    {% endfor %}
+                    <a href="https://ti.com/" class="footer-brand" target="_blank"><img
+                            src="{{ SITEURL }}/static/images/ti_logo.png"></a>
                 </div>
             </div>
-        <div class="col-md-4 hide-sm-down">
-            {% include 'partials/mailchimp_signup.html' %}
+            <div class="col-md-4 hide-sm-down" data-cfw-equalize-target="footerHeight">
+                <div class="row footer-title">
+                    <h3>Subscribe to our mailing list</h3>
+                </div>
+                <div class="row">
+                    {% include 'partials/mailchimp_signup.html' %}
+                </div>
+            </div>
         </div>
+        <div class="row figuration-reference hide-md-up" style="text-align: center">
+            <a href="http://figuration.org/" target="_blank">Built for accessibility with CAST Figuration</a>
         </div>
     </div>
 </footer>

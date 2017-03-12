@@ -47,10 +47,8 @@ week is required (though you are welcome to attend both to receive more in-perso
 ## Course Tools
 
 We use TI-Nspire Handhelds, teacher software, and Innovator Hubs to explore
-programming through TI-Basic and Lua and computers to write Lua and JavaScript.
+programming through TI-Basic and computers to write Python.
 Course communication and discussion will be done through the course Slack.
-Note: you are not required to use your real name on Slack, but you must inform
-the instructor of your screen name. All grades will be posted on the university eLearning.
 
 ## Student Objectives
 

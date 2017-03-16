@@ -2410,6 +2410,36 @@ input[type="button"].btn-block {
   border: #FFF solid;
 }
 
+.sidebar_template .btn-download:before, .module_template .btn-download:before, .sidebar_template .btn-extern:before, .module_template .btn-extern:before, .sidebar_template .btn-knowledge:before, .module_template .btn-knowledge:before, .sidebar_template .btn-reading:before, .module_template .btn-reading:before, .sidebar_template .btn-assign:before, .module_template .btn-assign:before, .sidebar_template .btn-discussion:before, .module_template .btn-discussion:before {
+  font-family: FontAwesome;
+  padding-right: 1rem;
+  float: left;
+}
+
+.sidebar_template .btn-download:before, .module_template .btn-download:before {
+  content: "\f019";
+}
+
+.sidebar_template .btn-extern:before, .module_template .btn-extern:before {
+  content: "\f08e";
+}
+
+.sidebar_template .btn-knowledge:before, .module_template .btn-knowledge:before {
+  content: "\f087";
+}
+
+.sidebar_template .btn-reading:before, .module_template .btn-reading:before {
+  content: "\f02d";
+}
+
+.sidebar_template .btn-assign:before, .module_template .btn-assign:before {
+  content: "\f044";
+}
+
+.sidebar_template .btn-discussion:before, .module_template .btn-discussion:before {
+  content: "\f0e6";
+}
+
 .navbar.bg-inverse {
   border-bottom: #008542 solid 0.3rem;
 }
@@ -2514,28 +2544,6 @@ body, .basic_template, .home_template, .sidebar_template, .module_template, .mod
 .module_template .btn-todo.active:before {
   content: "\f00c";
   font-family: FontAwesome;
-}
-
-.module_template .btn-knowledge:before, .module_template .btn-reading:before, .module_template .btn-assign:before, .module_template .btn-discussion:before {
-  font-family: FontAwesome;
-  padding-right: 1rem;
-  float: left;
-}
-
-.module_template .btn-knowledge:before {
-  content: "\f087";
-}
-
-.module_template .btn-reading:before {
-  content: "\f02d";
-}
-
-.module_template .btn-assign:before {
-  content: "\f044";
-}
-
-.module_template .btn-discussion:before {
-  content: "\f0e6";
 }
 
 .module_template .todo-list {

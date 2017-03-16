@@ -7,7 +7,7 @@
     <!-- Bootstrap -->
     <link href="http://utdweteachcs.org/static/css/figuration.min.css" rel="stylesheet">
     <link href="http://utdweteachcs.org/static/css/navbar.css" rel="stylesheet">
-    <title>UT Dallas WeTeach_CS  - Module 1: Variables and Control Structures</title>
+    <title>UT Dallas WeTeach_CS  - WeTeach_CS Facilitator's Academy</title>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -15,7 +15,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="module_template">
+<body class="sidebar_template">
 <header class="navbar navbar-dark bg-inverse navbar-fixed-top">
     <div class="container">
         <nav>
@@ -41,136 +41,160 @@
     <div class="row">
         <!--Nav Bar -->
         <div class="col-sm-3 sidebar">
+        </div>
+        <div class="affix-top sidebar-fixed hide-sm-down" id="sidebar">
                 <ul class="nav nav-pills nav-stacked">
-    <li class="nav-item dropdown" id="moduleSelector">
-        <a href="#" role="button" class="nav-link nav-current dropdown-toggle dropdown-toggle-split" data-cfw="dropdown"
-           data-cfw-dropdown-toggle="#moduleSelectorList" id="current">Module 01 </a>
-        <ul class="dropdown-menu" id="moduleSelectorList">
-                    <li class="nav-item ">
-                        <a class="nav-link"
-                           href="http://utdweteachcs.org/modules/module-0/">Module 00</a>
-                    </li>
-        </ul>
-    </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
+                               href="#top">Facilitator's Academy</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
+                               href="#presenters">Presenters</a>
+                        </li>
                         <li class="nav-item active">
                             <a class="nav-link"
-data-cfw="tab"                               href="#overview">Overview</a>
+                               href="#overview">Program Overview</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link"
-data-cfw="tab"                               href="#todos">To-Do List</a>
+                               href="#details">When and Where</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link"
-data-cfw="tab"                               href="#intro-scratch">Intro to Scratch</a>
+                               href="#schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
+                               href="#register">Register</a>
                         </li>
                 </ul>
         </div>
         <!--Main Content -->
         <div class="col-sm-9" id="mainContent">
-    <h1 class="module-title">Module 1: Variables and Control Structures</h1>
+<h1 id="top">WeTeach_CS Facilitator's Academy 2017</h1>
+<p>Get the tools, knowledge, and skills you need to run a one to two week
+Summer Institute with your WeTeach_CS Collaborative!</p>
+<p class="text-center"><a class="btn btn-primary btn-lg btn-download" href="/papers/utd_academy_flyer.pdf" role="button" target="_blank">Download Facilitator's Academy Flyer</a></p>
+<h2 id="presenters">Presenters</h2>
+<table class="table table-striped" id="instructor">
 
-    <div class="tab-content">
-        <div class="tab-pane" id="overview"><h1 id="time-to-program">Time to program!</h1>
-<p>This week we'll dive into programming! Instead of programming in the
-traditional manner using a text editor, however, we'll use block-based,
-visual tools to begin.</p>
-<h2 id="tools-for-this-module">Tools for this module</h2>
-<p>This module will use <a href="https://scratch.mit.edu/">Scratch</a> and
-<a href="https://trinket.io/">trinket.io</a> to introduce</p>
-<ul>
-<li>variables</li>
-<li>truth values</li>
-<li>if-else statements</li>
-<li>operations</li>
-</ul>
-<p>Please note that making an account on either of these services is not
-required.</p>
-<h2 id="in-class">In class</h2>
-<p>This week in class we'll use block-based programming to interact with
-the TI-Nspire and Innovator Hub! You will need a non-chromebook computer
-for this to install the teacher software on. Please let Georgia know if
-you need to borrow one for class.</p>
-<p>Remember that you're welcome to attend both days of class if you would like
-to revisit the in-class activity or simply work on your weekly assignments
-with the instructional team on hand.</p></div>
-        <div class="tab-pane" id="todos">
-<script>
-    var store = function (id) {
-        var tempItem = document.getElementById(id);
-        if (localStorage.getItem(id) === "true") {
-            localStorage.setItem(id, "false");
-        } else {
-            localStorage.setItem(id, "true");
-        }
-    };
+    <tr>
+        <th>Georgia Stuart</th>
+        <td style="font-style: italic">
+            <a href="http://www.utdallas.edu/sme/" target="_blank">Department of Science/Mathematics Education</a>
+        </td>
+        <td>georgia.stuart@utdallas.edu</td>
+    </tr>
+    <tr>
+        <th>Amin Lalani</th>
+        <td style="font-style: italic">
+            <a href="http://www.utdallas.edu/uteach/" target="_blank">UTeach Dallas</a>
+        </td>
+        <td>amin.lalani@utdallas.edu</td>
+    </tr>
+    <tr>
+        <th>Ranran Feng</th>
+        <td style="font-style: italic">
+            <a href="http://cs.utdallas.edu/" target="_blank">Department of Computer Science</a>
+        </td>
+        <td>rxf090020@utdallas.edu</td>
+    </tr>
+    <tr>
+        <th>Jey Veerasamy</th>
+        <td style="font-style: italic">
+            <a href="http://www.utdallas.edu/k12/" target="_blank">Center for Computer Science Education & Outreach</a>
+        </td>
+        <td>jeyv@utdallas.edu</td>
+    </tr>
+</table>
 
-    var getActive = function (id) {
-        console.log(id);
-        console.log("this is doing something");
-        var status = localStorage.getItem(id);
-        var el = document.getElementById(id);
-
-        console.log(status);
-        console.log(el)
-        if (status === "true") {
-            el.className += " active";
-        }
-    };
-</script>
-
-<h1>To-Do List</h1>
-
-<p class="lead">This checklist is only saved locally to your browser for your own reference!
-It will not transfer between browsers or computers.</p>
-
-<div class="todo-list">
-
-        <div class="row">
-            <div class="col-1">
-                <button type="button" data-cfw="button" onclick="store('intoScratch_')"
-                        class="btn btn-todo" id="intoScratch_"></button>
-                <script type="text/javascript">
-                    getActive("intoScratch_");
-                </script>
-
-            </div>
-            <div class="col-11">
-                <div class="todo-item">Learn to use scratch by watching the intro video and following along</div>
-            </div>
-        </div>
-
-</div></div>
-            <div class="tab-pane" id="overview">
-                None
-            </div>
-            <div class="tab-pane" id="todos">
-                None
-            </div>
-            <div class="tab-pane" id="intro-scratch">
-                <h1 id="introduction-to-scratch">Introduction to Scratch</h1>
-<p><a href="https://scratch.mit.edu/">Scratch</a> is a <em>block-based</em> programming language.
-Instead of typing programming commands into a text editor, you make programs
-by arranging colorful blocks. This lets us introduce the basics of programming
-structures without worrying about syntax (exactly <em>what</em> you need to type
-in a particular programming language) or typos!</p>
-<h2 id="what-can-you-do-with-scratch">What can you do with Scratch?</h2>
-<p>Scratch lets you make games and animations quickly and easily, like this!
+<h2 id="overview">Program Overview</h2>
+<p>The WeTeach_CS facilitators academy at UT Dallas will give you the tools
+to run a one to two week summer institute with your WeTeach_CS collaborative.
+The theme of the Facilitators Academy is “Computational Thinking” and
+contains explorations of computational thinking across the curriculum
+throughout the week. Our program is designed in Scratch and Python, but
+the computer science and computational thinking activities and concepts
+can be easily translated to other languages if you would like to use
+something else with your Collaborative.</p>
+<p>At the facilitators academy, you will participate in all the activities
+of the summer institute, with added consideration on how to replicate
+the program for your teachers. You will receive a facilitator's guide in
+addition to digital participant packs. The facilitator's guide leads you
+through how to prepare for and execute each activity, along with an overview
+of the subject matter. The participant packs contain extension lesson plans
+for each activity suitable for a K-12 classroom, concept information, and
+completed python programs as well as accompanying skeleton templates.</p>
+<p>We will demonstrate a variety of technologies that the institute can
+incorporate, depending on what you have available. All the provided
+activities can either be done offline on traditional computers running Windows,
+macOS, or Linux; or online on Chromebooks using the free online services
+trinket.io or repl.it. You'll be given instructions on how to get everyone
+up and running in a BYOD situation. In addition, we have incorporated a
+variety of “unplugged” activities to learn computational thinking and
+computer science without the use of computers at all!</p>
+<h2 id="details">When and Where</h2>
+<h3 id="when">When</h3>
+<p>April 24, 2017 through April 28, 2017<br>
+8:30 am to 4:30 pm</p>
+<h3 id="where">Where</h3>
+<p>The University of Texas at Dallas<br>
+800 W Campbell Rd.<br>
+Richardson, TX 75080<br>
+<em>Room:</em> <a href="http://www.utdallas.edu/locator/JSOM_11.305">JSOM 11.305</a></p>
 <div class="embed-responsive embed-responsive-4x3">
-      <iframe class="embed-responsive-item" src="//scratch.mit.edu/projects/embed/149851585/?autostart=false" allowfullscreen></iframe>
-</div></p>
-<p>This little game uses everything we'll learn in this module. <strong>One of
-your options for this week's project is to create an animation or game
-using Scratch.</strong></p>
-<h2 id="lets-get-started">Lets get started!</h2>
-<p>The following video will instruct you on how to set up a project from scratch (haha) using
-Scratch.</p>
-<div class="embed-responsive embed-responsive-16x9">
-      <iframe class="embed-responsive-item" src="//www.youtube-nocookie.com/embed/hbXeaHPgor8" allowfullscreen></iframe>
+    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.6829204610162!2d-96.75228798514541!3d32.98576638062004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c21ff895e4aa5%3A0xd9098b32e9aa1331!2sUniversity+of+Texas+at+Dallas!5e0!3m2!1sen!2sus!4v1489625105815"
+            allowfullscreen></iframe>
 </div>
-            </div>
-    </div>
-        </div>
+
+<h2 id="schedule">Schedule</h2>
+<table class="table table-striped" id="schedule">
+    <thead>
+    <tr>
+        <th>Day</th>
+        <th>Theme</th>
+        <th>Computer Science Topics</th>
+        <th>Project</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>Monday</th>
+        <td>Introduction to Computational Thinking</td>
+        <td>Basic variables, operations, truth values, and control structures</td>
+        <td>Make a simple game with scratch</td>
+    </tr>
+    <tr>
+        <th>Tuesday</th>
+        <td>Computational Thinking in K-5</td>
+        <td>Data types, looping, and lists</td>
+        <td>Exploring Patterns</td>
+    </tr>
+    <tr>
+        <th>Wednesday</th>
+        <td>Computational Thinking in Mathematics</td>
+        <td>Abstraction, functions, dictionaries, and sets</td>
+        <td>What are the Chances? (Probability Modeling), Find the Area (Geometry)</td>
+    </tr>
+    <tr>
+        <th>Thursday</th>
+        <td>Computational Thinking in Science</td>
+        <td>Variable scope, more data types, bringing it all together</td>
+        <td>Tree of Life (Biology), Modeling Reactions (Chemistry)</td>
+    </tr>
+    <tr>
+        <th>Friday</th>
+        <td>Computational Thinking in "The Real World"</td>
+        <td>Discussions from people who use computer science and computational thinking in their work</td>
+        <td>Project presentations</td>
+    </tr>
+    </tbody>
+</table>
+
+<h2 id="register">Register Now!</h2>
+<p>To register, please visit the <a href="https://www.weteachcs.org/events/cs-summer-institute/">event page on WeTeach_CS</a>.</p>
+<p class="text-center"><a class="btn btn-primary btn-lg btn-extern" href="https://www.weteachcs.org/events/cs-summer-institute/" role="button" target="_blank">Register Now!</a></p>        </div>
     </div>    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -178,6 +202,12 @@ Scratch.</p>
         <script src="http://utdweteachcs.org/static/js/figuration.min.js"></script>
         <script src="https://use.fontawesome.com/ea978b152b.js"></script>
 
+    <script type="text/javascript">
+        $('body').CFW_Scrollspy({
+            target: '#sidebar',
+            offset: 40
+        });
+    </script>
 <footer class="footer">
     <div class="container">
         <div class="row" data-cfw="equalize" data-cfw-equalize-target="footerHeight">

@@ -60,7 +60,7 @@ The University of Texas at Dallas<br>
 Richardson, TX 75080<br>
 *Room:* [JSOM 11.305](http://www.utdallas.edu/locator/JSOM_11.305)
 
-{!content/pages/facilitators_academy/map.html!}
+<!-- {!content/pages/facilitators_academy/map.html!} -->
 
 ## Schedule
 

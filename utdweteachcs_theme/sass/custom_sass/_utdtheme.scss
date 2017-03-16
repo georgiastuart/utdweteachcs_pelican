@@ -45,6 +45,37 @@
     //}
 }
 
+%button-prefixes {
+    %btn-icon-base {
+        font-family: FontAwesome;
+        padding-right: 1rem;
+        float: left;
+    }
+    .btn-download:before {
+        @extend %btn-icon-base;
+        content: "\f019";
+    }
+    .btn-extern:before {
+        @extend %btn-icon-base;
+        content: "\f08e";
+    }
+    .btn-knowledge:before {
+        @extend %btn-icon-base;
+        content: "\f087";
+    }
+    .btn-reading:before {
+        @extend %btn-icon-base;
+        content: "\f02d";
+    }
+    .btn-assign:before {
+        @extend %btn-icon-base;
+        content: "\f044";
+    }
+    .btn-discussion:before {
+        @extend %btn-icon-base;
+        content: "\f0e6";
+    }
+}
 .navbar.bg-inverse {
     border-bottom: #008542 solid 0.3rem;
 }
@@ -102,11 +133,13 @@ body {
 
 .sidebar_template {
     @extend %page_defaults;
+    @extend %button-prefixes;
     @include sidebar_template_mixin($top-margin-default, $top-padding-default);
 }
 
 .module_template {
     @extend %page_defaults;
+    @extend %button-prefixes;
     @include sidebar_template_mixin($top-margin-default, $top-padding-default, $top-padding-default - 0.15rem);
 
     #moduleSelector {
@@ -167,27 +200,6 @@ body {
     .btn-todo.active:before {
         content: "\f00c";
         font-family: FontAwesome;
-    }
-    %btn-icon-base {
-        font-family: FontAwesome;
-        padding-right: 1rem;
-        float: left;
-    }
-    .btn-knowledge:before {
-        @extend %btn-icon-base;
-        content: "\f087";
-    }
-    .btn-reading:before {
-        @extend %btn-icon-base;
-        content: "\f02d";
-    }
-    .btn-assign:before {
-        @extend %btn-icon-base;
-        content: "\f044";
-    }
-    .btn-discussion:before {
-        @extend %btn-icon-base;
-        content: "\f0e6";
     }
     .todo-list {
         .row {

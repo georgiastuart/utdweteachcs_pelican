@@ -1,3 +1,7 @@
 {
-
+    "Learn to use scratch by watching the intro video and following along": {
+        "type": "assignment",
+        "link": "#intro-scratch",
+        "short-name": "intoScratch"
+    }
 }

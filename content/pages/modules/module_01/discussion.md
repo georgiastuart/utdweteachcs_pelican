@@ -1,4 +1,4 @@
-# Module 0 Discussion
+# Module 01 Discussion
 
 You can access Slack from a computer browser, a desktop application for
 Windows or Mac, or a mobile app for iOS or Android. [Here is a good guide

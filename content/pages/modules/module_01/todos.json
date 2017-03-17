@@ -1,7 +1,37 @@
 {
-    "Learn to use scratch by watching the intro video and following along": {
+    "Learn to use Scratch by watching the intro video and following along": {
         "type": "assignment",
         "link": "#intro-scratch",
         "short-name": "intoScratch"
+    },
+    "Learn to use Trinket by watching the intro video and following along": {
+        "type": "assignment",
+        "link": "#intro-trinket",
+        "short-name": "intoTrinket"
+    },
+    "Read the variables page and complete the knowledge check": {
+        "type": "assignment",
+        "link": "#variables",
+        "short-name": "variables"
+    },
+    "Read the operations and truth values page and complete the knowledge check": {
+        "type": "assignment",
+        "link": "#operations",
+        "short-name": "operations"
+    },
+    "Read the if statement page and complete the knowledge check": {
+        "type": "assignment",
+        "link": "#if-statement",
+        "short-name": "ifStatement"
+    },
+    "Participate in the module 01 discussion (remember, there are two parts!)": {
+        "type": "discussion",
+        "link": "#discussion",
+        "short-name": "discussion"
+    },
+    "Complete the Module 1 Assignment": {
+        "type": "assignment",
+        "link": "#assignment",
+        "short-name": "mod1assignment"
     }
 }

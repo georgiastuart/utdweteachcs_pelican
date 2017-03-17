@@ -2410,7 +2410,7 @@ input[type="button"].btn-block {
   border: #FFF solid;
 }
 
-.sidebar_template .btn-download:before, .module_template .btn-download:before, .sidebar_template .btn-extern:before, .module_template .btn-extern:before, .sidebar_template .btn-knowledge:before, .module_template .btn-knowledge:before, .sidebar_template .btn-reading:before, .module_template .btn-reading:before, .sidebar_template .btn-assign:before, .module_template .btn-assign:before, .sidebar_template .btn-discussion:before, .module_template .btn-discussion:before {
+.sidebar_template .btn-download:before, .module_template .btn-download:before, .sidebar_template .btn-extern:before, .module_template .btn-extern:before, .sidebar_template .btn-knowledge:before, .module_template .btn-knowledge:before, .sidebar_template .btn-reading:before, .module_template .btn-reading:before, .sidebar_template .btn-assign:before, .module_template .btn-assign:before, .sidebar_template .btn-discussion:before, .module_template .btn-discussion:before, .sidebar_template .btn-movie:before, .module_template .btn-movie:before {
   font-family: FontAwesome;
   padding-right: 1rem;
   float: left;
@@ -2438,6 +2438,10 @@ input[type="button"].btn-block {
 
 .sidebar_template .btn-discussion:before, .module_template .btn-discussion:before {
   content: "\f0e6";
+}
+
+.sidebar_template .btn-movie:before, .module_template .btn-movie:before {
+  content: "\f008";
 }
 
 .navbar.bg-inverse {
@@ -2524,6 +2528,12 @@ body, .basic_template, .home_template, .sidebar_template, .module_template, .mod
 
 .module_template #mainContent blockquote ol li, .module_template #mainContent blockquote ul li {
   padding: 0;
+}
+
+.module_template #mainContent .definition {
+  color: #0039A6;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .module_template .btn-todo {

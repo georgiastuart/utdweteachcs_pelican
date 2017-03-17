@@ -1,4 +1,4 @@
-Title: Module 1: Variables and Control Structures
+Title: Module 1: Variables, Truth Values, and If Statements
 URL:
 short_title: Module 01
 module_settings: content/pages/modules/module_01/module_settings.json

@@ -2,11 +2,10 @@
     "Overview": "overview",
     "To-Do List": "todos",
     "Discussion": "discussion",
+    "Assignment": "assignment",
     "Intro to Scratch": "intro-scratch",
     "Intro to Trinket": "intro-trinket",
     "Variables": "variables",
-    "Truth Values": "truth-values",
-    "Operations": "operations",
-    "If Statements": "if-statements",
-    "Assignment": "assignment"
+    "Operations & Truth Values": "operations-truth-values",
+    "If Statements": "if-statements"
 }

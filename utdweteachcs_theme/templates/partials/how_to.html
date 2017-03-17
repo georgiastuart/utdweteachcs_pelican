@@ -1,0 +1,74 @@
+<h3>{{ settings['name'] }}</h3>
+
+{% if settings['gif']['show_gif'] %}
+    <div class="row" style="padding: 1rem">
+        <div class="text-center">
+            <button class="btn btn-lg btn-movie btn-primary" data-cfw="modal"
+                    data-cfw-modal-toggle="#{{ settings['gif']['short_name'] }}">
+                {{ settings['gif']['button_label'] }}
+            </button>
+        </div>
+    </div>
+{% endif %}
+
+<table class="table table-striped hide-sm-down">
+    <tbody>
+    {% for name, content in settings['steps'].items() %}
+        <tr>
+            <td class="valign-middle">
+                {{ content['step_text'] }}
+            </td>
+            <td>
+                <a href="#" data-cfw="modal" data-cfw-modal-toggle="#{{ name }}">
+                    <img class="img-responsive" src="{{ content['file'] }}" alt="{{ content['alt'] }}">
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+
+<table class="table table-striped hide-md-up">
+    <tbody>
+    {% for name, content in settings['steps'].items() %}
+        <tr>
+            <td class="valign-middle">
+                {{ content['step_text'] }}<br>
+                <a href="#" data-cfw="modal" data-cfw-modal-toggle="#{{ name }}">
+                    <img class="img-responsive" src="{{ content['file'] }}" alt="{{ content['alt'] }}">
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+
+{% if settings['gif']['show_gif'] %}
+    <div class="modal" id="{{ settings['gif']['short_name'] }}">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <br>
+                    <img class="img-responsive mx-auto d-block" src="{{ settings['gif']['file'] }}"
+                         alt="{{ settings['gif']['alt'] }}">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% for name, content in settings['steps'].items() %}
+    <div class="modal" id="{{ name }}">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <br>
+                    <img class="img-responsive mx-auto d-block" src="{{ content['file'] }}" alt="{{ content['alt'] }}">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+.

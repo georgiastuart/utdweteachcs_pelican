@@ -1,0 +1,30 @@
+{
+    "template": "how_to.html",
+    "outfile": "content/pages/modules/module_01/html_partials/assign_var_scratch.html",
+    "settings": {
+        "gif": {
+            "show_gif": true,
+            "short_name": "assign-var-scratch-gif",
+            "button_label": "Launch Scratch variable assignment gif",
+            "file": "/images/module-01/assign-var-scratch.gif",
+            "alt": "A video showing how to assign a value to a variable in Scratch"
+        },
+        "steps": {
+            "scratch-assign-var-step-1": {
+                "step_text": "From the data menu, drag the set variable block to your canvas.",
+                "file": "/images/module-01/scratch-set-var-1.png",
+                "alt": "Shows the procedure for dragging the set variable block to canvas"
+            },
+            "scratch-assign-var-step-2": {
+                "step_text": "In the small window, type the number or text you want to assign to your variable.",
+                "file": "/images/module-01/scratch-set-var-2.png",
+                "alt": "Shows the location of the variable set window"
+            },
+            "scratch-assign-var-step-3": {
+                "step_text": "To use a variable, drag the oval with the variable name into a slot.",
+                "file": "/images/module-01/scratch-set-var-3.png",
+                "alt": "Shows how to drag a variable to use it in your Scratch program"
+            }
+        }
+    }
+}

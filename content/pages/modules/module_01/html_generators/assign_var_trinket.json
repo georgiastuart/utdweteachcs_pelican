@@ -1,0 +1,40 @@
+{
+    "template": "how_to.html",
+    "outfile": "content/pages/modules/module_01/html_partials/assign_var_trinket.html",
+    "settings": {
+        "gif": {
+            "show_gif": true,
+            "short_name": "assign-var-trinket-gif",
+            "button_label": "Launch Trinket variable assignment gif",
+            "file": "/images/module-01/assign-var-trinket.gif",
+            "alt": "A video showing how to assign a value to a variable in Trinket"
+        },
+        "steps": {
+            "trinket-assign-var-step-1": {
+                "step_text": "From the variable menu, drag the set variable block to your canvas.",
+                "file": "/images/module-01/trinket-set-var-1.png",
+                "alt": "Shows the procedure for dragging the set variable block to canvas in Trinket"
+            },
+            "trinket-assign-var-step-2": {
+                "step_text": "Drag the type of value you want to set to the canvas and snap it to the set variable block",
+                "file": "/images/module-01/trinket-set-var-2.png",
+                "alt": "Shows snapping a value block to the set variable block"
+            },
+            "trinket-assign-var-step-3": {
+                "step_text": "Fill in the value for in the value block by typing in the small box.",
+                "file": "/images/module-01/trinket-set-var-3.png",
+                "alt": "Shows filling in the value in a value block"
+            },
+            "trinket-assign-var-step-4": {
+                "step_text": "To use the variable, drag the variable block with the connector on the left to your canvas.",
+                "file": "/images/module-01/trinket-set-var-4.png",
+                "alt": "Shows the location of the variable block"
+            },
+            "trinket-assign-var-step-5": {
+                "step_text": "Snap the variable block into the block you want it to interact with.",
+                "file": "/images/module-01/trinket-set-var-5.png",
+                "alt": "Shows snapping the variable block to a print statement"
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "template": "resp_embed.html",
+    "settings": {
+        "url": "https://trinket.io/embed/blocks/79b5766ca8",
+        "size": "4x3"
+    },
+    "outfile": "content/pages/modules/module_01/html_partials/assign_var_trinket_you_try.html"
+}

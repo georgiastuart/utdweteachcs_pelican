@@ -6,6 +6,7 @@
     "Intro to Scratch": "intro-scratch",
     "Intro to Trinket": "intro-trinket",
     "Variables": "variables",
-    "Operations & Truth Values": "operations-truth-values",
+    "Assigning Values to Variables": "variables-2",
+    "Operations & Truth Values": "operators",
     "If Statements": "if-statements"
 }

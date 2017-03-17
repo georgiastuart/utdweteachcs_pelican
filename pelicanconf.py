@@ -2,12 +2,15 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 import os
+from subprocess import run
 from collections import OrderedDict
 import json
 import markdown as md
 
 
 # import jinja_custom_filters as jcf
+
+run(['python', os.path.join(os.getcwd(), 'run_generators.py')])
 
 ext_config = {'markdown.extensions.toc': {},
               'markdown.extensions.attr_list': {},

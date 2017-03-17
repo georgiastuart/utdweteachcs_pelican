@@ -7,7 +7,7 @@
     <!-- Bootstrap -->
     <link href="http://utdweteachcs.org/static/css/figuration.min.css" rel="stylesheet">
     <link href="http://utdweteachcs.org/static/css/navbar.css" rel="stylesheet">
-    <title>UT Dallas WeTeach_CS  - Module 1: Variables and Control Structures</title>
+    <title>UT Dallas WeTeach_CS  - Module 1: Variables, Truth Values, and If Statements</title>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -50,6 +50,10 @@
                         <a class="nav-link"
                            href="http://utdweteachcs.org/modules/module-0/">Module 00</a>
                     </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                           href="http://utdweteachcs.org/modules/module-01/">Module 01</a>
+                    </li>
         </ul>
     </li>
                         <li class="nav-item active">
@@ -62,13 +66,37 @@ data-cfw="tab"                               href="#todos">To-Do List</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link"
+data-cfw="tab"                               href="#discussion">Discussion</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
+data-cfw="tab"                               href="#assignment">Assignment</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
 data-cfw="tab"                               href="#intro-scratch">Intro to Scratch</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
+data-cfw="tab"                               href="#intro-trinket">Intro to Trinket</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
+data-cfw="tab"                               href="#variables">Variables</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
+data-cfw="tab"                               href="#operations-truth-values">Operations & Truth Values</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
+data-cfw="tab"                               href="#if-statements">If Statements</a>
                         </li>
                 </ul>
         </div>
         <!--Main Content -->
         <div class="col-sm-9" id="mainContent">
-    <h1 class="module-title">Module 1: Variables and Control Structures</h1>
+    <h1 class="module-title">Module 1: Variables, Truth Values, and If Statements</h1>
 
     <div class="tab-content">
         <div class="tab-pane" id="overview"><h1 id="time-to-program">Time to program!</h1>
@@ -136,7 +164,85 @@ It will not transfer between browsers or computers.</p>
 
             </div>
             <div class="col-11">
-                <div class="todo-item">Learn to use scratch by watching the intro video and following along</div>
+                <div class="todo-item">Learn to use Scratch by watching the intro video and following along</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('intoTrinket_')"
+                        class="btn btn-todo" id="intoTrinket_"></button>
+                <script type="text/javascript">
+                    getActive("intoTrinket_");
+                </script>
+
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Learn to use Trinket by watching the intro video and following along</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('variables_')"
+                        class="btn btn-todo" id="variables_"></button>
+                <script type="text/javascript">
+                    getActive("variables_");
+                </script>
+
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Read the variables page and complete the knowledge check</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('operations_')"
+                        class="btn btn-todo" id="operations_"></button>
+                <script type="text/javascript">
+                    getActive("operations_");
+                </script>
+
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Read the operations and truth values page and complete the knowledge check</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('ifStatement_')"
+                        class="btn btn-todo" id="ifStatement_"></button>
+                <script type="text/javascript">
+                    getActive("ifStatement_");
+                </script>
+
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Read the if statement page and complete the knowledge check</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('discussion_')"
+                        class="btn btn-todo" id="discussion_"></button>
+                <script type="text/javascript">
+                    getActive("discussion_");
+                </script>
+
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Participate in the module 01 discussion (remember, there are two parts!)</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('mod1assignment_')"
+                        class="btn btn-todo" id="mod1assignment_"></button>
+                <script type="text/javascript">
+                    getActive("mod1assignment_");
+                </script>
+
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Complete the Module 1 Assignment</div>
             </div>
         </div>
 
@@ -146,6 +252,70 @@ It will not transfer between browsers or computers.</p>
             </div>
             <div class="tab-pane" id="todos">
                 None
+            </div>
+            <div class="tab-pane" id="discussion">
+                <h1 id="module-0-discussion">Module 0 Discussion</h1>
+<p>You can access Slack from a computer browser, a desktop application for
+Windows or Mac, or a mobile app for iOS or Android. <a href="https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-users">Here is a good guide
+for getting started with Slack!</a></p>
+<div class="jumbotron">
+    <h2>Block-Based Programming and Your Subject</h2>
+    <hr class="my-05">
+    <h3>Discussion Part 1</h3>
+    <p class="lead">Part 1 Ends on Wednesday, March 22nd at 11:59 pm</p>
+    In the #module-01-discussion channel, discuss the possible uses and pitfalls of using a block-based
+    programming language like Scratch or block-based Trinket in your classroom. <span style="font-weight: bold">
+    Comment on at least one other person's post in your subject area (or close to your subject).</span>
+</span>
+    <hr class="my-05">
+    <h3>Discussion Part 2</h3>
+    <p class="lead">Part 2 will be posted on Thursday, March 23rd</p>
+    <hr class="my-05">
+    <a class="btn btn-primary btn-discussion btn-xl" href="https://utdweteachcs.slack.com/messages/module-01-discussion"
+       role="button" target="_blank">Go to Discussion Channel</a>
+</div>
+
+<p>Slack will be our <strong>primary communication platform</strong> for discussions and
+asking questions. If you have any trouble or want some help, let us know!</p>
+            </div>
+            <div class="tab-pane" id="assignment">
+                <h1 id="module-01-assignment">Module 01 Assignment</h1>
+<p>For assignments, remember that we use standards-based grading. This means
+you should demonstrate the extent of your knowledge as best you can. If you
+do not meet a standard the first time (and it will be expected that you'll
+spend some time in partially proficient before achieving full proficiency),
+there will be future opportunities to demonstrate improvement.</p>
+<div class="jumbotron">
+    <h2>Module 01 Assignment</h2>
+    <hr class="my-05">
+    <p class="lead">Create a game with Scratch or a Turtle drawing with Trinket.io</p>
+    Your game or turle drawing must include:
+    <ul>
+        <li>Input from the user</li>
+        <li>Variables and assignment operators</li>
+        <li>At least one of each: arithmetic operators and comparison operators</li>
+        <li>If statements</li>
+    </ul>
+    <br>
+    Keep in mind that we are doing <span style="font-weight: bold">standards-based grading</span>, so
+    demonstrate the extent of your knowledge by applying the concepts creatively.
+
+    Your assignment document should include
+    <ol>
+        <li>Your First and Last Name</li>
+        <li>A link to your project on Scratch or Trinket</li>
+        <li>A reflection on your process creating this project. Think about what went
+        well, what pitfalls you encountered, etc.</li>
+    </ol>
+
+    <p class="lead">Due Sunday, March 26th at 11:59 pm</p>
+    <hr class="my-05">
+    <h4>How to Submit</h4>
+    Upload a word file or PDF to CometSpace (Box). If you cannot see the upload widget,
+    please inform Georgia.
+
+    <script src="https://app.box.com/embed/upload.js?token=yfxx4muusuq5maxgw2t1e4biiowo5dks&folder_id=21704820296&w=385&h=385&i=&d=1&t=Submit%20Module%201%20Assignment&r=1" type="text/javascript"></script>
+</div>
             </div>
             <div class="tab-pane" id="intro-scratch">
                 <h1 id="introduction-to-scratch">Introduction to Scratch</h1>
@@ -168,6 +338,378 @@ Scratch.</p>
 <div class="embed-responsive embed-responsive-16x9">
       <iframe class="embed-responsive-item" src="//www.youtube-nocookie.com/embed/hbXeaHPgor8" allowfullscreen></iframe>
 </div>
+            </div>
+            <div class="tab-pane" id="intro-trinket">
+                <h1 id="introduction-to-trinket">Introduction to Trinket</h1>
+<p><a href="https://trinket.io">Trinket.io</a> lets you write and execute code in your browser (including on
+Chromebooks)! We will use Trinket throughout the semester for Python (and examples in Java for
+extra info). This week, we're using the block-based Python interface.</p>
+<p>Here's a little example of what can be done in Trinket with the turtle:</p>
+<div class="embed-responsive embed-responsive-4x3">
+      <iframe class="embed-responsive-item" src="https://trinket.io/embed/blocks/0f4e538fd0" allowfullscreen></iframe>
+</div>
+
+<h2 id="how-to-use-trinket">How to use Trinket</h2>
+<p>The following video will demonstrate how to use Trinket, setup Trinket projects (Trinkets), or
+modify and share existing trinkets. If you would like to follow along without creating an account,
+there is a Trinket you can modify below the video.</p>
+<div class="embed-responsive embed-responsive-16x9">
+      <iframe class="embed-responsive-item" src="//www.youtube-nocookie.com/embed/hKGBJIxQwDk" allowfullscreen></iframe>
+</div>
+
+<div class="embed-responsive embed-responsive-4x3">
+      <iframe class="embed-responsive-item" src="https://trinket.io/embed/blocks/5500e02638" allowfullscreen></iframe>
+</div>
+            </div>
+            <div class="tab-pane" id="variables">
+                <h1 id="variables">Variables</h1>
+<p>A
+<em class="definition">variable</em>
+in programming is how we can store and reference information.
+They're similar to variables in math, except they can store many different
+types of information instead of just mathematical objects. You can <em>assign</em>
+information to a variable in one place, and then use that variable in another
+to retrieve that information.</p>
+<p>A variable consists of two parts: a name (called the
+<em class="definition">identifier</em>
+) and the information (called the
+<em class="definition">value</em>
+).</p>
+<h2 id="types-of-information">Types of Information</h2>
+<p>There are many types of information in programming. This week we focus
+on using <em>numbers</em>—like 1, 2.5, 3.99, -1, etc—and <em>text</em>, like "Hello World".</p>
+<p>Later in the course we'll refine what we mean by <em>numbers</em> and <em>text</em>.</p>
+<h2 id="creating-variables">Creating Variables</h2>
+<h3>Creating Variables in Scratch</h3>
+
+<div class="row" style="padding: 1rem">
+<div class="text-center">
+<button class="btn btn-lg btn-movie btn-primary" data-cfw="modal" data-cfw-modal-toggle="#create-var-scratch">
+    Watch Scratch variable creation gif
+</button>
+</div>
+</div>
+
+<table class="table table-striped">
+    <tbody>
+    <tr>
+        <td class="valign-middle">
+            Go to the <span style="color: darkorange; font-weight: bold">data</span> group in the Scripts tab.
+        </td>
+        <td>
+            <a href="#" data-cfw="modal" data-cfw-modal-toggle="#data-pic">
+                <img class="img-responsive" src="/images/module-01/data.png" alt="Location of the data group">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td class="valign-middle">
+            Click on the "make a variable" button.
+        </td>
+        <td>
+            <a href="#" data-cfw="modal" data-cfw-modal-toggle="#make-a-variable">
+                <img class="img-responsive" src="/images/module-01/make-a-variable.png"
+                     alt="Location of the make a variable button">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td class="valign-middle">
+            Choose whether the variable is only available to this sprite (<span class="definition">local</span>)
+            or all sprites (<span class="definition">global</span>).<br><br>
+            Note: we will discuss global vs. local variables in detail later.
+        </td>
+        <td>
+            <a href="#" data-cfw="modal" data-cfw-modal-toggle="#global-v-local">
+                <img class="img-responsive" src="/images/module-01/global-v-local.png"
+                     alt="Global vs local decision menu">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td class="valign-middle">
+            The variable is now available to set and use in the data menu!
+        </td>
+        <td>
+            <a href="#" data-cfw="modal" data-cfw-modal-toggle="#variable-availability">
+                <img class="img-responsive" src="/images/module-01/variable-availability.png"
+                     alt="Location of the make a variable button">
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="modal" id="create-var-scratch">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <br>
+                <img class="img-responsive mx-auto d-block" src="/images/module-01/create-var-scratch.gif" alt="A gif of creating a variable in Scratch">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="data-pic">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <br>
+                <img class="img-responsive mx-auto d-block" src="/images/module-01/data.png" alt="Location of the data group">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="make-a-variable">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <br>
+                <img class="img-responsive mx-auto d-block" src="/images/module-01/make-a-variable.png"
+                     alt="Global vs local decision menu">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="global-v-local">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <br>
+                <img class="img-responsive mx-auto d-block" src="/images/module-01/global-v-local.png"
+                     alt="Global vs local decision menu">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="variable-availability">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <br>
+                <img class="img-responsive mx-auto d-block" src="/images/module-01/variable-availability.png"
+                     alt="Location of the make a variable button">
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3>Creating Variables in Scratch</h3>
+
+<div class="row" style="padding: 1rem">
+<div class="text-center">
+<button class="btn btn-lg btn-movie btn-primary" data-cfw="modal" data-cfw-modal-toggle="#create-var-trinket">
+    Watch Trinket variable creation gif
+</button>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <tbody>
+    <tr>
+        <td class="valign-middle">
+            Go to the "variables" group
+        </td>
+        <td>
+            <a href="#" data-cfw="modal" data-cfw-modal-toggle="#trinket-var-menu">
+                <img class="img-responsive" src="/images/module-01/trinket-var-menu.png" alt="Location of the variable menu">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td class="valign-middle">
+            Drag a new variable to the canvas
+        </td>
+        <td>
+            <a href="#" data-cfw="modal" data-cfw-modal-toggle="#trinket-create-var">
+                <img class="img-responsive" src="/images/module-01/trinket-create-var.png"
+                     alt="Drag a the new variable to the canvas">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td class="valign-middle">
+            On the dropdown, choose "Create a new variable..."
+        </td>
+        <td>
+            <a href="#" data-cfw="modal" data-cfw-modal-toggle="#trinket-new-var">
+                <img class="img-responsive" src="/images/module-01/trinket-new-var.png"
+                     alt="Create new variable dropdown">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td class="valign-middle">
+            Name your variable!
+        </td>
+        <td>
+            <a href="#" data-cfw="modal" data-cfw-modal-toggle="#trinket-name-var">
+                <img class="img-responsive" src="/images/module-01/trinket-name-var.png"
+                     alt="Variable name menu">
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="modal" id="create-var-trinket">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <br>
+                <img class="img-responsive mx-auto d-block" src="/images/module-01/trinket-var-menu.png" alt="Location of the variable menu">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="trinket-var-menu">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <br>
+                <img class="img-responsive mx-auto d-block" src="/images/module-01/trinket-var-menu.png" alt="Location of the variable menu">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="trinket-create-var">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <br>
+                <img class="img-responsive mx-auto d-block" src="/images/module-01/trinket-create-var.png"
+                     alt="Drag a the new variable to the canvas">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="trinket-new-var">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <br>
+                <img class="img-responsive mx-auto d-block" src="/images/module-01/trinket-new-var.png"
+                     alt="Create new variable dropdown">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="trinket-name-var">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <br>
+                <img class="img-responsive mx-auto d-block" src="/images/module-01/trinket-name-var.png"
+                     alt="Variable name menu">
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 id="knowledge-check">Knowledge Check</h2>
+<p>Please complete each knowledge check before moving on.</p>
+<p class="text-center"><a class="btn btn-success btn-lg btn-knowledge" href="https://utdallas.qualtrics.com/SE/?SID=SV_2o9hMiA48UCYDTn" role="button" target="_blank">Knowledge Check: Variables</a></p>
+            </div>
+            <div class="tab-pane" id="operations-truth-values">
+                <h1 id="operations-and-truth-values">Operations and Truth Values</h1>
+<p>In this section we'll discuss</p>
+<ol>
+<li>Variable assignment (assignment operator)</li>
+<li>Math operators</li>
+<li>Truth values and comparison operators</li>
+</ol>
+<h2 id="variable-assignment">Variable assignment</h2>
+<p>In the previous section, we created
+<em class="definition">variables</em>,
+but didn't yet assign any information to them! To set a variable to a value,
+we use an
+<em class="definition">assignment operator</em>.</p>
+<p>In Scratch and block-based Trinkets, the assignment operator is its own
+block.</p>
+<h3 id="variable-assignment-in-scratch">Variable Assignment in Scratch</h3>
+<div class="row" style="padding: 1rem">
+    <div class="text-center">
+        <button class="btn btn-lg btn-movie btn-primary" data-cfw="modal" data-cfw-modal-toggle="#assign-var-scratch">
+            Watch Scratch variable assignment gif
+        </button>
+    </div>
+</div>
+
+<div class="text-center">
+    <figure class="figure">
+        <img class="figure-img img-responsive" src="/images/module-01/scratch-set-var-1.png"
+             alt="A screenshot of scratch showing the location of the set variable operator">
+        <figcaption class="figure-caption">From the data menu, drag the set variable block to your canvas.</figcaption>
+    </figure>
+</div>
+
+<div class="text-center">
+    <figure class="figure">
+        <img class="figure-img img-responsive" src="/images/module-01/scratch-set-var-2.png"
+             alt="A screenshot of scratch showing where to assign the variable value">
+        <figcaption class="figure-caption">In the small window, type the number or text you want to
+        assign to your variable.</figcaption>
+    </figure>
+</div>
+
+<div class="text-center">
+    <figure class="figure">
+        <img class="figure-img img-responsive" src="/images/module-01/scratch-set-var-3.png"
+             alt="A screenshot of scratch showing how to use a variable">
+        <figcaption class="figure-caption">To use a variable, drag the oval with the variable
+            name into a slot.</figcaption>
+    </figure>
+</div>
+
+<div class="modal" id="assign-var-scratch">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <br>
+                <img class="img-responsive mx-auto d-block" src="/images/module-01/assign-var-scratch.gif" alt="A gif of assigning a variable in Scratch">
+            </div>
+        </div>
+    </div>
+</div>
+
+<h4 id="you-try">You try!</h4>
+<p>Complete the program to make the cat say "up," "down," "left," and "right" depending
+on the arrow key pressed.</p>
+<p class="text-center"><a class="btn btn-primary btn-lg btn-extern" href="https://scratch.mit.edu/projects/150752102/" role="button" target="_blank">Launch the Scratch template</a></p>
+<h3 id="variable-assignment-in-trinket">Variable Assignment in Trinket</h3>
+            </div>
+            <div class="tab-pane" id="if-statements">
+                
             </div>
     </div>
         </div>

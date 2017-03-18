@@ -123,12 +123,34 @@ It will not transfer between browsers or computers.</p>
     </div>
         </div>
     </div>    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://utdweteachcs.org/static/js/figuration.min.js"></script>
         <script src="https://use.fontawesome.com/ea978b152b.js"></script>
 
+
+    <script>
+        $(function () {
+            $('.demo-modal').on('beforeShow.cfw.modal', function () {
+                $('img').each(function () {
+                    $(this).CFW_Lazy('show');
+                });
+            });
+
+            $('a[data-cfw="tab"]').on('beforeShow.cfw.tab', function (e) {
+                var paneID = $(e.target).attr('href');
+                console.log('tab triggered');
+                $(paneID + ' iframe').each(function () {
+                    var cur_frame = $(this);
+                    if (cur_frame.attr('src') == '') {
+                        var src = cur_frame.attr('data-src');
+                        cur_frame.attr('src', src);
+                    }
+                });
+            });
+        });
+    </script>
 <footer class="footer">
     <div class="container">
         <div class="row" data-cfw="equalize" data-cfw-equalize-target="footerHeight">

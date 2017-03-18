@@ -7,6 +7,7 @@
     <!-- Bootstrap -->
     <link href="https://utdweteachcs.org/static/css/figuration.min.css" rel="stylesheet">
     <link href="https://utdweteachcs.org/static/css/navbar.css" rel="stylesheet">
+    <link href="https://utdweteachcs.org/static/css/codehilite-styles.css" rel="stylesheet">
     <title>UT Dallas WeTeach_CS  - Module 1: Variables, Truth Values, and If Statements</title>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -90,7 +91,7 @@ data-cfw="tab"                               href="#variables-2">Assigning Value
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link"
-data-cfw="tab"                               href="#operators">Operations & Truth Values</a>
+data-cfw="tab"                               href="#operators">Operators & Truth Values</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link"
@@ -194,20 +195,20 @@ It will not transfer between browsers or computers.</p>
 
             </div>
             <div class="col-11">
-                <div class="todo-item">Read the variables page and complete the knowledge check</div>
+                <div class="todo-item">Read the variables pages and complete the knowledge check (on second page)</div>
             </div>
         </div>
         <div class="row">
             <div class="col-1">
-                <button type="button" data-cfw="button" onclick="store('operations_')"
-                        class="btn btn-todo" id="operations_"></button>
+                <button type="button" data-cfw="button" onclick="store('operators_')"
+                        class="btn btn-todo" id="operators_"></button>
                 <script type="text/javascript">
-                    getActive("operations_");
+                    getActive("operators_");
                 </script>
 
             </div>
             <div class="col-11">
-                <div class="todo-item">Read the operations and truth values page and complete the knowledge check</div>
+                <div class="todo-item">Read the operators and truth values page and complete the knowledge check</div>
             </div>
         </div>
         <div class="row">
@@ -639,8 +640,7 @@ on using <em>numbers</em>—like 1, 2.5, 3.99, -1, etc—and <em>text</em>, like
 </div>
 
 <h2 id="knowledge-check">Knowledge Check</h2>
-<p>Please complete each knowledge check before moving on.</p>
-<p class="text-center"><a class="btn btn-success btn-lg btn-knowledge" href="https://utdallas.qualtrics.com/SE/?SID=SV_2o9hMiA48UCYDTn" role="button" target="_blank">Knowledge Check: Variables</a></p>
+<p>Knowledge check is in the "Assigning Values to Variables" tab.</p>
             </div>
             <div class="tab-pane" id="variables-2">
                 <h1 id="variable-assignment">Variable assignment</h1>
@@ -668,15 +668,122 @@ on the arrow key pressed.</p>
 to appropriate
 values to draw a square with side length 100.</p>
 <div class="embed-responsive embed-responsive-4x3"> <iframe class=embed-responsive-item src=https://trinket.io/embed/blocks/79b5766ca8 allowfullscreen></iframe> </div>
+
+<h2 id="asking-for-user-input">Asking for User Input</h2>
+<p>One way to assign a variable is to ask your user to input the value. This
+can give a program a layer of interactivity!</p>
+<h3 id="user-input-in-scratch">User Input in Scratch</h3>
+<h3></h3>
+
+<p><div class=row style="padding: 1rem"> <div class=text-center> <button class="btn btn-lg btn-movie btn-primary" data-cfw=modal data-cfw-modal-toggle=#ask-scratch-gif> Launch Scratch user input gif </button> </div> </div> <table class="table table-striped hide-sm-down"> <tbody> <tr> <td class=valign-middle> From the sensing menu, drag the ask block to your canvas. </td> <td> <a href=# data-cfw=modal data-cfw-modal-toggle=#scratch-ask-step-1> <img class=img-responsive src=/images/module-01/scratch-ask-1.png alt="Shows the procedure for dragging the ask block to canvas"> </a> </td> </tr> <tr> <td class=valign-middle> Use the &#34;answer&#34; block to assign the answer to a variable. </td> <td> <a href=# data-cfw=modal data-cfw-modal-toggle=#scratch-ask-step-2> <img class=img-responsive src=/images/module-01/scratch-ask-2.png alt="Shows the location of the answer block"> </a> </td> </tr> </table> <table class="table table-striped hide-md-up"> <tbody> <tr> <td class=valign-middle> From the sensing menu, drag the ask block to your canvas.<br> <a href=# data-cfw=modal data-cfw-modal-toggle=#scratch-ask-step-1> <img class=img-responsive src=/images/module-01/scratch-ask-1.png alt="Shows the procedure for dragging the ask block to canvas"> </a> </td> </tr> <tr> <td class=valign-middle> Use the &#34;answer&#34; block to assign the answer to a variable.<br> <a href=# data-cfw=modal data-cfw-modal-toggle=#scratch-ask-step-2> <img class=img-responsive src=/images/module-01/scratch-ask-2.png alt="Shows the location of the answer block"> </a> </td> </tr> </table> <div class=modal id=ask-scratch-gif> <div class="modal-dialog modal-lg"> <div class=modal-content> <div class=modal-header> <button type=button class=close data-cfw-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button> <br> <img class="img-responsive mx-auto d-block" src=/images/module-01/ask-input-scratch.gif alt="A video showing how to ask a user for a value in Scratch"> </div> </div> </div> </div> <div class=modal id=scratch-ask-step-1> <div class=modal-dialog> <div class=modal-content> <div class=modal-header> <button type=button class=close data-cfw-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button> <br> <img class="img-responsive mx-auto d-block" src=/images/module-01/scratch-ask-1.png alt="Shows the procedure for dragging the ask block to canvas"> </div> </div> </div> </div> <div class=modal id=scratch-ask-step-2> <div class=modal-dialog> <div class=modal-content> <div class=modal-header> <button type=button class=close data-cfw-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button> <br> <img class="img-responsive mx-auto d-block" src=/images/module-01/scratch-ask-2.png alt="Shows the location of the answer block"> </div> </div> </div> </div> </p>
+<h3 id="user-input-in-trinket">User Input in Trinket</h3>
+<h3></h3>
+
+<p><div class=row style="padding: 1rem"> <div class=text-center> <button class="btn btn-lg btn-movie btn-primary" data-cfw=modal data-cfw-modal-toggle=#ask-trinket-gif> Launch Trinket user input gif </button> </div> </div> <table class="table table-striped hide-sm-down"> <tbody> <tr> <td class=valign-middle> From the text menu, drag the prompt user for input block to your canvas. </td> <td> <a href=# data-cfw=modal data-cfw-modal-toggle=#trinket-ask-step-1> <img class=img-responsive src=/images/module-01/trinket-ask-1.png alt="Shows the procedure for dragging the ask block to canvas"> </a> </td> </tr> <tr> <td class=valign-middle> Snap the prompt user block to a variable to store the input and enter a prompt phrase (if applicable). </td> <td> <a href=# data-cfw=modal data-cfw-modal-toggle=#trinket-ask-step-2> <img class=img-responsive src=/images/module-01/trinket-ask-2.png alt="Shows the placement of the prompt block"> </a> </td> </tr> <tr> <td class=valign-middle> When the program is run, your user will be prompted for input in the &#34;run&#34; console. </td> <td> <a href=# data-cfw=modal data-cfw-modal-toggle=#trinket-ask-step-3> <img class=img-responsive src=/images/module-01/trinket-ask-3.png alt="Shows prompting a user for input in the run console"> </a> </td> </tr> </table> <table class="table table-striped hide-md-up"> <tbody> <tr> <td class=valign-middle> From the text menu, drag the prompt user for input block to your canvas.<br> <a href=# data-cfw=modal data-cfw-modal-toggle=#trinket-ask-step-1> <img class=img-responsive src=/images/module-01/trinket-ask-1.png alt="Shows the procedure for dragging the ask block to canvas"> </a> </td> </tr> <tr> <td class=valign-middle> Snap the prompt user block to a variable to store the input and enter a prompt phrase (if applicable).<br> <a href=# data-cfw=modal data-cfw-modal-toggle=#trinket-ask-step-2> <img class=img-responsive src=/images/module-01/trinket-ask-2.png alt="Shows the placement of the prompt block"> </a> </td> </tr> <tr> <td class=valign-middle> When the program is run, your user will be prompted for input in the &#34;run&#34; console.<br> <a href=# data-cfw=modal data-cfw-modal-toggle=#trinket-ask-step-3> <img class=img-responsive src=/images/module-01/trinket-ask-3.png alt="Shows prompting a user for input in the run console"> </a> </td> </tr> </table> <div class=modal id=ask-trinket-gif> <div class="modal-dialog modal-lg"> <div class=modal-content> <div class=modal-header> <button type=button class=close data-cfw-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button> <br> <img class="img-responsive mx-auto d-block" src=/images/module-01/ask-input-trinket.gif alt="A video showing how to ask a user for a value in Trinket"> </div> </div> </div> </div> <div class=modal id=trinket-ask-step-1> <div class=modal-dialog> <div class=modal-content> <div class=modal-header> <button type=button class=close data-cfw-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button> <br> <img class="img-responsive mx-auto d-block" src=/images/module-01/trinket-ask-1.png alt="Shows the procedure for dragging the ask block to canvas"> </div> </div> </div> </div> <div class=modal id=trinket-ask-step-2> <div class=modal-dialog> <div class=modal-content> <div class=modal-header> <button type=button class=close data-cfw-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button> <br> <img class="img-responsive mx-auto d-block" src=/images/module-01/trinket-ask-2.png alt="Shows the placement of the prompt block"> </div> </div> </div> </div> <div class=modal id=trinket-ask-step-3> <div class=modal-dialog> <div class=modal-content> <div class=modal-header> <button type=button class=close data-cfw-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button> <br> <img class="img-responsive mx-auto d-block" src=/images/module-01/trinket-ask-3.png alt="Shows prompting a user for input in the run console"> </div> </div> </div> </div> </p>
+<h2 id="you-try_2">You try!</h2>
+<p>Modify the previous examples to accept user input.</p>
+<h2 id="knowledge-check">Knowledge check</h2>
+<p>Please complete each knowledge check before moving on.</p>
+<p class="text-center"><a class="btn btn-success btn-lg btn-knowledge" href="https://utdallas.qualtrics.com/SE/?SID=SV_2o9hMiA48UCYDTn" role="button" target="_blank">Knowledge Check: Variables</a></p>
             </div>
             <div class="tab-pane" id="operators">
-                <h1 id="operations-and-truth-values">Operations and Truth Values</h1>
+                <h1 id="operators-and-truth-values">Operators and Truth Values</h1>
 <p>In this section we'll discuss</p>
 <ol>
-<li>Variable assignment (assignment operator)</li>
-<li>Math operators</li>
-<li>Truth values and comparison operators</li>
+<li>Arithmetic operators</li>
+<li>Truth values and relational operators</li>
 </ol>
+<p><strong>Note:</strong> the demonstrations in this page will only be done in Trinket. However,
+there are similar blocks that work much the same in Scratch.</p>
+<h2 id="arithmetic-operators">Arithmetic operators</h2>
+<p><em class="definition">Arithmetic operators</em>
+will look very similar from math class! Addition,
+subtraction, multiplication, and division in Scratch, Trinket Blocks, and
+Python 3 work the same way as you would expect in math class.</p>
+<p>In future weeks, we will discuss operations on
+<em class="definition">integers</em> and
+<em class="definition">floating point numbers</em>
+(numbers that a computer can store) in greater detail. For now, just remember
+that there is rounding occurring that you may or may not notice (just like
+on a calculator).</p>
+<h3 id="using-the-basic-arithmetic-operators-in-trinket-blocks">Using the basic arithmetic operators in Trinket blocks</h3>
+<h3></h3>
+
+<p><div class=row style="padding: 1rem"> <div class=text-center> <button class="btn btn-lg btn-movie btn-primary" data-cfw=modal data-cfw-modal-toggle=#basic-operations-gif> Launch Trinket arithmetic operators gif </button> </div> </div> <table class="table table-striped hide-sm-down"> <tbody> <tr> <td class=valign-middle> The arithmetic operator block can be found under the &#34;numbers&#34; menu. It consists of two blank slots for numbers or variables and a dropdown to select the operator. </td> <td> <a href=# data-cfw=modal data-cfw-modal-toggle=#arithmetic-step-1> <img class=img-responsive src=/images/module-01/basic-operations-1.png alt="Shows the arithmetic operator block."> </a> </td> </tr> <tr> <td class=valign-middle> Fill in the slots with variables, numbers, or more arithmetic operation blocks. </td> <td> <a href=# data-cfw=modal data-cfw-modal-toggle=#arithmetic-step-2> <img class=img-responsive src=/images/module-01/basic-operations-2.png alt="Shows a filled-in arithmetic operator block."> </a> </td> </tr> <tr> <td class=valign-middle> Choose the arithmetic operation you want to use. </td> <td> <a href=# data-cfw=modal data-cfw-modal-toggle=#arithmetic-step-3> <img class=img-responsive src=/images/module-01/basic-operations-3.png alt="Shows the dropdown menu for arithmetic operators"> </a> </td> </tr> <tr> <td class=valign-middle> The operation will be simplified for printing or storing to a variable. </td> <td> <a href=# data-cfw=modal data-cfw-modal-toggle=#arithmetic-step-4> <img class=img-responsive src=/images/module-01/basic-operations-4.png alt="Shows a printout of the 4 operations"> </a> </td> </tr> </table> <table class="table table-striped hide-md-up"> <tbody> <tr> <td class=valign-middle> The arithmetic operator block can be found under the &#34;numbers&#34; menu. It consists of two blank slots for numbers or variables and a dropdown to select the operator.<br> <a href=# data-cfw=modal data-cfw-modal-toggle=#arithmetic-step-1> <img class=img-responsive src=/images/module-01/basic-operations-1.png alt="Shows the arithmetic operator block."> </a> </td> </tr> <tr> <td class=valign-middle> Fill in the slots with variables, numbers, or more arithmetic operation blocks.<br> <a href=# data-cfw=modal data-cfw-modal-toggle=#arithmetic-step-2> <img class=img-responsive src=/images/module-01/basic-operations-2.png alt="Shows a filled-in arithmetic operator block."> </a> </td> </tr> <tr> <td class=valign-middle> Choose the arithmetic operation you want to use.<br> <a href=# data-cfw=modal data-cfw-modal-toggle=#arithmetic-step-3> <img class=img-responsive src=/images/module-01/basic-operations-3.png alt="Shows the dropdown menu for arithmetic operators"> </a> </td> </tr> <tr> <td class=valign-middle> The operation will be simplified for printing or storing to a variable.<br> <a href=# data-cfw=modal data-cfw-modal-toggle=#arithmetic-step-4> <img class=img-responsive src=/images/module-01/basic-operations-4.png alt="Shows a printout of the 4 operations"> </a> </td> </tr> </table> <div class=modal id=basic-operations-gif> <div class="modal-dialog modal-lg"> <div class=modal-content> <div class=modal-header> <button type=button class=close data-cfw-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button> <br> <img class="img-responsive mx-auto d-block" src=/images/module-01/basic-operations.gif alt="A video showing how to use the arithmetic operator block Trinket"> </div> </div> </div> </div> <div class=modal id=arithmetic-step-1> <div class=modal-dialog> <div class=modal-content> <div class=modal-header> <button type=button class=close data-cfw-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button> <br> <img class="img-responsive mx-auto d-block" src=/images/module-01/basic-operations-1.png alt="Shows the arithmetic operator block."> </div> </div> </div> </div> <div class=modal id=arithmetic-step-2> <div class=modal-dialog> <div class=modal-content> <div class=modal-header> <button type=button class=close data-cfw-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button> <br> <img class="img-responsive mx-auto d-block" src=/images/module-01/basic-operations-2.png alt="Shows a filled-in arithmetic operator block."> </div> </div> </div> </div> <div class=modal id=arithmetic-step-3> <div class=modal-dialog> <div class=modal-content> <div class=modal-header> <button type=button class=close data-cfw-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button> <br> <img class="img-responsive mx-auto d-block" src=/images/module-01/basic-operations-3.png alt="Shows the dropdown menu for arithmetic operators"> </div> </div> </div> </div> <div class=modal id=arithmetic-step-4> <div class=modal-dialog> <div class=modal-content> <div class=modal-header> <button type=button class=close data-cfw-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button> <br> <img class="img-responsive mx-auto d-block" src=/images/module-01/basic-operations-4.png alt="Shows a printout of the 4 operations"> </div> </div> </div> </div> </p>
+<h4 id="test-it-out">Test it out</h4>
+<div class="embed-responsive embed-responsive-4x3"> <iframe class=embed-responsive-item src=https://trinket.io/embed/blocks/4617a3f892 allowfullscreen></iframe> </div>
+
+<h3 id="other-arithmetic-operators">Other arithmetic operators</h3>
+<p>In addition to the four basic operators, we can use the
+<em class="definition">integer division operator</em> and the
+<em class="definition">modulus operator</em>.</p>
+<h4 id="integer-division">Integer division</h4>
+<p>The <em class="definition">integer division operator</em> (denoted <code>//</code>) is division where the
+remainder is discarded, i.e. the <em>integer</em> number of times one number goes
+into another.</p>
+<p>For example,</p>
+<div class="codehilite"><pre><span></span><span class="mi">10</span> <span class="o">//</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">5</span>
+</pre></div>
+
+
+<p>Since 2 goes into 10 five times. However,</p>
+<div class="codehilite"><pre><span></span><span class="mi">10</span> <span class="o">//</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">3</span>
+</pre></div>
+
+
+<p>Since 3 only goes into 10 three times before we need a decimal. If the second
+number is bigger than the first, then</p>
+<div class="codehilite"><pre><span></span><span class="mi">10</span> <span class="o">//</span> <span class="mi">11</span> <span class="o">==</span> <span class="mi">0</span>
+</pre></div>
+
+
+<p>Since 11 does not divide 10 a whole number of times at all.</p>
+<h4 id="modulus-operator">Modulus operator</h4>
+<p>The <em class="definition">modulus operator</em> (denoted <code>%</code>) is the remainder operator.
+The modulus returns what's left over when you divide one number by another.</p>
+<p><strong>note:</strong> here we discuss only positive integers with the modulus operator.</p>
+<p>For example,</p>
+<div class="codehilite"><pre><span></span><span class="mi">10</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+</pre></div>
+
+
+<p>Since 2 divides 10 with no remainder leftover. However,</p>
+<div class="codehilite"><pre><span></span><span class="mi">10</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">1</span>
+</pre></div>
+
+
+<p>Since 3 divides 10 with 1 left over. If the second number is greater than
+the first then</p>
+<div class="codehilite"><pre><span></span><span class="mi">10</span> <span class="o">%</span> <span class="mi">11</span> <span class="o">==</span> <span class="mi">10</span>
+</pre></div>
+
+
+<p>Since 11 does not divide 10 at all, thus 10 is left over.</p>
+<h4 id="trinket-testing">Trinket Testing</h4>
+<p>The following trinket is set up for you to play with integer division and modulus.</p>
+<p>{
+    "template": "resp_embed.html",
+    "settings": {
+        "url": "https://trinket.io/embed/blocks/e18544b492",
+        "size": "4x3"
+    },
+    "outfile": "content/pages/modules/module_01/html_partials/modulus_trinket_embed.html"</p>
+<h2 id="truth-values-and-relational-operators">Truth Values and Relational Operators</h2>
+<p>In addition to the <em class="definition">number</em> and <em class="definition">text</em>
+types of values we've discussed so far, there are <em class="definition">boolean</em>
+types that can take one of two values. In this case, we have <em class="definition">true</em>
+ and <em class="definition">false</em>.</p>
+<p>A <em class="definition">relational operator</em> examines the relationship between
+two values and returns whether than relation is true or false.</p>
+<p>For example, Trinket blocks (and Python) defines equals, not equals, less than, less than or equals to,
+greater than, and greater than or equals to.</p>
+<p><img class="img-responsive" src="/images/module-01/relational-operators.gif"></img></p>
+<p>In future weeks we'll discuss the rules for combining truth values in different ways
+(important to the <em class="definition">discrete math</em> portion of the
+certification exam)!</p>
+<h2 id="knowledge-check">Knowledge Check</h2>
+<p>Please complete each knowledge check before moving on.</p>
+<p class="text-center"><a class="btn btn-success btn-lg btn-knowledge" href="https://utdallas.qualtrics.com/jfe/form/SV_39v6ZVaAhHZHuE5" role="button" target="_blank">Knowledge Check: Variables</a></p>
             </div>
             <div class="tab-pane" id="if-statements">
                 

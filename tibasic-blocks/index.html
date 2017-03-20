@@ -53,6 +53,9 @@
                 <button type="button" class="btn btn-block btn-primary" data-cfw="modal"
                         data-cfw-modal-toggle="#fileModal">Load Workspace
                 </button>
+                <button type="button" style="display: none" class="btn btn-block btn-primary" data-cfw="modal"
+                        data-cfw-modal-toggle="#restoreModal">Hidden Workaround
+                </button>
             </div>
         </div>
     </div>
@@ -78,6 +81,31 @@
             </div>
         </div>
     </div>
+
+    <div class="modal" id="restoreModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="uploadBlockly">Reload Autosave?</h2>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Do you want to reload your last workspace?</p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn btn-success btn-block" onclick="restoreLastSession()">Yes, Reload</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-warning btn-block" data-cfw-dismiss="modal">No, Don't Reload</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 <xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
     <category name="Logic" colour="#5C81A6">
@@ -214,7 +242,7 @@
             <field name="TYPES">TEXT</field>
             <value name="PROMPT">
                 <shadow type="text">
-                    <field name="TEXT">What is your input? </field>
+                    <field name="TEXT">What is your input?</field>
                 </shadow>
             </value>
             <field name="USERINPUT">userInput</field>
@@ -317,12 +345,69 @@
     </category>
     <sep></sep>
     <category name="TI-Innovator Hub" colour="#E98300">
-        <block type="innovator_io_led_ext"></block>
-        <block type="innovator_io_led"></block>
-        <block type="innovator_io_wait"></block>
-        <block type="innovator_io_sound_ext"></block>
-        <block type="innovator_io_sound"></block>
+        <block type="innovator_io_light_ext">
+            <value name="TIME">
+                <shadow type="math_number">
+                    <field name="NUM">3</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="innovator_io_light"></block>
+        <block type="innovator_io_color">
+            <value name="RED">
+                <shadow type="math_number">
+                    <field name="NUM">0</field>
+                </shadow>
+            </value>
+            <value name="GREEN">
+                <shadow type="math_number">
+                    <field name="NUM">133</field>
+                </shadow>
+            </value>
+            <value name="BLUE">
+                <shadow type="math_number">
+                    <field name="NUM">66</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="innovator_io_wait">
+            <value name="TIME">
+                <shadow type="math_number">
+                    <field name="NUM">3</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="innovator_io_sound_ext">
+            <value name="FREQUENCY">
+                <shadow type="math_number">
+                    <field name="NUM">500</field>
+                </shadow>
+            </value>
+            <value name="TIME">
+                <shadow type="math_number">
+                    <field name="NUM">3</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="innovator_io_sound">
+            <value name="FREQUENCY">
+                <shadow type="math_number">
+                    <field name="NUM">500</field>
+                </shadow>
+            </value>
+        </block>
         <block type="innovator_io_read"></block>
+        <block type="innovator_io_connect"></block>
+        <block type="innovator_io_disconnect"></block>
+        <block type="innovator_io_led">
+            <value name="VALUE">
+                <shadow type="math_number">
+                    <field name="NUM">255</field>
+                </shadow>
+            </value>
+        </block>
+
+
     </category>
     <sep></sep>
     <category name="Variables" colour="#A65C81" custom="VARIABLE"></category>
@@ -356,6 +441,7 @@
             var xml_text = localStorage.autoSave;
             var xml = Blockly.Xml.textToDom(xml_text);
             Blockly.Xml.domToWorkspace(xml, workspace);
+            $('#restoreModal').CFW_Modal('hide')
         };
 
         var showTIBasic = function () {
@@ -374,6 +460,12 @@
         };
 
         $(function () {
+            if (localStorage.autoSave) {
+                var restoreModal = $('#restoreModal').CFW_Modal({'animate': true});
+                console.log('trying here');
+                restoreModal.CFW_Modal('show');
+            }
+
             var fileInput = document.getElementById('fileInput');
 
             fileInput.addEventListener('change', function (e) {

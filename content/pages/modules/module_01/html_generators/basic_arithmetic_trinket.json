@@ -1,0 +1,35 @@
+{
+    "template": "how_to.html",
+    "outfile": "content/pages/modules/module_01/html_partials/arithmetic_trinket.html",
+    "settings": {
+        "gif": {
+            "show_gif": true,
+            "short_name": "basic-operations-gif",
+            "button_label": "Launch Trinket arithmetic operators gif",
+            "file": "/images/module-01/basic-operations.gif",
+            "alt": "A video showing how to use the arithmetic operator block Trinket"
+        },
+        "steps": {
+            "arithmetic-step-1": {
+                "step_text": "The arithmetic operator block can be found under the \"numbers\" menu. It consists of two blank slots for numbers or variables and a dropdown to select the operator.",
+                "file": "/images/module-01/basic-operations-1.png",
+                "alt": "Shows the arithmetic operator block."
+            },
+            "arithmetic-step-2": {
+                "step_text": "Fill in the slots with variables, numbers, or more arithmetic operation blocks.",
+                "file": "/images/module-01/basic-operations-2.png",
+                "alt": "Shows a filled-in arithmetic operator block."
+            },
+            "arithmetic-step-3": {
+                "step_text": "Choose the arithmetic operation you want to use.",
+                "file": "/images/module-01/basic-operations-3.png",
+                "alt": "Shows the dropdown menu for arithmetic operators"
+            },
+            "arithmetic-step-4": {
+                "step_text": "The operation will be simplified for printing or storing to a variable.",
+                "file": "/images/module-01/basic-operations-4.png",
+                "alt": "Shows a printout of the 4 operations"
+            }
+        }
+    }
+}

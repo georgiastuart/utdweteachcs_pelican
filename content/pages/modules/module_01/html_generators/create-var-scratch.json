@@ -1,0 +1,35 @@
+{
+    "template": "how_to.html",
+    "outfile": "content/pages/modules/module_01/html_partials/create_var_scratch.html",
+    "settings": {
+        "gif": {
+            "show_gif": true,
+            "short_name": "create-var-scratch-gif",
+            "button_label": "Launch Scratch variable creation gif",
+            "file": "/images/module-01/create-var-scratch.gif",
+            "alt": "A video showing how to create a variable in Scratch"
+        },
+        "steps": {
+            "scratch-create-var-step-1": {
+                "step_text": "Go to the data group in the Scripts tab.",
+                "file": "/images/module-01/data.png",
+                "alt": "Location of the data group"
+            },
+            "scratch-create-var-step-2": {
+                "step_text": "Click on the \"make a variable\" button.",
+                "file": "/images/module-01/make-a-variable.png",
+                "alt": "Location of the make a variable button"
+            },
+            "scratch-create-var-step-3": {
+                "step_text": "Choose whether the variable is only available to this sprite (local) or all sprites (global).\n\nNote: we will discuss global vs. local variables in detail later.",
+                "file": "/images/module-01/global-v-local.png",
+                "alt": "Global vs local decision menu"
+            },
+            "scratch-create-var-step-4": {
+                "step_text": "The variable is now available to set and use in the data menu!",
+                "file": "/images/module-01/variable-availability.png",
+                "alt": "Show the ready to use variable in the menu"
+            }
+        }
+    }
+}

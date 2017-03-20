@@ -1,0 +1,8 @@
+{
+    "template": "resp_embed.html",
+    "settings": {
+        "url": "https://trinket.io/embed/blocks/4617a3f892",
+        "size": "4x3"
+    },
+    "outfile": "content/pages/modules/module_01/html_partials/basic_arithmetic_trinket_embed.html"
+}

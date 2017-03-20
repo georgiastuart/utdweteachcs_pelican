@@ -1,0 +1,149 @@
+{% extends 'page_base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="container">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-block btn-primary" onclick="showTIBasic()">Generate TI-Basic
+                </button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-block btn-primary" onclick="saveFile('tibasic_blocks','xml')">Save
+                    Workspace
+                </button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-block btn-primary" data-cfw="modal"
+                        data-cfw-modal-toggle="#fileModal">Load Workspace
+                </button>
+                <button type="button" style="display: none" class="btn btn-block btn-primary" data-cfw="modal"
+                        data-cfw-modal-toggle="#restoreModal">Hidden Workaround
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding-top:1rem">
+        <div id="blocklyDiv" style="height: 30rem"></div>
+    </div>
+
+    <div class="modal" id="fileModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="uploadBlockly">Upload a Saved Blockly Workspace</h2>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Files must be Blockly xml files.</p>
+
+                    <label class="btn btn-default btn-file">
+                        Browse <input type="file" style="display: none;" id="fileInput">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="restoreModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="uploadBlockly">Reload Autosave?</h2>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Do you want to reload your last workspace?</p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn btn-success btn-block" onclick="restoreLastSession()">Yes, Reload</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-warning btn-block" data-cfw-dismiss="modal">No, Don't Reload</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% include 'partials/toolbox.html' %}
+{% endblock content %}
+
+{% block js %}
+    {{ super() }}
+    <script src="{{ SITEURL }}/static/js/blockly_compressed.js"></script>
+    <script src="{{ SITEURL }}/static/js/blocks_compressed.js"></script>
+    <script src="{{ SITEURL }}/static/js/tibasic_compressed.js"></script>
+    <script src="{{ SITEURL }}/static/js/en.js"></script>
+    <script src="{{ SITEURL }}/static/js/filesaver.min.js"></script>
+
+    <script>
+        var workspace = Blockly.inject('blocklyDiv', {
+            toolbox: document.getElementById('toolbox'),
+            grid: {spacing: 20, length: 3, colour: '#ccc', snap: true}, trashcan: true
+        });
+
+        var autoSaveChanges = function (event) {
+            var xml = Blockly.Xml.workspaceToDom(workspace);
+            localStorage.autoSave = Blockly.Xml.domToText(xml);
+        };
+
+        workspace.addChangeListener(autoSaveChanges);
+
+        var restoreLastSession = function () {
+            var xml_text = localStorage.autoSave;
+            var xml = Blockly.Xml.textToDom(xml_text);
+            Blockly.Xml.domToWorkspace(xml, workspace);
+            $('#restoreModal').CFW_Modal('hide')
+        };
+
+        var showTIBasic = function () {
+            var code = Blockly.TIBasic.workspaceToCode(workspace);
+            window.alert(code);
+        };
+
+
+        var saveFile = function (fileName, extension) {
+            var code = "";
+            var xml = Blockly.Xml.workspaceToDom(workspace);
+            code = Blockly.Xml.domToPrettyText(xml);
+            var blob = new Blob([code], {type: "text/plain;charset=utf-8"});
+            var fullFileName = fileName.trim() + "." + extension;
+            saveAs(blob, fullFileName);
+        };
+
+        $(function () {
+            if (localStorage.autoSave) {
+                var restoreModal = $('#restoreModal').CFW_Modal({'animate': true});
+                console.log('trying here');
+                restoreModal.CFW_Modal('show');
+            }
+
+            var fileInput = document.getElementById('fileInput');
+
+            fileInput.addEventListener('change', function (e) {
+                var file = fileInput.files[0];
+                var textType = /text.*/;
+
+                if (file.type.match(textType)) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        var xml_text = reader.result;
+                        var xml = Blockly.Xml.textToDom(xml_text);
+                        Blockly.Xml.domToWorkspace(xml, workspace);
+                    };
+
+                    reader.readAsText(file);
+                    $('#fileModal').CFW_Modal('hide');
+                } else {
+                    window.alert("File not supported!");
+                }
+            });
+        })
+    </script>
+{% endblock js %}

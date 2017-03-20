@@ -15,7 +15,9 @@ run(['python', os.path.join(os.getcwd(), 'run_generators.py')])
 ext_config = {'markdown.extensions.toc': {},
               'markdown.extensions.attr_list': {},
               'markdown_include.include': {},
-              'markdown.extensions.tables': {}}
+              'markdown.extensions.tables': {},
+              'markdown.extensions.fenced_code': {},
+              'markdown.extensions.codehilite': {}}
 
 
 def get_modules(value):

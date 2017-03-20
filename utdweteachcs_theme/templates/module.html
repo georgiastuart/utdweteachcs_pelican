@@ -39,3 +39,28 @@
         {% endfor %}
     </div>
 {% endblock main_content %}
+
+{% block js %}
+    {{ super() }}
+    <script>
+        $(function () {
+            $('.demo-modal').on('beforeShow.cfw.modal', function () {
+                $('img').each(function () {
+                    $(this).CFW_Lazy('show');
+                });
+            });
+
+            $('a[data-cfw="tab"]').on('beforeShow.cfw.tab', function (e) {
+                var paneID = $(e.target).attr('href');
+                console.log('tab triggered');
+                $(paneID + ' iframe').each(function () {
+                    var cur_frame = $(this);
+                    if (cur_frame.attr('src') == '') {
+                        var src = cur_frame.attr('data-src');
+                        cur_frame.attr('src', src);
+                    }
+                });
+            });
+        });
+    </script>
+{% endblock js %}

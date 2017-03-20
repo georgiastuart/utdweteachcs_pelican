@@ -42,14 +42,14 @@
 </table>
 
 {% if settings['gif']['show_gif'] %}
-    <div class="modal" id="{{ settings['gif']['short_name'] }}">
+    <div class="demo-modal modal" id="{{ settings['gif']['short_name'] }}">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
                     <br>
-                    <img class="img-responsive mx-auto d-block" src="{{ settings['gif']['file'] }}"
+                    <img class="img-responsive mx-auto d-block" src="" data-cfw="lazy" data-cfw-lazy-src="{{ settings['gif']['file'] }}"
                          alt="{{ settings['gif']['alt'] }}">
                 </div>
             </div>
@@ -58,14 +58,14 @@
 {% endif %}
 
 {% for name, content in settings['steps'].items() %}
-    <div class="modal" id="{{ name }}">
+    <div class="demo-modal modal" id="{{ name }}">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-cfw-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
                     <br>
-                    <img class="img-responsive mx-auto d-block" src="{{ content['file'] }}" alt="{{ content['alt'] }}">
+                    <img src="" class="img-responsive mx-auto d-block" data-cfw="lazy" data-cfw-lazy-src="{{ content['file'] }}" alt="{{ content['alt'] }}">
                 </div>
             </div>
         </div>

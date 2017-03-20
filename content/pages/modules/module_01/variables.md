@@ -23,13 +23,14 @@ Later in the course we'll refine what we mean by *numbers* and *text*.
 
 ## Creating Variables
 
-{!content/pages/modules/module_01/html_partials/create_variables_scratch.html!}
+### Creating Variables in Scratch
 
-{!content/pages/modules/module_01/html_partials/create_variables_trinket.html!}
+{!content/pages/modules/module_01/html_partials/create_var_scratch.html!}
+
+### Creating Variables in Trinket Blocks
+
+{!content/pages/modules/module_01/html_partials/create_var_trinket.html!}
 
 ## Knowledge Check
 
-Please complete each knowledge check before moving on.
-
-[Knowledge Check: Variables](https://utdallas.qualtrics.com/SE/?SID=SV_2o9hMiA48UCYDTn){: class="btn btn-success btn-lg btn-knowledge" role="button" target="_blank" }
-{: class="text-center" }
+Knowledge check is in the "Assigning Values to Variables" tab.

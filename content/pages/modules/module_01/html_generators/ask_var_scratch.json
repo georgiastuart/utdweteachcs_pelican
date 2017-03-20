@@ -1,0 +1,25 @@
+{
+    "template": "how_to.html",
+    "outfile": "content/pages/modules/module_01/html_partials/ask_scratch.html",
+    "settings": {
+        "gif": {
+            "show_gif": true,
+            "short_name": "ask-scratch-gif",
+            "button_label": "Launch Scratch user input gif",
+            "file": "/images/module-01/ask-input-scratch.gif",
+            "alt": "A video showing how to ask a user for a value in Scratch"
+        },
+        "steps": {
+            "scratch-ask-step-1": {
+                "step_text": "From the sensing menu, drag the ask block to your canvas.",
+                "file": "/images/module-01/scratch-ask-1.png",
+                "alt": "Shows the procedure for dragging the ask block to canvas"
+            },
+            "scratch-ask-step-2": {
+                "step_text": "Use the \"answer\" block to assign the answer to a variable.",
+                "file": "/images/module-01/scratch-ask-2.png",
+                "alt": "Shows the location of the answer block"
+            }
+        }
+    }
+}

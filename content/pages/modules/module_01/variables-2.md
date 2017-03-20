@@ -32,3 +32,27 @@ to appropriate
 values to draw a square with side length 100.
 
 {!content/pages/modules/module_01/html_partials/assign_var_trinket_you_try.html!}
+
+## Asking for User Input
+
+One way to assign a variable is to ask your user to input the value. This
+can give a program a layer of interactivity!
+
+### User Input in Scratch
+
+{!content/pages/modules/module_01/html_partials/ask_scratch.html!}
+
+### User Input in Trinket
+
+{!content/pages/modules/module_01/html_partials/ask_trinket.html!}
+
+## You try!
+
+Modify the previous examples to accept user input.
+
+## Knowledge check
+
+Please complete each knowledge check before moving on.
+
+[Knowledge Check: Variables](https://utdallas.qualtrics.com/SE/?SID=SV_2o9hMiA48UCYDTn){: class="btn btn-success btn-lg btn-knowledge" role="button" target="_blank" }
+{: class="text-center" }

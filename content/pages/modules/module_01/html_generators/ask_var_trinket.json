@@ -1,0 +1,30 @@
+{
+    "template": "how_to.html",
+    "outfile": "content/pages/modules/module_01/html_partials/ask_trinket.html",
+    "settings": {
+        "gif": {
+            "show_gif": true,
+            "short_name": "ask-trinket-gif",
+            "button_label": "Launch Trinket user input gif",
+            "file": "/images/module-01/ask-input-trinket.gif",
+            "alt": "A video showing how to ask a user for a value in Trinket"
+        },
+        "steps": {
+            "trinket-ask-step-1": {
+                "step_text": "From the text menu, drag the prompt user for input block to your canvas.",
+                "file": "/images/module-01/trinket-ask-1.png",
+                "alt": "Shows the procedure for dragging the ask block to canvas"
+            },
+            "trinket-ask-step-2": {
+                "step_text": "Snap the prompt user block to a variable to store the input and enter a prompt phrase (if applicable).",
+                "file": "/images/module-01/trinket-ask-2.png",
+                "alt": "Shows the placement of the prompt block"
+            },
+            "trinket-ask-step-3": {
+                "step_text": "When the program is run, your user will be prompted for input in the \"run\" console.",
+                "file": "/images/module-01/trinket-ask-3.png",
+                "alt": "Shows prompting a user for input in the run console"
+            }
+        }
+    }
+}

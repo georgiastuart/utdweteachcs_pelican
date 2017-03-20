@@ -1,0 +1,35 @@
+{
+    "template": "how_to.html",
+    "outfile": "content/pages/modules/module_01/html_partials/create_var_trinket.html",
+    "settings": {
+        "gif": {
+            "show_gif": true,
+            "short_name": "create-var-trinket-gif",
+            "button_label": "Launch Trinket variable creation gif",
+            "file": "/images/module-01/create-var-trinket.gif",
+            "alt": "A video showing how to create a variable in Trinket"
+        },
+        "steps": {
+            "trinket-create-var-step-1": {
+                "step_text": "Go to the \"variables\" group",
+                "file": "/images/module-01/trinket-var-menu.png",
+                "alt": "Location of the variables group"
+            },
+            "trinket-create-var-step-2": {
+                "step_text": "Drag a new variable to the canvas.",
+                "file": "/images/module-01/trinket-create-var.png",
+                "alt": "Drag a the new variable to the canvas"
+            },
+            "trinket-create-var-step-3": {
+                "step_text": "On the dropdown, choose \"Create a new variable...\"",
+                "file": "/images/module-01/trinket-new-var.png",
+                "alt": "Create new variable dropdown"
+            },
+            "trinket-create-var-step-4": {
+                "step_text": "Name your variable!",
+                "file": "/images/module-01/trinket-name-var.png",
+                "alt": "Location of the variable name field"
+            }
+        }
+    }
+}

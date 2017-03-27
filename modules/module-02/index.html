@@ -8,7 +8,7 @@
     <link href="https://utdweteachcs.org/static/css/figuration.min.css" rel="stylesheet">
     <link href="https://utdweteachcs.org/static/css/navbar.css" rel="stylesheet">
     <link href="https://utdweteachcs.org/static/css/codehilite-styles.css" rel="stylesheet">
-    <title>UT Dallas WeTeach_CS  - Module 02: Truth Values and Truth Tables</title>
+    <title>UT Dallas WeTeach_CS  - Module 2: Combining Truth Values, Looping, Lists, and Datatypes</title>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -55,6 +55,10 @@
                         <a class="nav-link"
                            href="https://utdweteachcs.org/modules/module-01/">Module 01</a>
                     </li>
+                    <li class="nav-item ">
+                        <a class="nav-link"
+                           href="https://utdweteachcs.org/modules/module-02/">Module 02</a>
+                    </li>
         </ul>
     </li>
                         <li class="nav-item active">
@@ -63,20 +67,51 @@ data-cfw="tab"                               href="#overview">Overview</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link"
-data-cfw="tab"                               href="#content">Content</a>
+data-cfw="tab"                               href="#todos">To-Do List</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
+data-cfw="tab"                               href="#discussion">Discussion</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link"
 data-cfw="tab"                               href="#assignment">Assignment</a>
                         </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
+data-cfw="tab"                               href="#truth-values">Combining Truth Values</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
+data-cfw="tab"                               href="#lists">Lists</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"
+data-cfw="tab"                               href="#looping">Looping</a>
+                        </li>
                 </ul>
         </div>
         <!--Main Content -->
         <div class="col-sm-9" id="mainContent">
-    <h1 class="module-title">Module 02: Truth Values and Truth Tables</h1>
+    <h1 class="module-title">Module 2: Combining Truth Values, Looping, Lists, and Datatypes</h1>
 
     <div class="tab-content">
-        <div class="tab-pane" id="overview"><h1 id="blah-blah">Blah blah</h1></div>
+        <div class="tab-pane" id="overview"><h2 id="tools-for-this-module">Tools for this module</h2>
+<p>This module will use <a href="https://trinket.io/">trinket.io</a> Blocks to introduce</p>
+<ul>
+<li>combining truth values</li>
+<li>data types</li>
+<li>while loops and for loops</li>
+<li>lists</li>
+</ul>
+<h2 id="in-class">In class</h2>
+<p>This week in class we'll again use block-based programming to interact with
+the TI-Nspire and Innovator Hub! Bring the laptop you installed the
+ TI Nspire teacher software on. Please let Georgia know if
+you need to borrow one for class.</p>
+<p>Remember that you're welcome to attend both days of class if you would like
+to revisit the in-class activity or simply work on your weekly assignments
+with the instructional team on hand.</p></div>
         <div class="tab-pane" id="todos">
 <script>
     var store = function (id) {
@@ -109,16 +144,180 @@ It will not transfer between browsers or computers.</p>
 
 <div class="todo-list">
 
+        <div class="row">
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('compoundTruth_')"
+                        class="btn btn-todo" id="compoundTruth_"></button>
+                <script type="text/javascript">
+                    getActive("compoundTruth_");
+                </script>
+
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Watch the Compound Truth Statements and Truth Tables Videos. Complete the Knowledge Check</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('looping_')"
+                        class="btn btn-todo" id="looping_"></button>
+                <script type="text/javascript">
+                    getActive("looping_");
+                </script>
+
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Watch the Looping video. Complete the Knowledge Check</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('lists_')"
+                        class="btn btn-todo" id="lists_"></button>
+                <script type="text/javascript">
+                    getActive("lists_");
+                </script>
+
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Watch the Lists video</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('mod2discussion_')"
+                        class="btn btn-todo" id="mod2discussion_"></button>
+                <script type="text/javascript">
+                    getActive("mod2discussion_");
+                </script>
+
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Participate in the module 02 discussion. There is only one part this week!!</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <button type="button" data-cfw="button" onclick="store('mod2assignment_')"
+                        class="btn btn-todo" id="mod2assignment_"></button>
+                <script type="text/javascript">
+                    getActive("mod2assignment_");
+                </script>
+
+            </div>
+            <div class="col-11">
+                <div class="todo-item">Complete the Module 02 Assignment</div>
+            </div>
+        </div>
 
 </div></div>
             <div class="tab-pane" id="overview">
                 None
             </div>
-            <div class="tab-pane" id="content">
+            <div class="tab-pane" id="todos">
                 None
             </div>
+            <div class="tab-pane" id="discussion">
+                <h1 id="module-02-discussion">Module 02 Discussion</h1>
+<p>You can access Slack from a computer browser, a desktop application for
+Windows or Mac, or a mobile app for iOS or Android. <a href="https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-users">Here is a good guide
+for getting started with Slack!</a></p>
+<div class="jumbotron">
+    <h2>Reflection</h2>
+    <hr class="my-05">
+    <h3>Discussion</h3>
+    <p class="lead">THERE IS ONLY ONE DISCUSSION PART THIS WEEK</p>
+    <p class="lead">The discussion ends on Sunday, April 2nd at 11:59 pm</p>
+    In the <a href="https://utdweteachcs.slack.com/messages/module-02-discussion" alt="module 2 discussion">
+    #module-02-discussion channel</a>, reflect on your first three weeks of class. Some suggested topics
+    are how you feel about your ability to complete the program, your experience with block-based programming,
+    etc.
+    <hr class="my-05">
+    <a class="btn btn-primary btn-discussion btn-xl" href="https://utdweteachcs.slack.com/messages/module-02-discussion"
+       role="button" target="_blank">Go to Discussion Channel</a>
+</div>
+
+<p>Slack will be our <strong>primary communication platform</strong> for discussions and
+asking questions. If you have any trouble or want some help, let us know!</p>
+            </div>
             <div class="tab-pane" id="assignment">
-                None
+                <h1 id="module-02-assignment">Module 02 Assignment</h1>
+<p>For assignments, remember that we use standards-based grading. This means
+you should demonstrate the extent of your knowledge as best you can. If you
+do not meet a standard the first time (and it will be expected that you'll
+spend some time in partially proficient before achieving full proficiency),
+there will be future opportunities to demonstrate improvement.</p>
+<div class="jumbotron">
+    <h2>Module 02 Assignment</h2>
+    <hr class="my-05">
+    <p class="lead">Complete the following problems:</p>
+    <ol>
+        <li>Construct the truth table for (A and B) or (A and C)</li>
+        <li>Construct the truth table for (not A) or B</li>
+        <li>You go to the restaurant and the server asks you if you want the soup or the salad with your entree. Is "or"
+            in this situation the same as logical or? Why or why not?
+        </li>
+    </ol>
+
+    <h3>For the following use trinket blocks:</h3>
+
+    <ol start="4">
+        <li>Create a program that asks the user for their name, then prints out their name the same number of times as
+            letters in the name.
+        </li>
+        <li>Create a program that asks the user for a letter continually unless they enter a vowel</li>
+        <li>Create a program that asks the user for a number, the prints out whether that number is even</li>
+        <li>Create a program that calculates the mean from a list of numbers (not using the average block!)</li>
+        <li>Create a program that asks for a score between 0 and 100, then prints out the letter grade (A, B, C, D, F)
+        </li>
+    </ol>
+
+    <h3>BONUS (not required):</h3>
+    <ol start="9">
+        <li>Create a program which prints out the prime numbers under 100 (must calculate whether prime as the program
+            runs,
+            not compare to a list of known prime numbers)
+        </li>
+        <li>Print the sum of the prime numbers under 1000</li>
+    </ol>
+
+    <p class="lead">Due Sunday, April 2nd at 11:59 pm</p>
+    <hr class="my-05">
+    <h4>How to Submit</h4>
+    You can either:
+    <ol>
+        <li>Paste the links to your trinkets into your document</li>
+        <li>Insert screenshots of your trinkets into your document</li>
+    </ol>
+    For the truth table problems, uploading pictures of your work is fine if you hand-write them.
+
+    Upload a word file or PDF to CometSpace (Box). If you cannot see the upload widget,
+    please inform Georgia.
+
+    <script src="https://app.box.com/embed/upload.js?token=2ecp42dx7enuwkyjpn236plxzgr29vek&folder_id=22480005735&w=385&h=385&i=&d=1&t=Submit%20Module%202%20Assignment&r=1"
+            type="text/javascript"></script>
+</div>
+            </div>
+            <div class="tab-pane" id="truth-values">
+                <h1 id="compound-truth-statements">Compound Truth Statements</h1>
+<h2 id="basic-compound-truth-statements">Basic Compound Truth Statements</h2>
+<div class="embed-responsive embed-responsive-16x9"> <iframe class=embed-responsive-item src data-src=https://www.youtube-nocookie.com/embed/hT0BB1MRltc allowfullscreen></iframe> </div>
+
+<h2 id="truth-tables">Truth Tables</h2>
+<div class="embed-responsive embed-responsive-16x9"> <iframe class=embed-responsive-item src data-src=https://www.youtube-nocookie.com/embed/u8HQKAU_cZE allowfullscreen></iframe> </div>
+
+<h2 id="knowledge-check">Knowledge Check!</h2>
+<p class="text-center"><a class="btn btn-success btn-lg btn-knowledge" href="https://utdallas.qualtrics.com/jfe/form/SV_9TP2TOuVc6StRit" role="button" target="_blank">Knowledge Check: Compound Truth Statements</a></p>
+            </div>
+            <div class="tab-pane" id="lists">
+                <h1 id="compound-truth-statements">Compound Truth Statements</h1>
+<div class="embed-responsive embed-responsive-16x9"> <iframe class=embed-responsive-item src data-src=https://www.youtube-nocookie.com/embed/4TPN437Ko0s allowfullscreen></iframe> </div>
+            </div>
+            <div class="tab-pane" id="looping">
+                <h1 id="looping">Looping</h1>
+<div class="embed-responsive embed-responsive-16x9"> <iframe class=embed-responsive-item src data-src=https://www.youtube-nocookie.com/embed/NMePgGY4grY allowfullscreen></iframe> </div>
+
+<p class="text-center"><a class="btn btn-success btn-lg btn-knowledge" href="https://utdallas.qualtrics.com/jfe/form/SV_3aUjC7H6hz3CfTn" role="button" target="_blank">Knowledge Check: Looping</a></p>
             </div>
     </div>
         </div>

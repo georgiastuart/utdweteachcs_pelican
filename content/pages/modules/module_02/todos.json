@@ -1,3 +1,27 @@
 {
-
+    "Watch the Compound Truth Statements and Truth Tables Videos. Complete the Knowledge Check": {
+        "type": "assignment",
+        "link": "#truth-values",
+        "short-name": "compoundTruth"
+    },
+    "Watch the Looping video. Complete the Knowledge Check": {
+        "type": "assignment",
+        "link": "#looping",
+        "short-name": "looping"
+    },
+    "Watch the Lists video": {
+        "type": "assignment",
+        "link": "#lists",
+        "short-name": "lists"
+    },
+    "Participate in the module 02 discussion. There is only one part this week!!": {
+        "type": "discussion",
+        "link": "#discussion",
+        "short-name": "mod2discussion"
+    },
+    "Complete the Module 02 Assignment": {
+        "type": "assignment",
+        "link": "#assignment",
+        "short-name": "mod2assignment"
+    }
 }

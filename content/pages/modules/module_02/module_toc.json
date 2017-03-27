@@ -1,5 +1,9 @@
 {
     "Overview": "overview",
-    "Content": "content",
-    "Assignment": "assignment"
+    "To-Do List": "todos",
+    "Discussion": "discussion",
+    "Assignment": "assignment",
+    "Combining Truth Values": "truth-values",
+    "Looping": "looping",
+    "Lists": "lists"
 }

@@ -1,0 +1,8 @@
+{
+    "template": "resp_embed.html",
+    "settings": {
+        "url": "https://www.youtube-nocookie.com/embed/hT0BB1MRltc",
+        "size": "16x9"
+    },
+    "outfile": "content/pages/modules/module_02/html_partials/compound_truth_embed.html"
+}

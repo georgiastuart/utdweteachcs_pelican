@@ -79,6 +79,10 @@
         @extend %btn-icon-base;
         content: "\f008";
     }
+    .btn-template:before{
+        @extend %btn-icon-base;
+        content: "\f121";
+    }
 
 }
 .navbar.bg-inverse {

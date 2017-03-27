@@ -19,11 +19,6 @@
         "link": "#operators",
         "short-name": "operators"
     },
-    "Read the if statement page and complete the knowledge check": {
-        "type": "assignment",
-        "link": "#if-statement",
-        "short-name": "ifStatement"
-    },
     "Participate in the module 01 discussion (remember, there are two parts!)": {
         "type": "discussion",
         "link": "#discussion",

@@ -1,0 +1,8 @@
+{
+    "template": "resp_embed.html",
+    "settings": {
+        "url": "https://www.youtube-nocookie.com/embed/u8HQKAU_cZE",
+        "size": "16x9"
+    },
+    "outfile": "content/pages/modules/module_02/html_partials/truth_table_embed.html"
+}

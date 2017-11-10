@@ -9,20 +9,15 @@
         "link": "#intro-trinket",
         "short-name": "intoTrinket"
     },
-    "Read the variables pages and complete the knowledge check (on second page)": {
+    "Read the variables pages": {
         "type": "assignment",
         "link": "#variables",
         "short-name": "variables"
     },
-    "Read the operators and truth values page and complete the knowledge check": {
+    "Read the operators and truth values page": {
         "type": "assignment",
         "link": "#operators",
         "short-name": "operators"
-    },
-    "Participate in the module 01 discussion (remember, there are two parts!)": {
-        "type": "discussion",
-        "link": "#discussion",
-        "short-name": "discussion"
     },
     "Complete the Module 1 Assignment": {
         "type": "assignment",

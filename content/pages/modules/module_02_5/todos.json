@@ -1,0 +1,12 @@
+{
+    "Participate in the module 2.5 discussion.": {
+        "type": "discussion",
+        "link": "#discussion",
+        "short-name": "mod2discussion"
+    },
+    "Complete the Module 2.5 Assignment": {
+        "type": "assignment",
+        "link": "#assignment",
+        "short-name": "mod2assignment"
+    }
+}

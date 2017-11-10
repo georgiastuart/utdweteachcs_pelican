@@ -21,16 +21,7 @@ This module will use [Scratch](https://scratch.mit.edu/) and
 - if-else statements
 - operations
 
-Please note that making an account on either of these services is not
-required.
-
 ## In class
 
-This week in class we'll use block-based programming to interact with
-the TI-Nspire and Innovator Hub! You will need a non-chromebook computer
-for this to install the teacher software on. Please let Georgia know if
-you need to borrow one for class.
-
-Remember that you're welcome to attend both days of class if you would like
-to revisit the in-class activity or simply work on your weekly assignments
-with the instructional team on hand.
+We'll learn to use trinket and use block-based programming to interact with
+the TI-Nspire and Innovator Hub!
